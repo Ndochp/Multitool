@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<Group>AlwaysHorizontal</Group>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Pages name="грСписокЗадач" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гр список задач</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гр список задач</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="грСписокЗадачРасширеннаяПодсказка" id="29"/>
+			<Events>
+				<Event name="OnCurrentPageChange">Группа1ПриСменеСтраницы</Event>
+			</Events>
+			<ChildItems>
+				<Page name="грСтруктура" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр структура</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр структура</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="грСтруктураРасширеннаяПодсказка" id="31"/>
+					<ChildItems>
+						<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа пользовательских настроек</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalStretch>false</VerticalStretch>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<CollapsedRepresentationTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа пользовательских настроек</v8:content>
+								</v8:item>
+							</CollapsedRepresentationTitle>
+							<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+						</UsualGroup>
+						<Table name="Список" id="3">
+							<Representation>Tree</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<InitialTreeView>ExpandTopLevel</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Список</DataPath>
+							<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+							<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+							<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+								<AdditionSource>
+									<Item>Список</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+								<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+								<AdditionSource>
+									<Item>Список</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+								<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+								<AdditionSource>
+									<Item>Список</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+								<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">СписокЗадачПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="Ссылка" id="16">
+									<DataPath>Список.Ref</DataPath>
+									<ContextMenu name="СсылкаКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="18"/>
+								</LabelField>
+								<LabelField name="Наименование" id="19">
+									<DataPath>Список.Description</DataPath>
+									<Visible>false</Visible>
+									<DefaultItem>true</DefaultItem>
+									<ContextMenu name="НаименованиеКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="21"/>
+								</LabelField>
+								<LabelField name="Код" id="22">
+									<DataPath>Список.Code</DataPath>
+									<ContextMenu name="КодКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="КодРасширеннаяПодсказка" id="24"/>
+								</LabelField>
+								<CheckBoxField name="Решена" id="25">
+									<DataPath>Список.Решена</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="РешенаКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="РешенаРасширеннаяПодсказка" id="27"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="грТуду" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр туду</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр туду</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="грТудуРасширеннаяПодсказка" id="33"/>
+					<ChildItems>
+						<UsualGroup name="ТудуСписокКомпоновщикНастроекПользовательскиеНастройки" id="88">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа пользовательских настроек</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Туду список компоновщик настроек пользовательские настройки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<VerticalStretch>false</VerticalStretch>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<CollapsedRepresentationTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа пользовательских настроек</v8:content>
+								</v8:item>
+							</CollapsedRepresentationTitle>
+							<ExtendedTooltip name="ТудуСписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="89"/>
+						</UsualGroup>
+						<Table name="ТудуСписок" id="34">
+							<Representation>List</Representation>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТудуСписок</DataPath>
+							<RowPictureDataPath>ТудуСписок.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<UserSettingsGroup>ТудуСписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="ТудуСписокКонтекстноеМеню" id="35"/>
+							<AutoCommandBar name="ТудуСписокКоманднаяПанель" id="36"/>
+							<ExtendedTooltip name="ТудуСписокРасширеннаяПодсказка" id="37"/>
+							<SearchStringAddition name="ТудуСписокСтрокаПоиска" id="38">
+								<AdditionSource>
+									<Item>ТудуСписок</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТудуСписокСтрокаПоискаКонтекстноеМеню" id="39"/>
+								<ExtendedTooltip name="ТудуСписокСтрокаПоискаРасширеннаяПодсказка" id="40"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТудуСписокСостояниеПросмотра" id="41">
+								<AdditionSource>
+									<Item>ТудуСписок</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТудуСписокСостояниеПросмотраКонтекстноеМеню" id="42"/>
+								<ExtendedTooltip name="ТудуСписокСостояниеПросмотраРасширеннаяПодсказка" id="43"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТудуСписокУправлениеПоиском" id="44">
+								<AdditionSource>
+									<Item>ТудуСписок</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТудуСписокУправлениеПоискомКонтекстноеМеню" id="45"/>
+								<ExtendedTooltip name="ТудуСписокУправлениеПоискомРасширеннаяПодсказка" id="46"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">СписокЗадачПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="Реквизит1Код" id="53">
+									<DataPath>ТудуСписок.Код</DataPath>
+									<ContextMenu name="Реквизит1КодКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="Реквизит1КодРасширеннаяПодсказка" id="55"/>
+								</LabelField>
+								<LabelField name="Реквизит1Ссылка" id="71">
+									<DataPath>ТудуСписок.Ссылка</DataPath>
+									<ContextMenu name="Реквизит1СсылкаКонтекстноеМеню" id="72"/>
+									<ExtendedTooltip name="Реквизит1СсылкаРасширеннаяПодсказка" id="73"/>
+								</LabelField>
+								<LabelField name="Реквизит1Наименование" id="56">
+									<DataPath>ТудуСписок.Наименование</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="Реквизит1НаименованиеКонтекстноеМеню" id="57"/>
+									<ExtendedTooltip name="Реквизит1НаименованиеРасширеннаяПодсказка" id="58"/>
+								</LabelField>
+								<CheckBoxField name="Реквизит1Предопределенный" id="62">
+									<DataPath>~ТудуСписок.Предопределенный</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="Реквизит1ПредопределенныйКонтекстноеМеню" id="63"/>
+									<ExtendedTooltip name="Реквизит1ПредопределенныйРасширеннаяПодсказка" id="64"/>
+								</CheckBoxField>
+								<CheckBoxField name="Реквизит1Решена" id="65">
+									<DataPath>ТудуСписок.Решена</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="Реквизит1РешенаКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="Реквизит1РешенаРасширеннаяПодсказка" id="67"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="Детали" id="74">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Детали</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Детали</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<CollapsedRepresentationTitle>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Детали</v8:content>
+				</v8:item>
+			</CollapsedRepresentationTitle>
+			<CurrentRowUse>Use</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">Список</AssociatedTableElementId>
+			<ExtendedTooltip name="ДеталиРасширеннаяПодсказка" id="75"/>
+			<ChildItems>
+				<InputField name="ТекущаяЗадачаНаименование" id="76">
+					<DataPath>ТекущаяЗадача.Description</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТекущаяЗадачаНаименованиеКонтекстноеМеню" id="77"/>
+					<ExtendedTooltip name="ТекущаяЗадачаНаименованиеРасширеннаяПодсказка" id="78"/>
+				</InputField>
+				<CheckBoxField name="ТекущаяЗадачаРешена" id="79">
+					<DataPath>ТекущаяЗадача.Решена</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТекущаяЗадачаРешенаКонтекстноеМеню" id="80"/>
+					<ExtendedTooltip name="ТекущаяЗадачаРешенаРасширеннаяПодсказка" id="81"/>
+				</CheckBoxField>
+				<InputField name="ТекущаяЗадачаКодПроекта" id="85">
+					<DataPath>ТекущаяЗадача.КодПроекта</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТекущаяЗадачаКодПроектаКонтекстноеМеню" id="86"/>
+					<ExtendedTooltip name="ТекущаяЗадачаКодПроектаРасширеннаяПодсказка" id="87"/>
+				</InputField>
+				<InputField name="ТекущаяЗадачаОписаниеЗадачи" id="82">
+					<DataPath>ТекущаяЗадача.ОписаниеЗадачи</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТекущаяЗадачаОписаниеЗадачиКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="ТекущаяЗадачаОписаниеЗадачиРасширеннаяПодсказка" id="84"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.Задачи</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТудуСписок" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Туду список</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	Задачи.Родитель КАК ЗадачиСПроблемами
+ПОМЕСТИТЬ втЗадачиСПроблемами
+ИЗ
+	Справочник.Задачи КАК Задачи
+ГДЕ
+	НЕ Задачи.Решена
+	И НЕ Задачи.ПометкаУдаления
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ЗадачиБлокеры.Ссылка
+ИЗ
+	Справочник.Задачи.Блокеры КАК ЗадачиБлокеры
+ГДЕ
+	НЕ ЗадачиБлокеры.Задача.Решена
+	И НЕ ЗадачиБлокеры.Ссылка.ПометкаУдаления
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СправочникЗадачи.Ссылка КАК Ссылка,
+	СправочникЗадачи.Родитель КАК Родитель,
+	СправочникЗадачи.Код КАК Код,
+	СправочникЗадачи.Наименование КАК Наименование,
+	СправочникЗадачи.Решена КАК Решена
+ИЗ
+	Справочник.Задачи КАК СправочникЗадачи
+		ЛЕВОЕ СОЕДИНЕНИЕ втЗадачиСПроблемами КАК втЗадачиСПроблемами
+		ПО (втЗадачиСПроблемами.ЗадачиСПроблемами = СправочникЗадачи.Ссылка)
+ГДЕ
+	втЗадачиСПроблемами.ЗадачиСПроблемами ЕСТЬ NULL
+	И НЕ СправочникЗадачи.ПометкаУдаления</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Код</dcssch:dataPath>
+					<dcssch:field>Код</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Родитель</dcssch:dataPath>
+					<dcssch:field>Родитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Наименование</dcssch:dataPath>
+					<dcssch:field>Наименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Решена</dcssch:dataPath>
+					<dcssch:field>Решена</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
+					<dcssch:dataPath>Блокеры</dcssch:dataPath>
+					<dcssch:field>Блокеры</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предопределенный</dcssch:dataPath>
+					<dcssch:field>Предопределенный</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмяПредопределенныхДанных</dcssch:dataPath>
+					<dcssch:field>ИмяПредопределенныхДанных</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОписаниеЗадачи</dcssch:dataPath>
+					<dcssch:field>ОписаниеЗадачи</dcssch:field>
+				</Field>
+				<MainTable>Catalog.Задачи</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТекущаяЗадача" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая задача</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Задачи</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>
