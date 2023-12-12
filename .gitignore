@@ -6,3 +6,4 @@ ConfigDumpInfo.xml
 build
 out
 .scannerwork
+*.cf
