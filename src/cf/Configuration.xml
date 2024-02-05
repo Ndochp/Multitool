@@ -242,6 +242,12 @@
 			<Subsystem>Администрирование</Subsystem>
 			<Subsystem>ПодключаемыеОтчетыИОбработки</Subsystem>
 			<Subsystem>СтандартныеПодсистемы</Subsystem>
+			<Subsystem>Эксплуататор1С</Subsystem>
+			<Subsystem>JIRA</Subsystem>
+			<Subsystem>GITLAB</Subsystem>
+			<Subsystem>Мультитул</Subsystem>
+			<Subsystem>GIT</Subsystem>
+			<Subsystem>Jenkins</Subsystem>
 			<StyleItem>ВажнаяНадписьШрифт</StyleItem>
 			<StyleItem>ВидДняПроизводственногоКалендаряПраздникЦвет</StyleItem>
 			<StyleItem>ГруппаВариантовОтчетовОбычнаяШрифт</StyleItem>
@@ -1237,6 +1243,13 @@
 			<CommonModule>ЭлектроннаяПодписьСлужебныйЛокализация</CommonModule>
 			<CommonModule>ЭлектроннаяПодписьСлужебныйПовтИсп</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыТУДУ</CommonModule>
+			<CommonModule>ОбновлениеИнформационнойБазыJira</CommonModule>
+			<CommonModule>ОбновлениеИнформационнойБазыGitLab</CommonModule>
+			<CommonModule>Jira</CommonModule>
+			<CommonModule>GitLab</CommonModule>
+			<CommonModule>ОбновлениеИнформационнойБазыJenkins</CommonModule>
+			<CommonModule>ОбновлениеИнформационнойБазыGit</CommonModule>
+			<CommonModule>GIT</CommonModule>
 			<ExchangePlan>ОбновлениеИнформационнойБазы</ExchangePlan>
 			<XDTOPackage>ApdexExport</XDTOPackage>
 			<XDTOPackage>ApdexExport_1_0_0_3</XDTOPackage>
@@ -1695,6 +1708,14 @@
 			<Catalog>УчетныеЗаписиЭлектроннойПочты</Catalog>
 			<Catalog>Файлы</Catalog>
 			<Catalog>ЭкземплярыСервераDSS</Catalog>
+			<Catalog>КатегорияМеста</Catalog>
+			<Catalog>КатегорияСрочности</Catalog>
+			<Catalog>Квадранты</Catalog>
+			<Catalog>Базы1С</Catalog>
+			<Catalog>Кластеры1С</Catalog>
+			<Catalog>Севера1С</Catalog>
+			<Catalog>СервераСУБД</Catalog>
+			<Catalog>БазаСУБД</Catalog>
 			<Document>ДокПустышка</Document>
 			<Enum>ВажностьПроблемыУчета</Enum>
 			<Enum>ВариантыСжатияTIFF</Enum>
