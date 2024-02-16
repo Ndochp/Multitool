@@ -18,8 +18,8 @@
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Задачи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Квадранты</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КатегорияСрочности</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КатегорияМеста</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КатегорииСрочности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КатегорииМеста</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбновлениеИнформационнойБазыТУДУ</xr:Item>
 			</Content>
 		</Properties>

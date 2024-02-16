@@ -1710,8 +1710,8 @@
 			<Catalog>УчетныеЗаписиЭлектроннойПочты</Catalog>
 			<Catalog>Файлы</Catalog>
 			<Catalog>ЭкземплярыСервераDSS</Catalog>
-			<Catalog>КатегорияМеста</Catalog>
-			<Catalog>КатегорияСрочности</Catalog>
+			<Catalog>КатегорииМеста</Catalog>
+			<Catalog>КатегорииСрочности</Catalog>
 			<Catalog>Квадранты</Catalog>
 			<Catalog>Базы1С</Catalog>
 			<Catalog>Кластеры1С</Catalog>
