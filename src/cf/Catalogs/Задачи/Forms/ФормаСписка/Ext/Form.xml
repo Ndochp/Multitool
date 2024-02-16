@@ -113,6 +113,7 @@
 								<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
 							</SearchControlAddition>
 							<Events>
+								<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
 								<Event name="OnActivateRow">СписокЗадачПриАктивизацииСтроки</Event>
 							</Events>
 							<ChildItems>
@@ -237,6 +238,7 @@
 								<ExtendedTooltip name="ТудуСписокУправлениеПоискомРасширеннаяПодсказка" id="46"/>
 							</SearchControlAddition>
 							<Events>
+								<Event name="BeforeAddRow">ТудуСписокПередНачаломДобавления</Event>
 								<Event name="OnActivateRow">СписокЗадачПриАктивизацииСтроки</Event>
 							</Events>
 							<ChildItems>

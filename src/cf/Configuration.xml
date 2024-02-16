@@ -1250,6 +1250,8 @@
 			<CommonModule>ОбновлениеИнформационнойБазыJenkins</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыGit</CommonModule>
 			<CommonModule>GIT</CommonModule>
+			<CommonModule>ДФИ</CommonModule>
+			<CommonModule>ЗадачиКлиент</CommonModule>
 			<ExchangePlan>ОбновлениеИнформационнойБазы</ExchangePlan>
 			<XDTOPackage>ApdexExport</XDTOPackage>
 			<XDTOPackage>ApdexExport_1_0_0_3</XDTOPackage>
