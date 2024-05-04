@@ -8,3 +8,4 @@ out
 .scannerwork
 *.cf
 env.json
+.obsidian
