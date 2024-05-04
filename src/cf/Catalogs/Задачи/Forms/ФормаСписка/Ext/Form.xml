@@ -6,6 +6,7 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<Pages name="грСписокЗадач" id="28">
@@ -240,6 +241,8 @@
 							<Events>
 								<Event name="BeforeAddRow">ТудуСписокПередНачаломДобавления</Event>
 								<Event name="OnActivateRow">СписокЗадачПриАктивизацииСтроки</Event>
+								<Event name="Drag">ТудуСписокПеретаскивание</Event>
+								<Event name="DragEnd">ТудуСписокОкончаниеПеретаскивания</Event>
 							</Events>
 							<ChildItems>
 								<LabelField name="Реквизит1Код" id="53">
@@ -299,12 +302,33 @@
 					<ContextMenu name="ТекущаяЗадачаНаименованиеКонтекстноеМеню" id="77"/>
 					<ExtendedTooltip name="ТекущаяЗадачаНаименованиеРасширеннаяПодсказка" id="78"/>
 				</InputField>
-				<CheckBoxField name="ТекущаяЗадачаРешена" id="79">
-					<DataPath>ТекущаяЗадача.Решена</DataPath>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ТекущаяЗадачаРешенаКонтекстноеМеню" id="80"/>
-					<ExtendedTooltip name="ТекущаяЗадачаРешенаРасширеннаяПодсказка" id="81"/>
-				</CheckBoxField>
+				<UsualGroup name="грРешена" id="105">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр решена</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр решена</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="грРешенаРасширеннаяПодсказка" id="106"/>
+					<ChildItems>
+						<CheckBoxField name="ТекущаяЗадачаРешена" id="79">
+							<DataPath>ТекущаяЗадача.Решена</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ТекущаяЗадачаРешенаКонтекстноеМеню" id="80"/>
+							<ExtendedTooltip name="ТекущаяЗадачаРешенаРасширеннаяПодсказка" id="81"/>
+						</CheckBoxField>
+						<LabelDecoration name="ДатаРешения" id="107">
+							<ContextMenu name="ДатаРешенияКонтекстноеМеню" id="108"/>
+							<ExtendedTooltip name="ДатаРешенияРасширеннаяПодсказка" id="109"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
 				<InputField name="ТекущаяЗадачаКодПроекта" id="85">
 					<DataPath>ТекущаяЗадача.КодПроекта</DataPath>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>

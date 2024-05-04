@@ -292,6 +292,7 @@
 			<InputByString>
 				<xr:Field>Catalog.Задачи.StandardAttribute.Description</xr:Field>
 				<xr:Field>Catalog.Задачи.StandardAttribute.Code</xr:Field>
+				<xr:Field>Catalog.Задачи.Attribute.КодПроекта</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>AnyPart</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>Use</FullTextSearchOnInputByString>
@@ -692,7 +693,7 @@
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 					<Use>ForItem</Use>
-					<Indexing>DontIndex</Indexing>
+					<Indexing>Index</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
 					<DataHistory>Use</DataHistory>
 				</Properties>
@@ -804,7 +805,7 @@
 					<Representation>Auto</Representation>
 					<ToolTip/>
 					<Picture/>
-					<Shortcut/>
+					<Shortcut>Ctrl+Shift+N</Shortcut>
 					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
 				</Properties>
 			</Command>
