@@ -18,6 +18,7 @@
 			<Comment/>
 			<Type>
 				<v8:Type>cfg:CatalogObject.СостоянияОригиналовПервичныхДокументов</v8:Type>
+				<v8:Type>cfg:CatalogObject.Задачи</v8:Type>
 				<v8:Type>cfg:CatalogObject.ВидыКонтактнойИнформации</v8:Type>
 				<v8:Type>cfg:CatalogObject.ИдентификаторыОбъектовМетаданных</v8:Type>
 			</Type>
