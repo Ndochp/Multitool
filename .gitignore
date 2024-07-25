@@ -9,3 +9,4 @@ out
 *.cf
 env.json
 .obsidian
+*.log
