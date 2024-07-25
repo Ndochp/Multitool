@@ -335,6 +335,12 @@
 					<ContextMenu name="ТекущаяЗадачаКодПроектаКонтекстноеМеню" id="86"/>
 					<ExtendedTooltip name="ТекущаяЗадачаКодПроектаРасширеннаяПодсказка" id="87"/>
 				</InputField>
+				<InputField name="ТекущаяЗадачаКатегорияСрочности" id="110">
+					<DataPath>ТекущаяЗадача.КатегорияСрочности</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТекущаяЗадачаКатегорияСрочностиКонтекстноеМеню" id="111"/>
+					<ExtendedTooltip name="ТекущаяЗадачаКатегорияСрочностиРасширеннаяПодсказка" id="112"/>
+				</InputField>
 				<Pages name="грОписаниеЗадачи" id="90">
 					<Title>
 						<v8:item>
@@ -392,6 +398,7 @@
 							<ChildItems>
 								<InputField name="ТекущаяЗадачаОписаниеЗадачи" id="82">
 									<DataPath>ТекущаяЗадача.ОписаниеЗадачи</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ТекущаяЗадачаОписаниеЗадачиКонтекстноеМеню" id="83"/>
 									<ExtendedTooltip name="ТекущаяЗадачаОписаниеЗадачиРасширеннаяПодсказка" id="84"/>
@@ -445,6 +452,9 @@
 			<Type>
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
+			<UseAlways>
+				<Field>ТудуСписок.Срок</Field>
+			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>false</DynamicDataRead>
