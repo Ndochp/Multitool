@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
-	<Catalog uuid="5096c0fe-128f-4f22-8c28-2a0e8f5e998d">
+	<Catalog uuid="a5e217df-219f-4a4a-81a1-60d63312dab1">
 		<InternalInfo>
-			<xr:GeneratedType name="CatalogObject.КатегорииСрочности" category="Object">
-				<xr:TypeId>54f5f332-fc05-4c59-b207-27a73fd028ac</xr:TypeId>
-				<xr:ValueId>8c1ee3d7-a2a9-4448-b4cf-cdcd288e31d5</xr:ValueId>
+			<xr:GeneratedType name="CatalogObject.ГрафикиРаботы" category="Object">
+				<xr:TypeId>1cf2ce90-dca4-45d5-9a4a-81e313e5034f</xr:TypeId>
+				<xr:ValueId>bf58886c-01f4-4e19-99d1-171238fb1c1c</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogRef.КатегорииСрочности" category="Ref">
-				<xr:TypeId>cf16001c-2321-471e-91aa-35469a855f68</xr:TypeId>
-				<xr:ValueId>c1e66709-4266-491f-a290-842d3b1bfc36</xr:ValueId>
+			<xr:GeneratedType name="CatalogRef.ГрафикиРаботы" category="Ref">
+				<xr:TypeId>a68ee9aa-0632-4f7e-842d-ad5715a79a09</xr:TypeId>
+				<xr:ValueId>c16f0c27-184f-45f5-a284-731555eb8916</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogSelection.КатегорииСрочности" category="Selection">
-				<xr:TypeId>eac191fe-d67d-4c89-8118-c1e8055bad99</xr:TypeId>
-				<xr:ValueId>e7cac59b-2621-4537-9c35-44d5c1e8e62e</xr:ValueId>
+			<xr:GeneratedType name="CatalogSelection.ГрафикиРаботы" category="Selection">
+				<xr:TypeId>f252318e-a2d1-445d-aad9-7232e282864c</xr:TypeId>
+				<xr:ValueId>dee9555b-348c-4696-97af-7305e3c9a726</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogList.КатегорииСрочности" category="List">
-				<xr:TypeId>62b830b9-c169-4fcf-80a1-799ece732373</xr:TypeId>
-				<xr:ValueId>703f4b3a-9fae-494c-9afc-776cb8105010</xr:ValueId>
+			<xr:GeneratedType name="CatalogList.ГрафикиРаботы" category="List">
+				<xr:TypeId>56ed25be-446e-445a-89d9-e53d51072de2</xr:TypeId>
+				<xr:ValueId>213f1fd1-8a9d-4351-ae6d-f6d324a1edde</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogManager.КатегорииСрочности" category="Manager">
-				<xr:TypeId>f031871e-078c-409e-bd84-8edb0e31110e</xr:TypeId>
-				<xr:ValueId>e3f7461b-1797-490b-86e9-4da7813af314</xr:ValueId>
+			<xr:GeneratedType name="CatalogManager.ГрафикиРаботы" category="Manager">
+				<xr:TypeId>effae50f-69bc-49fd-ac74-2428e1cc2d26</xr:TypeId>
+				<xr:ValueId>430e162e-9fdc-4163-bf7a-b83b184e5afc</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>КатегорииСрочности</Name>
+			<Name>ГрафикиРаботы</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Категории срочности</v8:content>
+					<v8:content>Графики работы</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -40,13 +40,13 @@
 			<UseStandardCommands>true</UseStandardCommands>
 			<Owners/>
 			<SubordinationUse>ToItems</SubordinationUse>
-			<CodeLength>0</CodeLength>
+			<CodeLength>9</CodeLength>
 			<DescriptionLength>25</DescriptionLength>
 			<CodeType>String</CodeType>
 			<CodeAllowedLength>Variable</CodeAllowedLength>
 			<CodeSeries>WholeCatalog</CodeSeries>
-			<CheckUnique>false</CheckUnique>
-			<Autonumbering>false</Autonumbering>
+			<CheckUnique>true</CheckUnique>
+			<Autonumbering>true</Autonumbering>
 			<DefaultPresentation>AsDescription</DefaultPresentation>
 			<Characteristics/>
 			<PredefinedDataUpdate>Auto</PredefinedDataUpdate>
@@ -54,7 +54,8 @@
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
-				<xr:Field>Catalog.КатегорииСрочности.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog.ГрафикиРаботы.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog.ГрафикиРаботы.StandardAttribute.Code</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
@@ -85,52 +86,6 @@
 			<UpdateDataHistoryImmediatelyAfterWrite>false</UpdateDataHistoryImmediatelyAfterWrite>
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
-		<ChildObjects>
-			<Attribute uuid="f22a9558-7ebf-43b3-982f-d048a6a261bd">
-				<Properties>
-					<Name>НаступитЧерезДней</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Наступит через дней</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:NumberQualifiers>
-							<v8:Digits>10</v8:Digits>
-							<v8:FractionDigits>0</v8:FractionDigits>
-							<v8:AllowedSign>Any</v8:AllowedSign>
-						</v8:NumberQualifiers>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Use>ForItem</Use>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-		</ChildObjects>
+		<ChildObjects/>
 	</Catalog>
 </MetaDataObject>
