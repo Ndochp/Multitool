@@ -460,6 +460,8 @@
 			<UseAlways>
 				<Field>~ТудуСписок.СрочностьНаступитЧерезДней</Field>
 				<Field>ТудуСписок.ДатаПаники</Field>
+				<Field>ТудуСписок.РешенаИзРодителя</Field>
+				<Field>ТудуСписок.СрокИзРодителя</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
@@ -479,9 +481,14 @@
 	ЗадачиБлокеры.Ссылка
 ИЗ
 	Справочник.Задачи.Блокеры КАК ЗадачиБлокеры
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.КэшированныеРеквизитыРодителейЗадач КАК КэшированныеРеквизитыРодителейЗадач
+		ПО ЗадачиБлокеры.Задача = КэшированныеРеквизитыРодителейЗадач.Задача
 ГДЕ
 	НЕ ЗадачиБлокеры.Задача.Решена
 	И НЕ ЗадачиБлокеры.Ссылка.ПометкаУдаления
+	И НЕ ЕстьNULL(КэшированныеРеквизитыРодителейЗадач.Решена, ложь)
+	И НЕ ЕстьNULL(КэшированныеРеквизитыРодителейЗадач.ПометкаУдаления, Ложь)
+
 ;
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -489,14 +496,33 @@
 	СправочникЗадачи.Ссылка КАК Ссылка,
 	СправочникЗадачи.Родитель КАК Родитель,
 	СправочникЗадачи.Код КАК Код,
-	СправочникЗадачи.Наименование КАК Наименование,
-	СправочникЗадачи.Решена КАК Решена,
-	СправочникЗадачи.Срок КАК Срок,
-	ДОБАВИТЬКДАТЕ(СправочникЗадачи.Срок, ДЕНЬ, -СправочникЗадачи.КатегорияСрочности.НаступитЧерезДней) КАК ДатаПаники
+	ПРЕДСТАВЛЕНИЕ(СправочникЗадачи.Ссылка) КАК Наименование,
+	СправочникЗадачи.Решена
+		ИЛИ ЕСТЬNULL(КэшированныеРеквизитыРодителейЗадач.Решена, ЛОЖЬ) КАК Решена,
+	ВЫБОР
+		КОГДА СправочникЗадачи.Срок &lt;&gt; ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)
+			ТОГДА СправочникЗадачи.Срок
+		ИНАЧЕ ЕСТЬNULL(КэшированныеРеквизитыРодителейЗадач.Срок, ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0))
+	КОНЕЦ КАК Срок,
+	ДОБАВИТЬКДАТЕ(ВЫБОР
+			КОГДА СправочникЗадачи.Срок &lt;&gt; ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)
+				ТОГДА СправочникЗадачи.Срок
+			ИНАЧЕ ЕСТЬNULL(КэшированныеРеквизитыРодителейЗадач.Срок, ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0))
+		КОНЕЦ, ДЕНЬ, -СправочникЗадачи.КатегорияСрочности.НаступитЧерезДней) КАК ДатаПаники,
+	СправочникЗадачи.Срок = ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)
+		И ЕСТЬNULL(КэшированныеРеквизитыРодителейЗадач.Срок, ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)) &lt;&gt; ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0) КАК СрокИзРодителя,
+	НЕ СправочникЗадачи.Решена
+		И ЕСТЬNULL(КэшированныеРеквизитыРодителейЗадач.Решена, ЛОЖЬ) КАК РешенаИзРодителя,
+	СправочникЗадачи.ПометкаУдаления
+		ИЛИ ЕСТЬNULL(КэшированныеРеквизитыРодителейЗадач.ПометкаУдаления, ЛОЖЬ) КАК ПометкаУдаления,
+	НЕ СправочникЗадачи.ПометкаУдаления
+		И ЕСТЬNULL(КэшированныеРеквизитыРодителейЗадач.ПометкаУдаления, ЛОЖЬ) КАК ПомемткаУдаленияИзРодителя
 ИЗ
 	Справочник.Задачи КАК СправочникЗадачи
 		ЛЕВОЕ СОЕДИНЕНИЕ втЗадачиСПроблемами КАК втЗадачиСПроблемами
 		ПО (втЗадачиСПроблемами.ЗадачиСПроблемами = СправочникЗадачи.Ссылка)
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.КэшированныеРеквизитыРодителейЗадач КАК КэшированныеРеквизитыРодителейЗадач
+		ПО (КэшированныеРеквизитыРодителейЗадач.Задача = СправочникЗадачи.Ссылка)
 ГДЕ
 	втЗадачиСПроблемами.ЗадачиСПроблемами ЕСТЬ NULL
 	И НЕ СправочникЗадачи.ПометкаУдаления
@@ -519,20 +545,46 @@
 					<dcssch:field>Родитель</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Наименование</dcssch:dataPath>
-					<dcssch:field>Наименование</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Решена</dcssch:dataPath>
 					<dcssch:field>Решена</dcssch:field>
 				</Field>
-				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
-					<dcssch:dataPath>Блокеры</dcssch:dataPath>
-					<dcssch:field>Блокеры</dcssch:field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КодПроекта</dcssch:dataPath>
+					<dcssch:field>КодПроекта</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Предопределенный</dcssch:dataPath>
-					<dcssch:field>Предопределенный</dcssch:field>
+					<dcssch:dataPath>Срок</dcssch:dataPath>
+					<dcssch:field>Срок</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаПаники</dcssch:dataPath>
+					<dcssch:field>ДатаПаники</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата паники</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СрокИзРодителя</dcssch:dataPath>
+					<dcssch:field>СрокИзРодителя</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Срок из родителя</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РешенаИзРодителя</dcssch:dataPath>
+					<dcssch:field>РешенаИзРодителя</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Решена из родителя</v8:content>
+						</v8:item>
+					</dcssch:title>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ИмяПредопределенныхДанных</dcssch:dataPath>
@@ -543,6 +595,28 @@
 					<dcssch:field>ОписаниеЗадачи</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Наименование1</dcssch:dataPath>
+					<dcssch:field>Наименование1</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование1</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РеквизитДопУпорядочивания</dcssch:dataPath>
+					<dcssch:field>РеквизитДопУпорядочивания</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаНачала</dcssch:dataPath>
+					<dcssch:field>ДатаНачала</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КатегорияМеста</dcssch:dataPath>
+					<dcssch:field>КатегорияМеста</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ЭтоПапка</dcssch:dataPath>
 					<dcssch:field>ЭтоПапка</dcssch:field>
 				</Field>
@@ -551,36 +625,34 @@
 					<dcssch:field>КатегорияСрочности</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>КатегорияМеста</dcssch:dataPath>
-					<dcssch:field>КатегорияМеста</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>КодПроекта</dcssch:dataPath>
-					<dcssch:field>КодПроекта</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Квадрант</dcssch:dataPath>
 					<dcssch:field>Квадрант</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ДатаНачала</dcssch:dataPath>
-					<dcssch:field>ДатаНачала</dcssch:field>
+					<dcssch:dataPath>Блокеры</dcssch:dataPath>
+					<dcssch:field>Блокеры</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Срок</dcssch:dataPath>
-					<dcssch:field>Срок</dcssch:field>
+					<dcssch:dataPath>Предопределенный</dcssch:dataPath>
+					<dcssch:field>Предопределенный</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>РеквизитДопУпорядочивания</dcssch:dataPath>
-					<dcssch:field>РеквизитДопУпорядочивания</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ДатаПаники</dcssch:dataPath>
-					<dcssch:field>ДатаПаники</dcssch:field>
+					<dcssch:dataPath>ПометкаУдаления1</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления1</dcssch:field>
 					<dcssch:title xsi:type="v8:LocalStringType">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Дата паники</v8:content>
+							<v8:content>Пометка удаления1</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПомемткаУдаленияИзРодителя</dcssch:dataPath>
+					<dcssch:field>ПомемткаУдаленияИзРодителя</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Помемтка удаления из родителя</v8:content>
 						</v8:item>
 					</dcssch:title>
 				</Field>
