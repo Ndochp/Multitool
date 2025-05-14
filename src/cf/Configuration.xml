@@ -802,6 +802,8 @@
 			<CommonPicture>ЭтапыПодтверждения</CommonPicture>
 			<CommonPicture>ЯндексКарты</CommonPicture>
 			<CommonPicture>УдалитьИнформация</CommonPicture>
+			<CommonPicture>ИконкаПроджект</CommonPicture>
+			<CommonPicture>ИконкаМультитул</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>ВидыДоступаСОтключеннымИспользованием</SessionParameter>
 			<SessionParameter>ВидыДоступаБезГруппДляЗначенияДоступа</SessionParameter>
@@ -1276,6 +1278,7 @@
 			<CommonModule>ДФИ</CommonModule>
 			<CommonModule>ЗадачиКлиент</CommonModule>
 			<CommonModule>мт_ОбщегоНазначенияВызовСервера</CommonModule>
+			<CommonModule>мт_УкрашательТекстов</CommonModule>
 			<ExchangePlan>ОбновлениеИнформационнойБазы</ExchangePlan>
 			<XDTOPackage>ApdexExport</XDTOPackage>
 			<XDTOPackage>ApdexExport_1_0_0_3</XDTOPackage>
