@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
 	<Group>AlwaysHorizontal</Group>
 	<HorizontalSpacing>Half</HorizontalSpacing>
 	<VerticalSpacing>Half</VerticalSpacing>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
@@ -85,9 +86,7 @@
 							<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
 							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 							<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
-							<AutoCommandBar name="СписокКоманднаяПанель" id="5">
-								<Autofill>false</Autofill>
-							</AutoCommandBar>
+							<AutoCommandBar name="СписокКоманднаяПанель" id="5" DisplayImportance="VeryHigh"/>
 							<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
 							<SearchStringAddition name="СписокСтрокаПоиска" id="7">
 								<AdditionSource>
@@ -266,6 +265,11 @@
 									<ContextMenu name="Реквизит1РешенаКонтекстноеМеню" id="66"/>
 									<ExtendedTooltip name="Реквизит1РешенаРасширеннаяПодсказка" id="67"/>
 								</CheckBoxField>
+								<LabelField name="ТудуСписокДатаПаники" id="113">
+									<DataPath>ТудуСписок.ДатаПаники</DataPath>
+									<ContextMenu name="ТудуСписокДатаПаникиКонтекстноеМеню" id="114"/>
+									<ExtendedTooltip name="ТудуСписокДатаПаникиРасширеннаяПодсказка" id="115"/>
+								</LabelField>
 							</ChildItems>
 						</Table>
 					</ChildItems>
@@ -315,6 +319,7 @@
 							<v8:content>Гр решена</v8:content>
 						</v8:item>
 					</ToolTip>
+					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="грРешенаРасширеннаяПодсказка" id="106"/>
 					<ChildItems>
 						<CheckBoxField name="ТекущаяЗадачаРешена" id="79">
@@ -334,6 +339,12 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ТекущаяЗадачаКодПроектаКонтекстноеМеню" id="86"/>
 					<ExtendedTooltip name="ТекущаяЗадачаКодПроектаРасширеннаяПодсказка" id="87"/>
+				</InputField>
+				<InputField name="ТекущаяЗадачаКатегорияСрочности" id="110">
+					<DataPath>ТекущаяЗадача.КатегорияСрочности</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТекущаяЗадачаКатегорияСрочностиКонтекстноеМеню" id="111"/>
+					<ExtendedTooltip name="ТекущаяЗадачаКатегорияСрочностиРасширеннаяПодсказка" id="112"/>
 				</InputField>
 				<Pages name="грОписаниеЗадачи" id="90">
 					<Title>
@@ -392,6 +403,7 @@
 							<ChildItems>
 								<InputField name="ТекущаяЗадачаОписаниеЗадачи" id="82">
 									<DataPath>ТекущаяЗадача.ОписаниеЗадачи</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ТекущаяЗадачаОписаниеЗадачиКонтекстноеМеню" id="83"/>
 									<ExtendedTooltip name="ТекущаяЗадачаОписаниеЗадачиРасширеннаяПодсказка" id="84"/>
@@ -419,6 +431,10 @@
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
 					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>РеквизитДопУпорядочивания</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
 					</dcsset:order>
@@ -441,6 +457,12 @@
 			<Type>
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
+			<UseAlways>
+				<Field>~ТудуСписок.СрочностьНаступитЧерезДней</Field>
+				<Field>ТудуСписок.ДатаПаники</Field>
+				<Field>ТудуСписок.РешенаИзРодителя</Field>
+				<Field>ТудуСписок.СрокИзРодителя</Field>
+			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>false</DynamicDataRead>
@@ -459,9 +481,14 @@
 	ЗадачиБлокеры.Ссылка
 ИЗ
 	Справочник.Задачи.Блокеры КАК ЗадачиБлокеры
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.КэшированныеРеквизитыРодителейЗадач КАК КэшированныеРеквизитыРодителейЗадач
+		ПО ЗадачиБлокеры.Задача = КэшированныеРеквизитыРодителейЗадач.Задача
 ГДЕ
 	НЕ ЗадачиБлокеры.Задача.Решена
 	И НЕ ЗадачиБлокеры.Ссылка.ПометкаУдаления
+	И НЕ ЕстьNULL(КэшированныеРеквизитыРодителейЗадач.Решена, ложь)
+	И НЕ ЕстьNULL(КэшированныеРеквизитыРодителейЗадач.ПометкаУдаления, Ложь)
+
 ;
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -469,18 +496,38 @@
 	СправочникЗадачи.Ссылка КАК Ссылка,
 	СправочникЗадачи.Родитель КАК Родитель,
 	СправочникЗадачи.Код КАК Код,
-	СправочникЗадачи.Наименование КАК Наименование,
-	СправочникЗадачи.Решена КАК Решена,
-	СправочникЗадачи.Срок КАК Срок
+	ПРЕДСТАВЛЕНИЕ(СправочникЗадачи.Ссылка) КАК Наименование,
+	СправочникЗадачи.Решена
+		ИЛИ ЕСТЬNULL(КэшированныеРеквизитыРодителейЗадач.Решена, ЛОЖЬ) КАК Решена,
+	ВЫБОР
+		КОГДА СправочникЗадачи.Срок &lt;&gt; ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)
+			ТОГДА СправочникЗадачи.Срок
+		ИНАЧЕ ЕСТЬNULL(КэшированныеРеквизитыРодителейЗадач.Срок, ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0))
+	КОНЕЦ КАК Срок,
+	ДОБАВИТЬКДАТЕ(ВЫБОР
+			КОГДА СправочникЗадачи.Срок &lt;&gt; ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)
+				ТОГДА СправочникЗадачи.Срок
+			ИНАЧЕ ЕСТЬNULL(КэшированныеРеквизитыРодителейЗадач.Срок, ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0))
+		КОНЕЦ, ДЕНЬ, -СправочникЗадачи.КатегорияСрочности.НаступитЧерезДней) КАК ДатаПаники,
+	СправочникЗадачи.Срок = ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)
+		И ЕСТЬNULL(КэшированныеРеквизитыРодителейЗадач.Срок, ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0)) &lt;&gt; ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0) КАК СрокИзРодителя,
+	НЕ СправочникЗадачи.Решена
+		И ЕСТЬNULL(КэшированныеРеквизитыРодителейЗадач.Решена, ЛОЖЬ) КАК РешенаИзРодителя,
+	СправочникЗадачи.ПометкаУдаления
+		ИЛИ ЕСТЬNULL(КэшированныеРеквизитыРодителейЗадач.ПометкаУдаления, ЛОЖЬ) КАК ПометкаУдаления,
+	НЕ СправочникЗадачи.ПометкаУдаления
+		И ЕСТЬNULL(КэшированныеРеквизитыРодителейЗадач.ПометкаУдаления, ЛОЖЬ) КАК ПомемткаУдаленияИзРодителя
 ИЗ
 	Справочник.Задачи КАК СправочникЗадачи
 		ЛЕВОЕ СОЕДИНЕНИЕ втЗадачиСПроблемами КАК втЗадачиСПроблемами
 		ПО (втЗадачиСПроблемами.ЗадачиСПроблемами = СправочникЗадачи.Ссылка)
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.КэшированныеРеквизитыРодителейЗадач КАК КэшированныеРеквизитыРодителейЗадач
+		ПО (КэшированныеРеквизитыРодителейЗадач.Задача = СправочникЗадачи.Ссылка)
 ГДЕ
 	втЗадачиСПроблемами.ЗадачиСПроблемами ЕСТЬ NULL
 	И НЕ СправочникЗадачи.ПометкаУдаления
 	И НЕ СправочникЗадачи.ЭтоПапка
-	И (СправочникЗадачи.ДатаНачала &lt; &amp;ДатаНачала)</QueryText>
+	И СправочникЗадачи.ДатаНачала &lt; &amp;ДатаНачала</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Ссылка</dcssch:dataPath>
 					<dcssch:field>Ссылка</dcssch:field>
@@ -498,20 +545,46 @@
 					<dcssch:field>Родитель</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Наименование</dcssch:dataPath>
-					<dcssch:field>Наименование</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Решена</dcssch:dataPath>
 					<dcssch:field>Решена</dcssch:field>
 				</Field>
-				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
-					<dcssch:dataPath>Блокеры</dcssch:dataPath>
-					<dcssch:field>Блокеры</dcssch:field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КодПроекта</dcssch:dataPath>
+					<dcssch:field>КодПроекта</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Предопределенный</dcssch:dataPath>
-					<dcssch:field>Предопределенный</dcssch:field>
+					<dcssch:dataPath>Срок</dcssch:dataPath>
+					<dcssch:field>Срок</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаПаники</dcssch:dataPath>
+					<dcssch:field>ДатаПаники</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата паники</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СрокИзРодителя</dcssch:dataPath>
+					<dcssch:field>СрокИзРодителя</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Срок из родителя</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РешенаИзРодителя</dcssch:dataPath>
+					<dcssch:field>РешенаИзРодителя</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Решена из родителя</v8:content>
+						</v8:item>
+					</dcssch:title>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ИмяПредопределенныхДанных</dcssch:dataPath>
@@ -522,6 +595,28 @@
 					<dcssch:field>ОписаниеЗадачи</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Наименование1</dcssch:dataPath>
+					<dcssch:field>Наименование1</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование1</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РеквизитДопУпорядочивания</dcssch:dataPath>
+					<dcssch:field>РеквизитДопУпорядочивания</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаНачала</dcssch:dataPath>
+					<dcssch:field>ДатаНачала</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КатегорияМеста</dcssch:dataPath>
+					<dcssch:field>КатегорияМеста</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ЭтоПапка</dcssch:dataPath>
 					<dcssch:field>ЭтоПапка</dcssch:field>
 				</Field>
@@ -530,24 +625,36 @@
 					<dcssch:field>КатегорияСрочности</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>КатегорияМеста</dcssch:dataPath>
-					<dcssch:field>КатегорияМеста</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>КодПроекта</dcssch:dataPath>
-					<dcssch:field>КодПроекта</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Квадрант</dcssch:dataPath>
 					<dcssch:field>Квадрант</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ДатаНачала</dcssch:dataPath>
-					<dcssch:field>ДатаНачала</dcssch:field>
+					<dcssch:dataPath>Блокеры</dcssch:dataPath>
+					<dcssch:field>Блокеры</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Срок</dcssch:dataPath>
-					<dcssch:field>Срок</dcssch:field>
+					<dcssch:dataPath>Предопределенный</dcssch:dataPath>
+					<dcssch:field>Предопределенный</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления1</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления1</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка удаления1</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПомемткаУдаленияИзРодителя</dcssch:dataPath>
+					<dcssch:field>ПомемткаУдаленияИзРодителя</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Помемтка удаления из родителя</v8:content>
+						</v8:item>
+					</dcssch:title>
 				</Field>
 				<Parameter>
 					<dcssch:name>ДатаНачала</dcssch:name>
@@ -611,6 +718,15 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыПодключаемыхКоманд" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры подключаемых команд</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
 		</Attribute>
 	</Attributes>
 </Form>
