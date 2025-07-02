@@ -1,0 +1,20 @@
+Инструменты и артефакты, которые под гитигнором лежат в каталоге ./BIN
+
+https://github.com/bia-technologies/yaxunit/releases/tag/25.04 (yaxUnit)
+YAxUnit-25.04.cfe
+Smoke-25.04.cfe
+
+https://github.com/Pr-Mex/vanessa-automation-single/releases/tag/1.2.042.1 (Vanessa)
+VAExtension.1.12.cfe
+vanessa-automation-single.1.2.042.1.zip, распаковать в vanessa-automation-single.epf
+
+https://oscript.io/downloads/ (не ждем в папках репозитория, должен стоять на ранере)
+Версия 1.9.2.10
+
+https://github.com/vanessa-opensource/add (не ждем в папках репозитория, должен стоять на ранере)
+opm i add
+
+Эталонная база со всеми установленными инструментальными расширениями (BaseBase)
+#НадоСделать - написать батник который соберет 1CD, DT или что подобное
+
+Платформа 1С 1С:Предприятие 8.3 (8.3.25.1445), файлловая, HTTP отладчик (не ждем в папках репозитория, должен стоять на ранере)
