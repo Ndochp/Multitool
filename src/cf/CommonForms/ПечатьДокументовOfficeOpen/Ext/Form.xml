@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoTitle>false</AutoTitle>
 	<MobileDeviceCommandBarContent>
 		<xr:Item>
@@ -52,18 +52,30 @@
 							<Representation>PictureAndText</Representation>
 							<DefaultButton>true</DefaultButton>
 							<CommandName>Form.Command.Печать</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Печать</v8:content>
+								</v8:item>
+							</Title>
 							<ExtendedTooltip name="ПечатьРасширеннаяПодсказка" id="118"/>
 						</Button>
 						<Button name="Показать" id="10">
 							<Type>CommandBarButton</Type>
 							<CommandName>Form.Command.ПредварительныйПросмотр</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Предварительный просмотр</v8:content>
+								</v8:item>
+							</Title>
 							<ExtendedTooltip name="ПоказатьРасширеннаяПодсказка" id="11"/>
 						</Button>
 						<ButtonGroup name="ГруппаУправленияСпискомДокументов" id="128">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа управления списком документов</v8:content>
+									<v8:content>Управление списком документов</v8:content>
 								</v8:item>
 							</Title>
 							<Representation>Compact</Representation>
@@ -82,11 +94,23 @@
 										<Button name="ПечатныеФормыУстановитьФлажки" id="126">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.УстановитьФлажки</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Установить флажки</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="ПечатныеФормыУстановитьФлажкиРасширеннаяПодсказка" id="127"/>
 										</Button>
 										<Button name="ПечатныеФормыСнятьФлажки" id="124">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.СнятьФлажки</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Снять флажки</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="ПечатныеФормыСнятьФлажкиРасширеннаяПодсказка" id="125"/>
 										</Button>
 									</ChildItems>
@@ -134,6 +158,12 @@
 					<ChildItems>
 						<CheckBoxField name="ФлажокПодписьИПечать" id="53" DisplayImportance="VeryHigh">
 							<DataPath>ПодписьИПечать</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подпись и печать</v8:content>
+								</v8:item>
+							</Title>
 							<TitleLocation>Right</TitleLocation>
 							<ToolTipRepresentation>Button</ToolTipRepresentation>
 							<CheckBoxType>Auto</CheckBoxType>
@@ -152,6 +182,12 @@
 						</CheckBoxField>
 						<CheckBoxField name="ФлажокОбъединитьДокументы" id="65" DisplayImportance="VeryHigh">
 							<DataPath>ОбъединитьДокументы</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Одним документом</v8:content>
+								</v8:item>
+							</Title>
 							<TitleLocation>Right</TitleLocation>
 							<ToolTipRepresentation>Button</ToolTipRepresentation>
 							<CheckBoxType>Auto</CheckBoxType>
@@ -197,20 +233,58 @@
 							</Title>
 							<ExtendedTooltip name="ГруппаСохранитьИОтправитьРасширеннаяПодсказка" id="25"/>
 							<ChildItems>
-								<Button name="Сохранить" id="18">
-									<Type>CommandBarButton</Type>
-									<Representation>Picture</Representation>
-									<CommandName>Form.Command.Сохранить</CommandName>
-									<LocationInCommandBar>InCommandBar</LocationInCommandBar>
-									<ExtendedTooltip name="СохранитьРасширеннаяПодсказка" id="19"/>
-								</Button>
-								<Button name="Отправить" id="20">
-									<Type>CommandBarButton</Type>
-									<Representation>Picture</Representation>
-									<CommandName>Form.Command.Отправить</CommandName>
-									<LocationInCommandBar>InCommandBar</LocationInCommandBar>
-									<ExtendedTooltip name="ОтправитьРасширеннаяПодсказка" id="21"/>
-								</Button>
+								<Popup name="ПодменюОтправить" id="151">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отправить</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>StdPicture.SendMessage</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ПодменюОтправитьРасширеннаяПодсказка" id="152"/>
+									<ChildItems>
+										<Button name="Отправить" id="20">
+											<Type>CommandBarButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.Отправить</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Почта</v8:content>
+												</v8:item>
+											</Title>
+											<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+											<ExtendedTooltip name="ОтправитьРасширеннаяПодсказка" id="21"/>
+										</Button>
+										<Button name="Сохранить" id="18">
+											<Type>CommandBarButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.СохранитьНаКомпьютер</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>На компьютер</v8:content>
+												</v8:item>
+											</Title>
+											<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+											<ExtendedTooltip name="СохранитьРасширеннаяПодсказка" id="19"/>
+										</Button>
+										<Button name="СохранитьВПрисоединенныеФайлы" id="161">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.СохранитьВПрисоединенныеФайлы</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>В присоединенные файлы</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="СохранитьВПрисоединенныеФайлыРасширеннаяПодсказка" id="162"/>
+										</Button>
+									</ChildItems>
+								</Popup>
 							</ChildItems>
 						</ButtonGroup>
 					</ChildItems>
@@ -219,34 +293,106 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Командная панель еще</v8:content>
+							<v8:content>Еще</v8:content>
 						</v8:item>
 					</Title>
 					<ExtendedTooltip name="КоманднаяПанельЕщеРасширеннаяПодсказка" id="35"/>
 					<ChildItems>
+						<Button name="ПечатьВсеДействия" id="153">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.Печать</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Печать</v8:content>
+								</v8:item>
+							</Title>
+							<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="ПечатьВсеДействияРасширеннаяПодсказка" id="154"/>
+						</Button>
+						<Button name="ПредварительныйПросмотрВсеДействия" id="155">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПредварительныйПросмотр</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Предварительный просмотр</v8:content>
+								</v8:item>
+							</Title>
+							<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="ПредварительныйПросмотрВсеДействияРасширеннаяПодсказка" id="156"/>
+						</Button>
 						<ButtonGroup name="ГруппаСохранитьИОтправитьВсеДействия" id="45">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа сохранить и отправить все действия</v8:content>
+									<v8:content>Сохранить и отправить</v8:content>
 								</v8:item>
 							</Title>
 							<ExtendedTooltip name="ГруппаСохранитьИОтправитьВсеДействияРасширеннаяПодсказка" id="46"/>
 							<ChildItems>
-								<Button name="КнопкаСохранитьВсеДействия" id="47">
-									<Type>CommandBarButton</Type>
-									<CommandName>Form.Command.Сохранить</CommandName>
-									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-									<ExtendedTooltip name="КнопкаСохранитьВсеДействияРасширеннаяПодсказка" id="48"/>
-								</Button>
-								<Button name="КнопкаОтправитьВсеДействия" id="49">
-									<Type>CommandBarButton</Type>
-									<CommandName>Form.Command.Отправить</CommandName>
-									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-									<ExtendedTooltip name="КнопкаОтправитьВсеДействияРасширеннаяПодсказка" id="50"/>
-								</Button>
+								<Popup name="ПодменюОтправитьВсеДействия" id="159">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отправить</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>StdPicture.SendMessage</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ПодменюОтправитьВсеДействияРасширеннаяПодсказка" id="160"/>
+									<ChildItems>
+										<Button name="КнопкаОтправитьВсеДействия" id="49">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.Отправить</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отправить...</v8:content>
+												</v8:item>
+											</Title>
+											<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+											<ExtendedTooltip name="КнопкаОтправитьВсеДействияРасширеннаяПодсказка" id="50"/>
+										</Button>
+										<Button name="КнопкаСохранитьВсеДействия" id="47">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.СохранитьНаКомпьютер</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>На компьютер</v8:content>
+												</v8:item>
+											</Title>
+											<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+											<ExtendedTooltip name="КнопкаСохранитьВсеДействияРасширеннаяПодсказка" id="48"/>
+										</Button>
+										<Button name="КнопкаСохранитьВПрисоединенныеФайлыВсеДействия" id="163">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.СохранитьВПрисоединенныеФайлы</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>В присоединенные файлы</v8:content>
+												</v8:item>
+											</Title>
+											<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+											<ExtendedTooltip name="КнопкаСохранитьВПрисоединенныеФайлыВсеДействияРасширеннаяПодсказка" id="164"/>
+										</Button>
+									</ChildItems>
+								</Popup>
 							</ChildItems>
 						</ButtonGroup>
+						<Popup name="ЯзыкВсеДействия" id="157">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Язык</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ЯзыкВсеДействияРасширеннаяПодсказка" id="158"/>
+						</Popup>
 						<ButtonGroup name="ГруппаРедактированиеМакета" id="51">
 							<Title>
 								<v8:item>
@@ -259,14 +405,62 @@
 								<Button name="КнопкаИзменитьМакет" id="95">
 									<Type>CommandBarButton</Type>
 									<CommandName>Form.Command.ИзменитьМакет</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Изменить макет...</v8:content>
+										</v8:item>
+									</Title>
 									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 									<ExtendedTooltip name="КнопкаИзменитьМакетРасширеннаяПодсказка" id="96"/>
 								</Button>
 								<Button name="ПерейтиКУправлениюМакетами" id="16">
 									<Type>CommandBarButton</Type>
 									<CommandName>Form.Command.ПерейтиКУправлениюМакетами</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перейти к макетам печатных форм</v8:content>
+										</v8:item>
+									</Title>
 									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 									<ExtendedTooltip name="ПерейтиКУправлениюМакетамиРасширеннаяПодсказка" id="17"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+						<ButtonGroup name="ГруппаУправлениеФлажкамиЕще" id="165">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Управление флажками</v8:content>
+								</v8:item>
+							</Title>
+							<Representation>Compact</Representation>
+							<ExtendedTooltip name="ГруппаУправлениеФлажкамиЕщеРасширеннаяПодсказка" id="166"/>
+							<ChildItems>
+								<Button name="ПечатныеФормыУстановитьФлажкиЕще" id="167">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.УстановитьФлажки</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Установить флажки</v8:content>
+										</v8:item>
+									</Title>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="ПечатныеФормыУстановитьФлажкиЕщеРасширеннаяПодсказка" id="168"/>
+								</Button>
+								<Button name="ПечатныеФормыСнятьФлажкиЕще" id="169">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СнятьФлажки</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Снять флажки</v8:content>
+										</v8:item>
+									</Title>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="ПечатныеФормыСнятьФлажкиЕщеРасширеннаяПодсказка" id="170"/>
 								</Button>
 							</ChildItems>
 						</ButtonGroup>
@@ -291,11 +485,6 @@
 									<CommandName>Form.Item.ПечатныеФормы.StandardCommand.MoveDown</CommandName>
 									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 									<ExtendedTooltip name="ПечатныеФормыПереместитьВнизЕщеРасширеннаяПодсказка" id="148"/>
-								</Button>
-								<Button name="ПечатныеФормПереставитьСтрокиЕще" id="149">
-									<Type>CommandBarButton</Type>
-									<CommandName>Form.Item.ПечатныеФормы.StandardCommand.ShowRowRearrangement</CommandName>
-									<ExtendedTooltip name="ПечатныеФормПереставитьСтрокиЕщеРасширеннаяПодсказка" id="150"/>
 								</Button>
 							</ChildItems>
 						</ButtonGroup>
@@ -438,6 +627,12 @@
 					<ChildItems>
 						<CheckBoxField name="ПечатныеФормыПометка" id="121">
 							<DataPath>ПечатныеФормы.Пометка</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пометка</v8:content>
+								</v8:item>
+							</Title>
 							<TitleLocation>None</TitleLocation>
 							<HeaderPicture>
 								<xr:Ref>StdPicture.Print</xr:Ref>
@@ -462,6 +657,12 @@
 							<ChildItems>
 								<PictureField name="ПечатныеФормыКартинка" id="138">
 									<DataPath>ПечатныеФормы.Картинка</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Картинка</v8:content>
+										</v8:item>
+									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<ShowInHeader>false</ShowInHeader>
 									<ValuesPicture>
@@ -502,6 +703,12 @@
 					<ChildItems>
 						<HTMLDocumentField name="Инструкция" id="7">
 							<DataPath>Инструкция</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Инструкция</v8:content>
+								</v8:item>
+							</Title>
 							<TitleLocation>None</TitleLocation>
 							<Output>Disable</Output>
 							<ContextMenu name="ИнструкцияКонтекстноеМеню" id="8"/>
@@ -530,6 +737,12 @@
 			<ChildItems>
 				<CheckBoxField name="БольшеНеПоказывать" id="58">
 					<DataPath>БольшеНеПоказывать</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Больше не показывать и открывать печатную форму сразу</v8:content>
+						</v8:item>
+					</Title>
 					<TitleLocation>Right</TitleLocation>
 					<TitleHeight>1</TitleHeight>
 					<ToolTip>
@@ -622,7 +835,7 @@
 			<Columns>
 				<Column name="ОбъектПечати" id="7">
 					<Type>
-						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 					</Type>
 				</Column>
 				<Column name="АдресПечатнойФормы" id="9">
@@ -979,24 +1192,24 @@
 			<Representation>Picture</Representation>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
-		<Command name="Сохранить" id="4">
+		<Command name="СохранитьНаКомпьютер" id="4">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сохранить...</v8:content>
+					<v8:content>На компьютер</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сохранить на компьютере или в качестве присоединенного файла к объекту</v8:content>
+					<v8:content>Сохранить печатную форму в файл на компьютере</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
-				<xr:Ref>StdPicture.SaveFile</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:Ref>CommonPicture.Скачать</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
-			<Action>Сохранить</Action>
+			<Action>СохранитьНаКомпьютер</Action>
 			<Representation>TextPicture</Representation>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
@@ -1089,6 +1302,25 @@
 			</Picture>
 			<Action>УстановитьФлажки</Action>
 			<Representation>Picture</Representation>
+		</Command>
+		<Command name="СохранитьВПрисоединенныеФайлы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В присоединенные файлы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить печатную форму в присоединенный файл к документу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Скрепка</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>СохранитьВПрисоединенныеФайлы</Action>
 		</Command>
 	</Commands>
 	<Parameters>

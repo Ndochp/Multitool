@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<CommandSet>
 		<ExcludedCommand>WriteAndClose</ExcludedCommand>
 	</CommandSet>
@@ -16,6 +16,12 @@
 					<xr:Ref>StdPicture.WriteAndClose</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Записать и закрыть</v8:content>
+					</v8:item>
+				</Title>
 				<ExtendedTooltip name="ФормаЗаписатьИЗакрытьРасширеннаяПодсказка" id="37"/>
 			</Button>
 			<ButtonGroup name="СтандартныеКоманды" id="38">
@@ -28,25 +34,39 @@
 				<CommandSource>Form</CommandSource>
 				<ExtendedTooltip name="СтандартныеКомандыРасширеннаяПодсказка" id="39"/>
 			</ButtonGroup>
-			<Button name="ФормаСправка" id="40">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.StandardCommand.Help</CommandName>
-				<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="41"/>
-			</Button>
 			<Button name="ФормаПроверитьЦелостностьТома" id="48">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ПроверитьЦелостностьТома</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Проверить целостность</v8:content>
+					</v8:item>
+				</Title>
 				<ExtendedTooltip name="ФормаПроверитьЦелостностьТомаРасширеннаяПодсказка" id="49"/>
 			</Button>
 			<Button name="ФормаУдалитьЛишниеФайлы" id="50">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.УдалитьЛишниеФайлы</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Удалить лишние файлы</v8:content>
+					</v8:item>
+				</Title>
 				<ExtendedTooltip name="ФормаУдалитьЛишниеФайлыРасширеннаяПодсказка" id="51"/>
+			</Button>
+			<Button name="ФормаСправка" id="40">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="41"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
 		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="BeforeClose">ПередЗакрытием</Event>
 		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
@@ -64,20 +84,20 @@
 			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаКодИНаименованиеExtendedTooltip" id="25"/>
+			<ExtendedTooltip name="ГруппаКодИНаименованиеРасширеннаяПодсказка" id="25"/>
 			<ChildItems>
 				<InputField name="Наименование" id="3">
 					<DataPath>Объект.Description</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
-					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="26"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="26"/>
 				</InputField>
 				<InputField name="Код" id="1">
 					<DataPath>Объект.Code</DataPath>
 					<SkipOnInput>true</SkipOnInput>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
-					<ExtendedTooltip name="КодExtendedTooltip" id="27"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="27"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -111,7 +131,7 @@
 							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаПутиExtendedTooltip" id="28"/>
+							<ExtendedTooltip name="ГруппаПутиРасширеннаяПодсказка" id="28"/>
 							<ChildItems>
 								<InputField name="ПолныйПутьWindows" id="5">
 									<DataPath>Объект.ПолныйПутьWindows</DataPath>
@@ -137,7 +157,7 @@
 										</v8:item>
 									</InputHint>
 									<ContextMenu name="ПолныйПутьWindowsКонтекстноеМеню" id="6"/>
-									<ExtendedTooltip name="ПолныйПутьWindowsExtendedTooltip" id="29"/>
+									<ExtendedTooltip name="ПолныйПутьWindowsРасширеннаяПодсказка" id="29"/>
 									<Events>
 										<Event name="OnChange">ПолныйПутьWindowsПриИзменении</Event>
 									</Events>
@@ -153,7 +173,7 @@
 									<TitleLocation>Top</TitleLocation>
 									<Width>60</Width>
 									<ContextMenu name="ПолныйПутьLinuxКонтекстноеМеню" id="24"/>
-									<ExtendedTooltip name="ПолныйПутьLinuxExtendedTooltip" id="30"/>
+									<ExtendedTooltip name="ПолныйПутьLinuxРасширеннаяПодсказка" id="30"/>
 									<Events>
 										<Event name="OnChange">ПолныйПутьLinuxПриИзменении</Event>
 									</Events>
@@ -165,7 +185,7 @@
 							<EditMode>EnterOnInput</EditMode>
 							<SpinButton>true</SpinButton>
 							<ContextMenu name="ПорядокКонтекстноеМеню" id="8"/>
-							<ExtendedTooltip name="ПорядокExtendedTooltip" id="31"/>
+							<ExtendedTooltip name="ПорядокРасширеннаяПодсказка" id="31"/>
 						</InputField>
 						<UsualGroup name="ГруппаМаксимальныйРазмер" id="19">
 							<Title>
@@ -177,17 +197,23 @@
 							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаМаксимальныйРазмерExtendedTooltip" id="32"/>
+							<ExtendedTooltip name="ГруппаМаксимальныйРазмерРасширеннаяПодсказка" id="32"/>
 							<ChildItems>
 								<InputField name="МаксимальныйРазмер" id="17">
 									<DataPath>Объект.МаксимальныйРазмер</DataPath>
 									<SpinButton>true</SpinButton>
 									<ContextMenu name="МаксимальныйРазмерКонтекстноеМеню" id="18"/>
-									<ExtendedTooltip name="МаксимальныйРазмерExtendedTooltip" id="33"/>
+									<ExtendedTooltip name="МаксимальныйРазмерРасширеннаяПодсказка" id="33"/>
 								</InputField>
 								<InputField name="ТекущийРазмер" id="20">
 									<DataPath>ТекущийРазмер</DataPath>
 									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Текущий размер, МБ</v8:content>
+										</v8:item>
+									</Title>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -195,7 +221,7 @@
 										</v8:item>
 									</ToolTip>
 									<ContextMenu name="ТекущийРазмерКонтекстноеМеню" id="21"/>
-									<ExtendedTooltip name="ТекущийРазмерExtendedTooltip" id="34"/>
+									<ExtendedTooltip name="ТекущийРазмерРасширеннаяПодсказка" id="34"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -217,7 +243,7 @@
 							<MultiLine>true</MultiLine>
 							<ExtendedEdit>true</ExtendedEdit>
 							<ContextMenu name="КомментарийКонтекстноеМеню" id="14"/>
-							<ExtendedTooltip name="КомментарийExtendedTooltip" id="35"/>
+							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="35"/>
 						</InputField>
 					</ChildItems>
 				</Page>
@@ -310,13 +336,4 @@
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
-	<CommandInterface>
-		<NavigationPanel>
-			<Item>
-				<Command>0</Command>
-				<Type>Auto</Type>
-				<DefaultVisible>false</DefaultVisible>
-			</Item>
-		</NavigationPanel>
-	</CommandInterface>
 </Form>

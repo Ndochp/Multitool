@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<SaveDataInSettings>UseList</SaveDataInSettings>
@@ -25,12 +25,18 @@
 				<DefaultButton>true</DefaultButton>
 				<SkipOnInput>false</SkipOnInput>
 				<CommandName>Form.Command.Выбрать</CommandName>
-				<ExtendedTooltip name="КнопкаПрикрепитьExtendedTooltip" id="42"/>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выбрать</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="КнопкаПрикрепитьРасширеннаяПодсказка" id="42"/>
 			</Button>
 			<Button name="КнопкаОтмена" id="30">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.StandardCommand.Cancel</CommandName>
-				<ExtendedTooltip name="КнопкаОтменаExtendedTooltip" id="43"/>
+				<ExtendedTooltip name="КнопкаОтменаРасширеннаяПодсказка" id="43"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -51,7 +57,7 @@
 			<Group>Vertical</Group>
 			<Behavior>Usual</Behavior>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаВыборФорматовExtendedTooltip" id="44"/>
+			<ExtendedTooltip name="ГруппаВыборФорматовРасширеннаяПодсказка" id="44"/>
 			<ChildItems>
 				<Table name="ВыбранныеФорматы" id="32">
 					<Representation>List</Representation>
@@ -89,7 +95,7 @@
 					<AutoCommandBar name="ВыбранныеФорматыКоманднаяПанель" id="34">
 						<Autofill>false</Autofill>
 					</AutoCommandBar>
-					<ExtendedTooltip name="ВыбранныеФорматыExtendedTooltip" id="45"/>
+					<ExtendedTooltip name="ВыбранныеФорматыРасширеннаяПодсказка" id="45"/>
 					<SearchStringAddition name="ВыбранныеФорматыSearchString" id="50">
 						<AdditionSource>
 							<Item>ВыбранныеФорматы</Item>
@@ -126,7 +132,7 @@
 							<EditMode>EnterOnInput</EditMode>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ВыбранныеФорматыСохраненияПометкаКонтекстноеМеню" id="38"/>
-							<ExtendedTooltip name="ВыбранныеФорматыСохраненияПометкаExtendedTooltip" id="46"/>
+							<ExtendedTooltip name="ВыбранныеФорматыСохраненияПометкаРасширеннаяПодсказка" id="46"/>
 						</CheckBoxField>
 						<InputField name="ВыбранныеФорматыСохраненияЗначение" id="35">
 							<DataPath>ВыбранныеФорматыСохранения.Value</DataPath>
@@ -139,7 +145,7 @@
 							</Title>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="ВыбранныеФорматыСохраненияЗначениеКонтекстноеМеню" id="36"/>
-							<ExtendedTooltip name="ВыбранныеФорматыСохраненияЗначениеExtendedTooltip" id="47"/>
+							<ExtendedTooltip name="ВыбранныеФорматыСохраненияЗначениеРасширеннаяПодсказка" id="47"/>
 						</InputField>
 					</ChildItems>
 				</Table>
@@ -156,7 +162,7 @@
 			<Behavior>Usual</Behavior>
 			<Representation>NormalSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаДополнительныеПараметрыExtendedTooltip" id="48"/>
+			<ExtendedTooltip name="ГруппаДополнительныеПараметрыРасширеннаяПодсказка" id="48"/>
 			<ChildItems>
 				<CheckBoxField name="УпаковатьВАрхив" id="40">
 					<DataPath>УпаковатьВАрхив</DataPath>
@@ -169,10 +175,16 @@
 					<TitleLocation>Right</TitleLocation>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="УпаковатьВАрхивКонтекстноеМеню" id="41"/>
-					<ExtendedTooltip name="УпаковатьВАрхивExtendedTooltip" id="49"/>
+					<ExtendedTooltip name="УпаковатьВАрхивРасширеннаяПодсказка" id="49"/>
 				</CheckBoxField>
 				<CheckBoxField name="ПереводитьИменаФайловВТранслит" id="59">
 					<DataPath>ПереводитьИменаФайловВТранслит</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Транслитерировать имена файлов</v8:content>
+						</v8:item>
+					</Title>
 					<TitleLocation>Right</TitleLocation>
 					<ToolTip>
 						<v8:item>
@@ -187,6 +199,12 @@
 				</CheckBoxField>
 				<CheckBoxField name="Подписать" id="62">
 					<DataPath>Подписать</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подписать</v8:content>
+						</v8:item>
+					</Title>
 					<TitleLocation>Right</TitleLocation>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ПодписатьКонтекстноеМеню" id="63"/>
@@ -276,9 +294,6 @@
 		</Command>
 	</Commands>
 	<Parameters>
-		<Parameter name="НастройкиФормата">
-			<Type/>
-		</Parameter>
 		<Parameter name="ОграничениеФорматовСохранения">
 			<Type>
 				<v8:Type>xs:string</v8:Type>
@@ -286,6 +301,24 @@
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ФорматыСохранения">
+			<Type/>
+		</Parameter>
+		<Parameter name="УпаковатьВАрхив">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ПереводитьИменаФайловВТранслит">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="Подписать">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Parameter>
 	</Parameters>

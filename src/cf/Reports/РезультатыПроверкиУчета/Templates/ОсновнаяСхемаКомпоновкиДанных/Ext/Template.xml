@@ -295,7 +295,7 @@
 	</calculatedField>
 	<calculatedField>
 		<dataPath>РасшифровкаПоля</dataPath>
-		<expression>КонтрольВеденияУчетаСлужебный.РасшифровкаЯчейки(ПроблемныйОбъект, ПравилоПроверки, ВидПроверки, УточнениеПроблемы)</expression>
+		<expression>КонтрольВеденияУчетаСлужебный.РасшифровкаЯчейки(ПроблемныйОбъект, ПравилоПроверки, ВидПроверки, УточнениеПроблемы, КлючУникальности)</expression>
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
@@ -331,7 +331,7 @@
 			</v8:item>
 		</title>
 		<valueType>
-			<v8:TypeSet xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:AnyRef</v8:TypeSet>
+			<v8:TypeSet xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:AnyIBRef</v8:TypeSet>
 		</valueType>
 		<useRestriction>true</useRestriction>
 		<valueListAllowed>true</valueListAllowed>
@@ -1016,7 +1016,7 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">25</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">35</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -1044,7 +1044,7 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">50</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">80</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -1176,7 +1176,7 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">9</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">12</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>

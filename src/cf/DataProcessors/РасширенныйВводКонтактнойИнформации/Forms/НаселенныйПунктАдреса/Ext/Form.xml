@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
-			<v8:content>Населенный пункт</v8:content>
+			<v8:content>Город, населенный пункт</v8:content>
 		</v8:item>
 	</Title>
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
@@ -22,17 +22,23 @@
 					<xr:Ref>StdPicture.WriteAndClose</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
-				<ExtendedTooltip name="ФормаКомандаОКExtendedTooltip" id="4"/>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ОК</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаКомандаОКРасширеннаяПодсказка" id="4"/>
 			</Button>
 			<Button name="ФормаСправка" id="2">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.StandardCommand.Help</CommandName>
-				<ExtendedTooltip name="ФормаСправкаExtendedTooltip" id="5"/>
+				<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="5"/>
 			</Button>
 			<Button name="ФормаОтмена" id="3">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.StandardCommand.Cancel</CommandName>
-				<ExtendedTooltip name="ФормаОтменаExtendedTooltip" id="6"/>
+				<ExtendedTooltip name="ФормаОтменаРасширеннаяПодсказка" id="6"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -43,6 +49,12 @@
 	<ChildItems>
 		<RadioButtonField name="ТипАдреса" id="9">
 			<DataPath>ТипАдреса</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип адреса</v8:content>
+				</v8:item>
+			</Title>
 			<TitleLocation>None</TitleLocation>
 			<RadioButtonType>Auto</RadioButtonType>
 			<ChoiceList>
@@ -92,14 +104,20 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаЧастейАдресаРасширеннаяПодсказка" id="8"/>
 			<ChildItems>
-				<InputField name="СубъектРФ" id="12">
+				<InputField name="Регион" id="12">
 					<DataPath>Регион</DataPath>
 					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регион</v8:content>
+						</v8:item>
+					</Title>
 					<Width>30</Width>
 					<ChoiceButton>true</ChoiceButton>
 					<EditTextUpdate>OnValueChange</EditTextUpdate>
-					<ContextMenu name="СубъектРФКонтекстноеМеню" id="13"/>
-					<ExtendedTooltip name="СубъектРФРасширеннаяПодсказка" id="14"/>
+					<ContextMenu name="РегионКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="РегионРасширеннаяПодсказка" id="14"/>
 					<Events>
 						<Event name="OnChange">СубъектРФПриИзменении</Event>
 						<Event name="AutoComplete">СубъектРФАвтоПодбор</Event>
@@ -109,6 +127,12 @@
 				</InputField>
 				<InputField name="Район" id="18">
 					<DataPath>Район</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Район</v8:content>
+						</v8:item>
+					</Title>
 					<Width>30</Width>
 					<ChoiceButton>true</ChoiceButton>
 					<EditTextUpdate>OnValueChange</EditTextUpdate>
@@ -123,6 +147,12 @@
 				</InputField>
 				<InputField name="МуниципальныйРайон" id="15">
 					<DataPath>МуниципальныйРайон</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Муниципальный район, городской округ</v8:content>
+						</v8:item>
+					</Title>
 					<TitleHeight>2</TitleHeight>
 					<Width>30</Width>
 					<ChoiceButton>true</ChoiceButton>
@@ -138,6 +168,12 @@
 				</InputField>
 				<InputField name="Поселение" id="24">
 					<DataPath>Поселение</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поселение</v8:content>
+						</v8:item>
+					</Title>
 					<Width>30</Width>
 					<ChoiceButton>true</ChoiceButton>
 					<EditTextUpdate>OnValueChange</EditTextUpdate>
@@ -152,6 +188,12 @@
 				</InputField>
 				<InputField name="Город" id="21">
 					<DataPath>Город</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Город</v8:content>
+						</v8:item>
+					</Title>
 					<Width>30</Width>
 					<ChoiceButton>true</ChoiceButton>
 					<EditTextUpdate>OnValueChange</EditTextUpdate>
@@ -166,6 +208,12 @@
 				</InputField>
 				<InputField name="НаселенныйПункт" id="30">
 					<DataPath>НаселенныйПункт</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Населенный пункт</v8:content>
+						</v8:item>
+					</Title>
 					<Width>30</Width>
 					<ChoiceButton>true</ChoiceButton>
 					<EditTextUpdate>OnValueChange</EditTextUpdate>
@@ -180,6 +228,12 @@
 				</InputField>
 				<InputField name="Территория" id="33">
 					<DataPath>Территория</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Территория</v8:content>
+						</v8:item>
+					</Title>
 					<Width>30</Width>
 					<ChoiceButton>true</ChoiceButton>
 					<EditTextUpdate>OnValueChange</EditTextUpdate>

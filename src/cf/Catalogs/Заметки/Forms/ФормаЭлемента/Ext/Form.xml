@@ -1,9 +1,23 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
+			<Popup name="ПодменюОрганайзер" id="121">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Органайзер</v8:content>
+					</v8:item>
+				</Title>
+				<Picture>
+					<xr:Ref>CommonPicture.Органайзер</xr:Ref>
+					<xr:LoadTransparent>false</xr:LoadTransparent>
+				</Picture>
+				<Representation>Picture</Representation>
+				<ExtendedTooltip name="ПодменюОрганайзерРасширеннаяПодсказка" id="122"/>
+			</Popup>
 			<ButtonGroup name="КоманднаяПанельРедактирования" id="79">
 				<Title>
 					<v8:item>
@@ -12,7 +26,7 @@
 					</v8:item>
 				</Title>
 				<CommandSource>Item.Содержание</CommandSource>
-				<ExtendedTooltip name="КоманднаяПанельРедактированияExtendedTooltip" id="107"/>
+				<ExtendedTooltip name="КоманднаяПанельРедактированияРасширеннаяПодсказка" id="107"/>
 			</ButtonGroup>
 		</ChildItems>
 	</AutoCommandBar>
@@ -20,6 +34,7 @@
 		<Event name="AfterWrite">ПослеЗаписи</Event>
 		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
 		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
 	</Events>
@@ -35,7 +50,7 @@
 			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="СодержаниеЗаметкиExtendedTooltip" id="108"/>
+			<ExtendedTooltip name="СодержаниеЗаметкиРасширеннаяПодсказка" id="108"/>
 			<ChildItems>
 				<UsualGroup name="ГруппаПредмет" id="102">
 					<Title>
@@ -47,7 +62,7 @@
 					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаПредметExtendedTooltip" id="109"/>
+					<ExtendedTooltip name="ГруппаПредметРасширеннаяПодсказка" id="109"/>
 					<ChildItems>
 						<LabelDecoration name="НадписьПредмет" id="65">
 							<AutoMaxWidth>false</AutoMaxWidth>
@@ -58,7 +73,7 @@
 								</v8:item>
 							</Title>
 							<ContextMenu name="НадписьПредметКонтекстноеМеню" id="66"/>
-							<ExtendedTooltip name="НадписьПредметExtendedTooltip" id="110"/>
+							<ExtendedTooltip name="НадписьПредметРасширеннаяПодсказка" id="110"/>
 						</LabelDecoration>
 						<LabelDecoration name="Предмет" id="63">
 							<AutoMaxWidth>false</AutoMaxWidth>
@@ -77,7 +92,7 @@
 							</ToolTip>
 							<Hyperlink>true</Hyperlink>
 							<ContextMenu name="ПредметКонтекстноеМеню" id="64"/>
-							<ExtendedTooltip name="ПредметExtendedTooltip" id="111"/>
+							<ExtendedTooltip name="ПредметРасширеннаяПодсказка" id="111"/>
 							<Events>
 								<Event name="Click">ПредметНажатие</Event>
 							</Events>
@@ -105,7 +120,7 @@
 			<EditMode>EnterOnInput</EditMode>
 			<Width>20</Width>
 			<ContextMenu name="СодержаниеКонтекстноеМеню" id="10"/>
-			<ExtendedTooltip name="СодержаниеExtendedTooltip" id="112"/>
+			<ExtendedTooltip name="СодержаниеРасширеннаяПодсказка" id="112"/>
 		</FormattedDocumentField>
 		<UsualGroup name="ПараметрыОтображения" id="90">
 			<Title>
@@ -117,7 +132,7 @@
 			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ПараметрыОтображенияExtendedTooltip" id="113"/>
+			<ExtendedTooltip name="ПараметрыОтображенияРасширеннаяПодсказка" id="113"/>
 			<ChildItems>
 				<CheckBoxField name="ОтображатьНаРабочемСтоле" id="80">
 					<DataPath>Объект.ДляРабочегоСтола</DataPath>
@@ -130,7 +145,7 @@
 					<TitleLocation>Right</TitleLocation>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ОтображатьНаРабочемСтолеКонтекстноеМеню" id="81"/>
-					<ExtendedTooltip name="ОтображатьНаРабочемСтолеExtendedTooltip" id="114"/>
+					<ExtendedTooltip name="ОтображатьНаРабочемСтолеРасширеннаяПодсказка" id="114"/>
 				</CheckBoxField>
 				<InputField name="Пометка" id="82">
 					<DataPath>Объект.Пометка</DataPath>
@@ -143,14 +158,14 @@
 					<Width>15</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ПометкаКонтекстноеМеню" id="83"/>
-					<ExtendedTooltip name="ПометкаExtendedTooltip" id="115"/>
+					<ExtendedTooltip name="ПометкаРасширеннаяПодсказка" id="115"/>
 				</InputField>
 				<InputField name="ГруппаЗаметок" id="105">
 					<DataPath>Объект.Parent</DataPath>
 					<Width>20</Width>
 					<OpenButton>false</OpenButton>
 					<ContextMenu name="ГруппаЗаметокКонтекстноеМеню" id="106"/>
-					<ExtendedTooltip name="ГруппаЗаметокExtendedTooltip" id="116"/>
+					<ExtendedTooltip name="ГруппаЗаметокРасширеннаяПодсказка" id="116"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -164,7 +179,7 @@
 			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ИнформацияОбАвтореExtendedTooltip" id="117"/>
+			<ExtendedTooltip name="ИнформацияОбАвтореРасширеннаяПодсказка" id="117"/>
 			<ChildItems>
 				<LabelDecoration name="НадписьАвтор" id="92">
 					<AutoMaxWidth>false</AutoMaxWidth>
@@ -175,7 +190,7 @@
 						</v8:item>
 					</Title>
 					<ContextMenu name="НадписьАвторКонтекстноеМеню" id="93"/>
-					<ExtendedTooltip name="НадписьАвторExtendedTooltip" id="118"/>
+					<ExtendedTooltip name="НадписьАвторРасширеннаяПодсказка" id="118"/>
 				</LabelDecoration>
 				<LabelDecoration name="Автор" id="94">
 					<AutoMaxWidth>false</AutoMaxWidth>
@@ -193,7 +208,7 @@
 					</ToolTip>
 					<Hyperlink>true</Hyperlink>
 					<ContextMenu name="АвторКонтекстноеМеню" id="95"/>
-					<ExtendedTooltip name="АвторExtendedTooltip" id="119"/>
+					<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="119"/>
 					<Events>
 						<Event name="Click">АвторНажатие</Event>
 					</Events>
@@ -210,7 +225,7 @@
 				</v8:item>
 			</Title>
 			<ContextMenu name="ДатаЗаметкиКонтекстноеМеню" id="104"/>
-			<ExtendedTooltip name="ДатаЗаметкиExtendedTooltip" id="120"/>
+			<ExtendedTooltip name="ДатаЗаметкиРасширеннаяПодсказка" id="120"/>
 		</LabelDecoration>
 	</ChildItems>
 	<Attributes>
@@ -234,4 +249,9 @@
 			<SavedData>true</SavedData>
 		</Attribute>
 	</Attributes>
+	<Parameters>
+		<Parameter name="Предмет">
+			<Type/>
+		</Parameter>
+	</Parameters>
 </Form>

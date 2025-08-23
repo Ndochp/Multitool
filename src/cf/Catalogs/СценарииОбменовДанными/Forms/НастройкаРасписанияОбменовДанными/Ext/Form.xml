@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoTitle>false</AutoTitle>
 	<CommandSet>
 		<ExcludedCommand>CancelSearch</ExcludedCommand>
@@ -65,11 +65,23 @@
 			<Button name="Создать" id="13">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.СоздатьСценарийОбменаДанными</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Добавить</v8:content>
+					</v8:item>
+				</Title>
 				<ExtendedTooltip name="СоздатьExtendedTooltip" id="40"/>
 			</Button>
 			<Button name="ИзменитьСценарийОбменаДанными" id="14">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ИзменитьСценарийОбменаДанными</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Изменить</v8:content>
+					</v8:item>
+				</Title>
 				<ExtendedTooltip name="ИзменитьСценарийОбменаДаннымиExtendedTooltip" id="41"/>
 			</Button>
 			<ButtonGroup name="ГруппаКнопок" id="17">
@@ -84,6 +96,12 @@
 					<Button name="ФормаВключитьОтключитьРегламентноеЗадание" id="15">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ВключитьОтключитьРегламентноеЗадание</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Включить/отключить расписание</v8:content>
+							</v8:item>
+						</Title>
 						<ExtendedTooltip name="ФормаВключитьОтключитьРегламентноеЗаданиеExtendedTooltip" id="43"/>
 					</Button>
 				</ChildItems>
@@ -91,6 +109,12 @@
 			<Button name="ФормаВыполнитьСценарий" id="32">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ВыполнитьСценарий</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выполнить сценарий</v8:content>
+					</v8:item>
+				</Title>
 				<ExtendedTooltip name="ФормаВыполнитьСценарийExtendedTooltip" id="44"/>
 			</Button>
 		</ChildItems>
@@ -146,11 +170,23 @@
 							<Button name="СписокКонтекстноеМенюВключитьОтключитьЗагрузку" id="27">
 								<Type>CommandBarButton</Type>
 								<CommandName>Form.Command.ВключитьОтключитьЗагрузку</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Включить/отключить получение данных</v8:content>
+									</v8:item>
+								</Title>
 								<ExtendedTooltip name="СписокКонтекстноеМенюВключитьОтключитьЗагрузкуExtendedTooltip" id="46"/>
 							</Button>
 							<Button name="ФормаВключитьОтключитьВыгрузку" id="26">
 								<Type>CommandBarButton</Type>
 								<CommandName>Form.Command.ВключитьОтключитьВыгрузку</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Включить/отключить отправку данных</v8:content>
+									</v8:item>
+								</Title>
 								<ExtendedTooltip name="ФормаВключитьОтключитьВыгрузкуExtendedTooltip" id="47"/>
 							</Button>
 						</ChildItems>
@@ -167,6 +203,12 @@
 							<Button name="СписокКонтекстноеМенюВключитьОтключитьРегламентноеЗадание" id="16">
 								<Type>CommandBarButton</Type>
 								<CommandName>Form.Command.ВключитьОтключитьРегламентноеЗадание</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Включить/отключить расписание</v8:content>
+									</v8:item>
+								</Title>
 								<ExtendedTooltip name="СписокКонтекстноеМенюВключитьОтключитьРегламентноеЗаданиеExtendedTooltip" id="49"/>
 							</Button>
 							<Button name="СписокКонтекстноеМенюОткрытьСценарийОбменаДанными" id="19">
@@ -179,6 +221,12 @@
 					<Button name="СписокКонтекстноеМенюВыполнитьСценарий" id="33">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ВыполнитьСценарий</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выполнить сценарий</v8:content>
+							</v8:item>
+						</Title>
 						<ExtendedTooltip name="СписокКонтекстноеМенюВыполнитьСценарийExtendedTooltip" id="51"/>
 					</Button>
 				</ChildItems>

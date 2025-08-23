@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
@@ -61,6 +61,12 @@
 							<ChildItems>
 								<RadioButtonField name="МестоХранения" id="16">
 									<DataPath>МестоХранения</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Место хранения</v8:content>
+										</v8:item>
+									</Title>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -167,6 +173,12 @@
 							<EnableStartDrag>true</EnableStartDrag>
 							<DataPath>АрхивСообщенийОбменов</DataPath>
 							<RowPictureDataPath>АрхивСообщенийОбменов.DefaultPicture</RowPictureDataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Архив сообщений обменов</v8:content>
+								</v8:item>
+							</Title>
 							<CommandSet>
 								<ExcludedCommand>CancelSearch</ExcludedCommand>
 								<ExcludedCommand>Change</ExcludedCommand>
@@ -205,13 +217,18 @@
 									<Button name="АрхивСообщенийОбменовСохранить" id="75">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.Сохранить</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сохранить</v8:content>
+											</v8:item>
+										</Title>
 										<ExtendedTooltip name="АрхивСообщенийОбменовСохранитьРасширеннаяПодсказка" id="76"/>
 									</Button>
 								</ChildItems>
 							</AutoCommandBar>
 							<ExtendedTooltip name="АрхивСообщенийОбменовРасширеннаяПодсказка" id="36"/>
 							<SearchStringAddition name="АрхивСообщенийОбменовСтрокаПоиска" id="37">
-								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>АрхивСообщенийОбменов</Item>
 									<Type>SearchStringRepresentation</Type>
@@ -220,7 +237,6 @@
 								<ExtendedTooltip name="АрхивСообщенийОбменовСтрокаПоискаРасширеннаяПодсказка" id="39"/>
 							</SearchStringAddition>
 							<ViewStatusAddition name="АрхивСообщенийОбменовСостояниеПросмотра" id="40">
-								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>АрхивСообщенийОбменов</Item>
 									<Type>ViewStatusRepresentation</Type>

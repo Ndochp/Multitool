@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Customizable>false</Customizable>
 	<CommandBarLocation>None</CommandBarLocation>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
@@ -31,6 +31,12 @@
 					<ExtendedTooltip name="АвтономнаяРаботаНеНастроенаExtendedTooltip" id="117"/>
 					<ChildItems>
 						<UsualGroup name="Группа1" id="53">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа</v8:content>
+								</v8:item>
+							</Title>
 							<Group>Horizontal</Group>
 							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
@@ -49,6 +55,12 @@
 									<ExtendedTooltip name="Декорация2ExtendedTooltip" id="119"/>
 								</PictureDecoration>
 								<UsualGroup name="Группа4" id="100">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа</v8:content>
+										</v8:item>
+									</Title>
 									<Group>Vertical</Group>
 									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
@@ -82,6 +94,12 @@
 											<Type>Hyperlink</Type>
 											<AutoMaxWidth>false</AutoMaxWidth>
 											<CommandName>Form.Command.КакУстановитьИлиОбновитьВерсиюПлатформы1СПредприятие</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Как установить или обновить версию платформы 1С:Предприятие</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="КакУстановитьИлиОбновитьВерсиюПлатформы1СПредприятиеExtendedTooltip" id="123"/>
 										</Button>
 									</ChildItems>
@@ -89,6 +107,12 @@
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="Группа8" id="58">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа</v8:content>
+								</v8:item>
+							</Title>
 							<Group>Horizontal</Group>
 							<Behavior>Usual</Behavior>
 							<Representation>NormalSeparation</Representation>
@@ -98,6 +122,12 @@
 								<Button name="СоздатьАвтономноеРабочееМесто" id="59">
 									<Type>UsualButton</Type>
 									<CommandName>Form.Command.СоздатьАвтономноеРабочееМесто</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Создать...</v8:content>
+										</v8:item>
+									</Title>
 									<ExtendedTooltip name="СоздатьАвтономноеРабочееМестоExtendedTooltip" id="125"/>
 								</Button>
 								<LabelDecoration name="Декорация3" id="60">
@@ -116,6 +146,12 @@
 						<Button name="КакНастроитьАвтономноеРабочееМесто" id="110">
 							<Type>Hyperlink</Type>
 							<CommandName>Form.Command.КакНастроитьАвтономноеРабочееМесто</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Как настроить автономное рабочее место</v8:content>
+								</v8:item>
+							</Title>
 							<ExtendedTooltip name="КакНастроитьАвтономноеРабочееМестоExtendedTooltip" id="127"/>
 						</Button>
 					</ChildItems>
@@ -130,6 +166,12 @@
 					<ExtendedTooltip name="ОдноАвтономноеРабочееМестоExtendedTooltip" id="128"/>
 					<ChildItems>
 						<UsualGroup name="Группа9" id="113">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа</v8:content>
+								</v8:item>
+							</Title>
 							<Group>Vertical</Group>
 							<Behavior>Usual</Behavior>
 							<Representation>NormalSeparation</Representation>
@@ -137,6 +179,12 @@
 							<ExtendedTooltip name="Группа9ExtendedTooltip" id="129"/>
 							<ChildItems>
 								<UsualGroup name="Группа5" id="5">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа</v8:content>
+										</v8:item>
+									</Title>
 									<Group>Horizontal</Group>
 									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
@@ -155,6 +203,12 @@
 										</LabelDecoration>
 										<LabelField name="АвтономноеРабочееМесто" id="67">
 											<DataPath>АвтономноеРабочееМесто</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Автономное рабочее место</v8:content>
+												</v8:item>
+											</Title>
 											<TitleLocation>None</TitleLocation>
 											<HorizontalAlign>Left</HorizontalAlign>
 											<AutoMaxWidth>false</AutoMaxWidth>
@@ -164,6 +218,12 @@
 									</ChildItems>
 								</UsualGroup>
 								<UsualGroup name="Группа3" id="76">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа</v8:content>
+										</v8:item>
+									</Title>
 									<Group>Horizontal</Group>
 									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
@@ -184,11 +244,23 @@
 										<Button name="ПерейтиККонфликтам" id="114">
 											<Type>Hyperlink</Type>
 											<CommandName>Form.Command.ПерейтиККонфликтам</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Предупреждений нет</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="ПерейтиККонфликтамExtendedTooltip" id="135"/>
 										</Button>
 									</ChildItems>
 								</UsualGroup>
 								<UsualGroup name="Группа2" id="14">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа</v8:content>
+										</v8:item>
+									</Title>
 									<Group>Horizontal</Group>
 									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
@@ -196,6 +268,12 @@
 									<ExtendedTooltip name="Группа2ExtendedTooltip" id="136"/>
 									<ChildItems>
 										<UsualGroup name="Группа10" id="183">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа</v8:content>
+												</v8:item>
+											</Title>
 											<Group>Horizontal</Group>
 											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
@@ -206,6 +284,12 @@
 													<Type>UsualButton</Type>
 													<Width>12</Width>
 													<CommandName>Form.Command.ИзменитьАвтономноеРабочееМесто</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Настроить...</v8:content>
+														</v8:item>
+													</Title>
 													<ExtendedTooltip name="ИзменитьАвтономноеРабочееМестоExtendedTooltip" id="137"/>
 												</Button>
 												<Button name="СоставОтправляемыхДанных" id="181">
@@ -213,6 +297,12 @@
 													<Representation>Picture</Representation>
 													<Width>3</Width>
 													<CommandName>Form.Command.СоставОтправляемыхДанных</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Состав отправляемых данных</v8:content>
+														</v8:item>
+													</Title>
 													<ExtendedTooltip name="СоставОтправляемыхДанныхРасширеннаяПодсказка" id="182"/>
 												</Button>
 											</ChildItems>
@@ -230,6 +320,12 @@
 									</ChildItems>
 								</UsualGroup>
 								<UsualGroup name="Группа6" id="16">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа</v8:content>
+										</v8:item>
+									</Title>
 									<Group>Horizontal</Group>
 									<Behavior>Usual</Behavior>
 									<Representation>NormalSeparation</Representation>
@@ -240,6 +336,12 @@
 											<Type>UsualButton</Type>
 											<Width>16</Width>
 											<CommandName>Form.Command.ПрекратитьСинхронизациюСАвтономнымРабочимМестом</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Прекратить</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="ПрекратитьСинхронизациюСАвтономнымРабочимМестомExtendedTooltip" id="140"/>
 										</Button>
 										<LabelDecoration name="Декорация8" id="18">
@@ -257,6 +359,12 @@
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="Группа7" id="20">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа</v8:content>
+								</v8:item>
+							</Title>
 							<Group>Horizontal</Group>
 							<Behavior>Usual</Behavior>
 							<Representation>NormalSeparation</Representation>
@@ -266,6 +374,12 @@
 								<Button name="СоздатьАвтономноеРабочееМесто1" id="21">
 									<Type>UsualButton</Type>
 									<CommandName>Form.Command.СоздатьАвтономноеРабочееМесто</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Создать...</v8:content>
+										</v8:item>
+									</Title>
 									<ExtendedTooltip name="СоздатьАвтономноеРабочееМесто1ExtendedTooltip" id="143"/>
 								</Button>
 								<LabelDecoration name="Декорация7" id="22">
@@ -284,6 +398,12 @@
 						<Button name="КакНастроитьАвтономноеРабочееМесто1" id="111">
 							<Type>Hyperlink</Type>
 							<CommandName>Form.Command.КакНастроитьАвтономноеРабочееМесто</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Как настроить автономное рабочее место</v8:content>
+								</v8:item>
+							</Title>
 							<ExtendedTooltip name="КакНастроитьАвтономноеРабочееМесто1ExtendedTooltip" id="145"/>
 						</Button>
 					</ChildItems>
@@ -300,6 +420,12 @@
 						<Button name="ПерейтиККонфликтам1" id="115">
 							<Type>Hyperlink</Type>
 							<CommandName>Form.Command.ПерейтиККонфликтам</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Предупреждений нет</v8:content>
+								</v8:item>
+							</Title>
 							<ExtendedTooltip name="ПерейтиККонфликтам1ExtendedTooltip" id="147"/>
 						</Button>
 						<Table name="СписокАвтономныхРабочихМест" id="78">
@@ -341,11 +467,23 @@
 									<Button name="СписокАвтономныхРабочихМестСоздатьАвтономноеРабочееМесто1" id="103">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.СоздатьАвтономноеРабочееМесто</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Создать...</v8:content>
+											</v8:item>
+										</Title>
 										<ExtendedTooltip name="СписокАвтономныхРабочихМестСоздатьАвтономноеРабочееМесто1ExtendedTooltip" id="148"/>
 									</Button>
 									<Button name="СписокАвтономныхРабочихМестИзменитьАвтономноеРабочееМестоВСписке1" id="104">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.ИзменитьАвтономноеРабочееМестоВСписке</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Изменить</v8:content>
+											</v8:item>
+										</Title>
 										<ExtendedTooltip name="СписокАвтономныхРабочихМестИзменитьАвтономноеРабочееМестоВСписке1ExtendedTooltip" id="149"/>
 									</Button>
 									<Button name="СписокАвтономныхРабочихМестПрекратитьСинхронизациюСАвтономнымРабочимМестом1" id="105">
@@ -367,9 +505,21 @@
 									<Button name="СписокАвтономныхРабочихМестКонтекстноеМенюСоставОтправляемыхДанных" id="172">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.СоставОтправляемыхДанных</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Состав отправляемых данных</v8:content>
+											</v8:item>
+										</Title>
 										<ExtendedTooltip name="СписокАвтономныхРабочихМестКонтекстноеМенюСоставОтправляемыхДанныхРасширеннаяПодсказка" id="173"/>
 									</Button>
 									<ButtonGroup name="СписокАвтономныхРабочихМестГруппа4" id="106">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Автономных рабочих мест группа 4</v8:content>
+											</v8:item>
+										</Title>
 										<ExtendedTooltip name="СписокАвтономныхРабочихМестГруппа4ExtendedTooltip" id="151"/>
 										<ChildItems>
 											<Button name="СписокАвтономныхРабочихМестКопироватьВБуферОбмена1" id="107">
@@ -394,11 +544,23 @@
 									<Button name="СписокАвтономныхРабочихМестСоздатьАвтономноеРабочееМесто" id="85">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.СоздатьАвтономноеРабочееМесто</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Создать...</v8:content>
+											</v8:item>
+										</Title>
 										<ExtendedTooltip name="СписокАвтономныхРабочихМестСоздатьАвтономноеРабочееМестоExtendedTooltip" id="154"/>
 									</Button>
 									<Button name="СписокАвтономныхРабочихМестИзменитьАвтономноеРабочееМестоВСписке" id="98">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.ИзменитьАвтономноеРабочееМестоВСписке</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Изменить</v8:content>
+											</v8:item>
+										</Title>
 										<ExtendedTooltip name="СписокАвтономныхРабочихМестИзменитьАвтономноеРабочееМестоВСпискеExtendedTooltip" id="155"/>
 									</Button>
 									<Button name="СписокАвтономныхРабочихМестПрекратитьСинхронизациюСАвтономнымРабочимМестом" id="87">
@@ -420,21 +582,45 @@
 									<Button name="СписокАвтономныхРабочихМестСоставОтправляемыхДанных" id="170">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.СоставОтправляемыхДанных</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Состав отправляемых данных</v8:content>
+											</v8:item>
+										</Title>
 										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 										<ExtendedTooltip name="СписокАвтономныхРабочихМестСоставОтправляемыхДанныхРасширеннаяПодсказка" id="171"/>
 									</Button>
 									<ButtonGroup name="СписокАвтономныхРабочихМестГруппа3" id="95">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Автономных рабочих мест группа 3</v8:content>
+											</v8:item>
+										</Title>
 										<ExtendedTooltip name="СписокАвтономныхРабочихМестГруппа3ExtendedTooltip" id="157"/>
 										<ChildItems>
 											<Button name="СписокАвтономныхРабочихМестОбновить" id="88">
 												<Type>CommandBarButton</Type>
 												<CommandName>Form.Command.Обновить</CommandName>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Обновить</v8:content>
+													</v8:item>
+												</Title>
 												<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 												<ExtendedTooltip name="СписокАвтономныхРабочихМестОбновитьExtendedTooltip" id="158"/>
 											</Button>
 										</ChildItems>
 									</ButtonGroup>
 									<ButtonGroup name="СписокАвтономныхРабочихМестГруппа1" id="93">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Автономных рабочих мест группа 1</v8:content>
+											</v8:item>
+										</Title>
 										<ExtendedTooltip name="СписокАвтономныхРабочихМестГруппа1ExtendedTooltip" id="159"/>
 										<ChildItems>
 											<Button name="СписокАвтономныхРабочихМестНайти" id="89">
@@ -452,6 +638,12 @@
 										</ChildItems>
 									</ButtonGroup>
 									<ButtonGroup name="СписокАвтономныхРабочихМестГруппа2" id="94">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Автономных рабочих мест группа 2</v8:content>
+											</v8:item>
+										</Title>
 										<ExtendedTooltip name="СписокАвтономныхРабочихМестГруппа2ExtendedTooltip" id="162"/>
 										<ChildItems>
 											<Button name="СписокАвтономныхРабочихМестКопироватьВБуферОбмена" id="92">
@@ -506,12 +698,24 @@
 							<ChildItems>
 								<InputField name="СписокАвтономныхРабочихМестАвтономноеРабочееМесто" id="81">
 									<DataPath>СписокАвтономныхРабочихМест.АвтономноеРабочееМесто</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Автономное рабочее место</v8:content>
+										</v8:item>
+									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="СписокАвтономныхРабочихМестАвтономноеРабочееМестоКонтекстноеМеню" id="82"/>
 									<ExtendedTooltip name="СписокАвтономныхРабочихМестАвтономноеРабочееМестоExtendedTooltip" id="167"/>
 								</InputField>
 								<InputField name="СписокАвтономныхРабочихМестПредставлениеДатыСинхронизации" id="96">
 									<DataPath>СписокАвтономныхРабочихМест.ПредставлениеДатыСинхронизации</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Последняя синхронизация</v8:content>
+										</v8:item>
+									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<Format>
 										<v8:item>
@@ -533,6 +737,12 @@
 						<Button name="КакНастроитьАвтономноеРабочееМесто2" id="112">
 							<Type>Hyperlink</Type>
 							<CommandName>Form.Command.КакНастроитьАвтономноеРабочееМесто</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Как настроить автономное рабочее место</v8:content>
+								</v8:item>
+							</Title>
 							<ExtendedTooltip name="КакНастроитьАвтономноеРабочееМесто2ExtendedTooltip" id="169"/>
 						</Button>
 					</ChildItems>

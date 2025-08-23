@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<Customizable>false</Customizable>
 	<CommandBarLocation>Bottom</CommandBarLocation>
@@ -12,13 +12,19 @@
 				<DefaultButton>true</DefaultButton>
 				<SkipOnInput>false</SkipOnInput>
 				<CommandName>Form.Command.OK</CommandName>
-				<ExtendedTooltip name="OKExtendedTooltip" id="19"/>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>OK</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="OKРасширеннаяПодсказка" id="19"/>
 			</Button>
 			<Button name="Отмена" id="2">
 				<Type>CommandBarButton</Type>
 				<SkipOnInput>false</SkipOnInput>
 				<CommandName>Form.StandardCommand.Cancel</CommandName>
-				<ExtendedTooltip name="ОтменаExtendedTooltip" id="20"/>
+				<ExtendedTooltip name="ОтменаРасширеннаяПодсказка" id="20"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -29,6 +35,12 @@
 	<ChildItems>
 		<InputField name="Роль" id="3">
 			<DataPath>Роль</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Роль исполнителя</v8:content>
+				</v8:item>
+			</Title>
 			<ToolTipRepresentation>Button</ToolTipRepresentation>
 			<Wrap>false</Wrap>
 			<DropListButton>false</DropListButton>
@@ -37,7 +49,7 @@
 			<OpenButton>false</OpenButton>
 			<AutoMarkIncomplete>true</AutoMarkIncomplete>
 			<ContextMenu name="РольКонтекстноеМеню" id="4"/>
-			<ExtendedTooltip name="РольExtendedTooltip" id="21">
+			<ExtendedTooltip name="РольРасширеннаяПодсказка" id="21">
 				<Title formatted="false">
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -80,16 +92,28 @@
 					<ChildItems>
 						<InputField name="ОсновнойОбъектАдресации" id="13">
 							<DataPath>ОсновнойОбъектАдресации</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Основной объект адресации</v8:content>
+								</v8:item>
+							</Title>
 							<ToolTipRepresentation>Button</ToolTipRepresentation>
 							<Wrap>false</Wrap>
 							<ContextMenu name="ОсновнойОбъектАдресацииКонтекстноеМеню" id="14"/>
-							<ExtendedTooltip name="ОсновнойОбъектАдресацииExtendedTooltip" id="22"/>
+							<ExtendedTooltip name="ОсновнойОбъектАдресацииРасширеннаяПодсказка" id="22"/>
 						</InputField>
 						<InputField name="ДополнительныйОбъектАдресации" id="15">
 							<DataPath>ДополнительныйОбъектАдресации</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Доп. объект адресации</v8:content>
+								</v8:item>
+							</Title>
 							<Wrap>false</Wrap>
 							<ContextMenu name="ДополнительныйОбъектАдресацииКонтекстноеМеню" id="16"/>
-							<ExtendedTooltip name="ДополнительныйОбъектАдресацииExtendedTooltip" id="23"/>
+							<ExtendedTooltip name="ДополнительныйОбъектАдресацииРасширеннаяПодсказка" id="23"/>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>

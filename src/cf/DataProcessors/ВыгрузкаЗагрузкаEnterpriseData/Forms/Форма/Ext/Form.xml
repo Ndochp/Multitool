@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -15,6 +15,12 @@
 				<Type>CommandBarButton</Type>
 				<Check>true</Check>
 				<CommandName>Form.Command.ВключитьРежимРазработчика</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Режим разработчика</v8:content>
+					</v8:item>
+				</Title>
 				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 				<ExtendedTooltip name="ФормаВключитьРасширенныеВозможностиРасширеннаяПодсказка" id="231"/>
 			</Button>
@@ -22,6 +28,12 @@
 				<Type>CommandBarButton</Type>
 				<Representation>PictureAndText</Representation>
 				<CommandName>Form.Command.ВыполнитьОперацию</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выполнить операцию</v8:content>
+					</v8:item>
+				</Title>
 				<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 				<ExtendedTooltip name="ФормаВыполнитьОперациюРасширеннаяПодсказка" id="235"/>
 			</Button>
@@ -40,12 +52,24 @@
 			<Button name="ФормаИспользоватьВнутреннийКаталогСообщений" id="270">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ИспользоватьВнутреннийКаталогСообщений</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Использовать внутренний каталог сообщений</v8:content>
+					</v8:item>
+				</Title>
 				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 				<ExtendedTooltip name="ФормаИспользоватьВнутреннийКаталогСообщенийРасширеннаяПодсказка" id="271"/>
 			</Button>
 			<Button name="ФормаЛогироватьВыгрузкуОбъектов" id="272">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ЛогироватьВыгрузкуОбъектов</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Логировать выгрузку объектов</v8:content>
+					</v8:item>
+				</Title>
 				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 				<ExtendedTooltip name="ФормаЛогироватьВыгрузкуОбъектовРасширеннаяПодсказка" id="273"/>
 			</Button>
@@ -149,6 +173,12 @@
 						</LabelDecoration>
 						<RadioButtonField name="ИсточникЗагрузки" id="180">
 							<DataPath>ИсточникЗагрузки</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Источник загрузки</v8:content>
+								</v8:item>
+							</Title>
 							<RadioButtonType>Tumbler</RadioButtonType>
 							<ChoiceList>
 								<xr:Item>
@@ -186,6 +216,12 @@
 						</RadioButtonField>
 						<InputField name="ПутьКФайлуЗагрузки" id="186">
 							<DataPath>ПутьКФайлуЗагрузки</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Путь к файлу загрузки</v8:content>
+								</v8:item>
+							</Title>
 							<ChoiceButton>true</ChoiceButton>
 							<OpenButton>false</OpenButton>
 							<ContextMenu name="ПутьКФайлуЗагрузкиКонтекстноеМеню" id="187"/>
@@ -224,6 +260,12 @@
 						</InputField>
 						<LabelField name="СтрокаПоддерживаемыеВерсииФормата" id="239">
 							<DataPath>СтрокаПоддерживаемыеВерсииФормата</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Строка поддерживаемые версии формата</v8:content>
+								</v8:item>
+							</Title>
 							<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
 							<TitleLocation>None</TitleLocation>
 							<ContextMenu name="СтрокаПоддерживаемыеВерсииФорматаКонтекстноеМеню" id="240"/>
@@ -303,6 +345,12 @@
 										<Button name="ОткрытьXML" id="153">
 											<Type>UsualButton</Type>
 											<CommandName>Form.Command.ОткрытьXML</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Открыть XML</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="ОткрытьXMLРасширеннаяПодсказка" id="154"/>
 										</Button>
 									</ChildItems>
@@ -322,6 +370,12 @@
 					<ChildItems>
 						<RadioButtonField name="МестоВыгрузки" id="183">
 							<DataPath>МестоВыгрузки</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Место выгрузки</v8:content>
+								</v8:item>
+							</Title>
 							<RadioButtonType>Tumbler</RadioButtonType>
 							<ChoiceList>
 								<xr:Item>
@@ -545,6 +599,12 @@
 													<Width>3</Width>
 													<AutoMaxWidth>false</AutoMaxWidth>
 													<CommandName>Form.Command.СохранитьНастройки</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Сохранить настройки</v8:content>
+														</v8:item>
+													</Title>
 													<ExtendedTooltip name="СохранитьНастройкиРасширеннаяПодсказка" id="175"/>
 												</Button>
 												<Button name="ВосстановитьНастройки" id="176">
@@ -552,6 +612,12 @@
 													<Width>3</Width>
 													<AutoMaxWidth>false</AutoMaxWidth>
 													<CommandName>Form.Command.ВосстановитьНастройки</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Восстановить настройки</v8:content>
+														</v8:item>
+													</Title>
 													<ExtendedTooltip name="ВосстановитьНастройкиРасширеннаяПодсказка" id="177"/>
 												</Button>
 												<InputField name="ПериодОтбораВсехДокументов" id="140">
@@ -697,6 +763,12 @@
 														<Button name="СохранитьXML" id="83">
 															<Type>UsualButton</Type>
 															<CommandName>Form.Command.СохранитьXML</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Сохранить XML</v8:content>
+																</v8:item>
+															</Title>
 															<ExtendedTooltip name="СохранитьXMLРасширеннаяПодсказка" id="84"/>
 														</Button>
 													</ChildItems>
@@ -773,10 +845,6 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<Save>
-				<Field>1/0:28497538-35a5-4698-80cb-8935787c3903</Field>
-				<Field>1/0:2df5390d-4ee8-4716-af67-3dbe7437f4f7</Field>
-				<Field>1/0:5d07bae6-89d7-4869-99ad-19723153f72c</Field>
-				<Field>1/0:8ac1a99d-8ca3-4f14-9ddf-9f3aea74f062</Field>
 				<Field>Объект.ВерсияФормата</Field>
 				<Field>Объект.РезультатВыгрузкиXDTO</Field>
 			</Save>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoTitle>false</AutoTitle>
 	<CommandBarLocation>None</CommandBarLocation>
@@ -17,9 +17,15 @@
 	<ChildItems>
 		<LabelField name="СообщениеЗаголовок" id="2">
 			<DataPath>СообщениеЗаголовок</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сообщение заголовок</v8:content>
+				</v8:item>
+			</Title>
 			<TitleLocation>None</TitleLocation>
 			<ContextMenu name="СообщениеЗаголовокКонтекстноеМеню" id="3"/>
-			<ExtendedTooltip name="СообщениеЗаголовокExtendedTooltip" id="17"/>
+			<ExtendedTooltip name="СообщениеЗаголовокРасширеннаяПодсказка" id="17"/>
 		</LabelField>
 		<Table name="Файлы" id="4">
 			<Representation>List</Representation>
@@ -41,7 +47,7 @@
 			<SearchControlLocation>None</SearchControlLocation>
 			<ContextMenu name="ФайлыКонтекстноеМеню" id="5"/>
 			<AutoCommandBar name="ФайлыКоманднаяПанель" id="6"/>
-			<ExtendedTooltip name="ФайлыExtendedTooltip" id="18"/>
+			<ExtendedTooltip name="ФайлыРасширеннаяПодсказка" id="18"/>
 			<SearchStringAddition name="ФайлыСтрокаПоиска" id="25">
 				<AdditionSource>
 					<Item>Файлы</Item>
@@ -80,15 +86,21 @@
 					</Title>
 					<Wrap>false</Wrap>
 					<ContextMenu name="ПредставлениеКонтекстноеМеню" id="10"/>
-					<ExtendedTooltip name="ПредставлениеExtendedTooltip" id="19"/>
+					<ExtendedTooltip name="ПредставлениеРасширеннаяПодсказка" id="19"/>
 				</InputField>
 			</ChildItems>
 		</Table>
 		<LabelField name="СообщениеВопрос" id="11">
 			<DataPath>СообщениеВопрос</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сообщение вопрос</v8:content>
+				</v8:item>
+			</Title>
 			<TitleLocation>None</TitleLocation>
 			<ContextMenu name="СообщениеВопросКонтекстноеМеню" id="12"/>
-			<ExtendedTooltip name="СообщениеВопросExtendedTooltip" id="20"/>
+			<ExtendedTooltip name="СообщениеВопросРасширеннаяПодсказка" id="20"/>
 		</LabelField>
 		<CommandBar name="ОсновнаяКоманднаяПанель" id="13">
 			<Title>
@@ -98,7 +110,7 @@
 				</v8:item>
 			</Title>
 			<HorizontalLocation>Right</HorizontalLocation>
-			<ExtendedTooltip name="ОсновнаяКоманднаяПанельExtendedTooltip" id="21"/>
+			<ExtendedTooltip name="ОсновнаяКоманднаяПанельРасширеннаяПодсказка" id="21"/>
 			<ChildItems>
 				<Button name="Да" id="14">
 					<Type>CommandBarButton</Type>
@@ -111,7 +123,7 @@
 							<v8:content>Да</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="ДаExtendedTooltip" id="22"/>
+					<ExtendedTooltip name="ДаРасширеннаяПодсказка" id="22"/>
 				</Button>
 				<Button name="Нет" id="15">
 					<Type>CommandBarButton</Type>
@@ -123,7 +135,7 @@
 							<v8:content>Нет</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="НетExtendedTooltip" id="23"/>
+					<ExtendedTooltip name="НетРасширеннаяПодсказка" id="23"/>
 				</Button>
 				<Button name="Справка" id="16">
 					<Type>CommandBarButton</Type>
@@ -135,7 +147,7 @@
 							<v8:content>Справка</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="СправкаExtendedTooltip" id="24"/>
+					<ExtendedTooltip name="СправкаРасширеннаяПодсказка" id="24"/>
 				</Button>
 			</ChildItems>
 		</CommandBar>

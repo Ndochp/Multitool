@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -47,6 +47,22 @@
 			</Title>
 			<CommandSource>Form</CommandSource>
 			<ExtendedTooltip name="КоманднаяПанельРасширеннаяПодсказка" id="42"/>
+			<ChildItems>
+				<Popup name="ПодменюОрганайзер" id="60">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Органайзер</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Ref>CommonPicture.Органайзер</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<Representation>Picture</Representation>
+					<ExtendedTooltip name="ПодменюОрганайзерРасширеннаяПодсказка" id="61"/>
+				</Popup>
+			</ChildItems>
 		</CommandBar>
 		<Table name="Список" id="1">
 			<Representation>List</Representation>
@@ -94,7 +110,7 @@
 			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
 			<AutoCommandBar name="СписокКоманднаяПанель" id="3"/>
-			<ExtendedTooltip name="СписокExtendedTooltip" id="34"/>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="34"/>
 			<SearchStringAddition name="СписокSearchString" id="48">
 				<AdditionSource>
 					<Item>Список</Item>
@@ -121,6 +137,7 @@
 			</SearchControlAddition>
 			<Events>
 				<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
+				<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
 			</Events>
 			<ChildItems>
 				<LabelField name="Наименование" id="45">
@@ -133,7 +150,7 @@
 				<LabelField name="Автор" id="25">
 					<DataPath>Список.Автор</DataPath>
 					<ContextMenu name="АвторКонтекстноеМеню" id="26"/>
-					<ExtendedTooltip name="АвторExtendedTooltip" id="37"/>
+					<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="37"/>
 				</LabelField>
 				<LabelField name="Ссылка" id="57">
 					<DataPath>Список.Ref</DataPath>
@@ -155,24 +172,36 @@
 			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ФильтрыExtendedTooltip" id="38"/>
+			<ExtendedTooltip name="ФильтрыРасширеннаяПодсказка" id="38"/>
 			<ChildItems>
 				<CheckBoxField name="ПоказыватьЗаметкиДругихПользователей" id="23">
 					<DataPath>ПоказыватьЗаметкиДругихПользователей</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Показывать заметки других пользователей</v8:content>
+						</v8:item>
+					</Title>
 					<TitleLocation>Right</TitleLocation>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ПоказыватьЗаметкиДругихПользователейКонтекстноеМеню" id="24"/>
-					<ExtendedTooltip name="ПоказыватьЗаметкиДругихПользователейExtendedTooltip" id="39"/>
+					<ExtendedTooltip name="ПоказыватьЗаметкиДругихПользователейРасширеннаяПодсказка" id="39"/>
 					<Events>
 						<Event name="OnChange">ПоказыватьЗаметкиДругихПользователейПриИзменении</Event>
 					</Events>
 				</CheckBoxField>
 				<CheckBoxField name="ПоказыватьУдаленные" id="28">
 					<DataPath>ПоказыватьУдаленные</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Показывать удаленные</v8:content>
+						</v8:item>
+					</Title>
 					<TitleLocation>Right</TitleLocation>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ПоказыватьУдаленныеКонтекстноеМеню" id="29"/>
-					<ExtendedTooltip name="ПоказыватьУдаленныеExtendedTooltip" id="40"/>
+					<ExtendedTooltip name="ПоказыватьУдаленныеРасширеннаяПодсказка" id="40"/>
 					<Events>
 						<Event name="OnChange">ПоказыватьУдаленныеПриИзменении</Event>
 					</Events>
@@ -274,4 +303,9 @@
 			</Save>
 		</Attribute>
 	</Attributes>
+	<Parameters>
+		<Parameter name="Предмет">
+			<Type/>
+		</Parameter>
+	</Parameters>
 </Form>

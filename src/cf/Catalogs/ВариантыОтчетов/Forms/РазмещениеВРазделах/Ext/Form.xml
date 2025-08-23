@@ -1,21 +1,45 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
-			<Button name="Разместить" id="58">
-				<Type>CommandBarButton</Type>
-				<Representation>Text</Representation>
-				<DefaultButton>true</DefaultButton>
-				<CommandName>Form.Command.Разместить</CommandName>
-				<ExtendedTooltip name="РазместитьExtendedTooltip" id="79"/>
-			</Button>
-			<Button name="ДеревоПодсистемСнятьФлажки" id="76">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.СнятьФлажки</CommandName>
-				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-				<ExtendedTooltip name="ДеревоПодсистемСнятьФлажкиExtendedTooltip" id="80"/>
-			</Button>
+			<ButtonGroup name="ФормаГруппаФлажки" id="102">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа флажки</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаГруппаФлажкиРасширеннаяПодсказка" id="103"/>
+				<ChildItems>
+					<Button name="Разместить" id="58">
+						<Type>CommandBarButton</Type>
+						<Representation>Text</Representation>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.Разместить</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Разместить</v8:content>
+							</v8:item>
+						</Title>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="РазместитьРасширеннаяПодсказка" id="79"/>
+					</Button>
+					<Button name="ДеревоПодсистемСнятьФлажки" id="76">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СнятьФлажки</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Снять флажки</v8:content>
+							</v8:item>
+						</Title>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ДеревоПодсистемСнятьФлажкиРасширеннаяПодсказка" id="80"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
 			<SearchStringAddition name="СтрокаПоиска" id="99">
 				<AdditionSource>
 					<Item>ДеревоПодсистем</Item>
@@ -24,6 +48,12 @@
 				<ContextMenu name="СтрокаПоискаКонтекстноеМеню" id="100"/>
 				<ExtendedTooltip name="СтрокаПоискаРасширеннаяПодсказка" id="101"/>
 			</SearchStringAddition>
+			<Button name="ФормаСправка" id="104">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="105"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -66,14 +96,20 @@
 					<Button name="ДеревоПодсистемКонтекстноеМенюСнятьФлажки" id="78">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.СнятьФлажки</CommandName>
-						<ExtendedTooltip name="ДеревоПодсистемКонтекстноеМенюСнятьФлажкиExtendedTooltip" id="83"/>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Снять флажки</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ДеревоПодсистемКонтекстноеМенюСнятьФлажкиРасширеннаяПодсказка" id="83"/>
 					</Button>
 				</ChildItems>
 			</ContextMenu>
 			<AutoCommandBar name="ДеревоПодсистемКоманднаяПанель" id="9">
 				<Autofill>false</Autofill>
 			</AutoCommandBar>
-			<ExtendedTooltip name="ДеревоПодсистемExtendedTooltip" id="85"/>
+			<ExtendedTooltip name="ДеревоПодсистемРасширеннаяПодсказка" id="85"/>
 			<SearchStringAddition name="ДеревоПодсистемСтрокаПоиска" id="90">
 				<AdditionSource>
 					<Item>ДеревоПодсистем</Item>
@@ -107,16 +143,22 @@
 						</v8:item>
 					</Title>
 					<Group>InCell</Group>
-					<ExtendedTooltip name="ГруппаКолонокExtendedTooltip" id="86"/>
+					<ExtendedTooltip name="ГруппаКолонокРасширеннаяПодсказка" id="86"/>
 					<ChildItems>
 						<CheckBoxField name="ДеревоПодсистемИспользование" id="69" DisplayImportance="VeryHigh">
 							<DataPath>ДеревоПодсистем.Использование</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Использование</v8:content>
+								</v8:item>
+							</Title>
 							<TitleLocation>None</TitleLocation>
 							<HorizontalAlign>Left</HorizontalAlign>
 							<EditMode>EnterOnInput</EditMode>
 							<ThreeState>true</ThreeState>
 							<ContextMenu name="ДеревоПодсистемИспользованиеКонтекстноеМеню" id="70"/>
-							<ExtendedTooltip name="ДеревоПодсистемИспользованиеExtendedTooltip" id="87"/>
+							<ExtendedTooltip name="ДеревоПодсистемИспользованиеРасширеннаяПодсказка" id="87"/>
 							<Events>
 								<Event name="OnChange">ДеревоПодсистемИспользованиеПриИзменении</Event>
 							</Events>
@@ -124,16 +166,28 @@
 						<InputField name="ДеревоПодсистемПредставление" id="61" DisplayImportance="VeryHigh">
 							<DataPath>ДеревоПодсистем.Представление</DataPath>
 							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Раздел, Группа</v8:content>
+								</v8:item>
+							</Title>
 							<HorizontalAlign>Left</HorizontalAlign>
 							<EditMode>EnterOnInput</EditMode>
 							<TextEdit>false</TextEdit>
 							<ContextMenu name="ДеревоПодсистемПредставлениеКонтекстноеМеню" id="62"/>
-							<ExtendedTooltip name="ДеревоПодсистемПредставлениеExtendedTooltip" id="88"/>
+							<ExtendedTooltip name="ДеревоПодсистемПредставлениеРасширеннаяПодсказка" id="88"/>
 						</InputField>
 					</ChildItems>
 				</ColumnGroup>
 				<InputField name="ДеревоПодсистемВажность" id="71">
 					<DataPath>ДеревоПодсистем.Важность</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Важность</v8:content>
+						</v8:item>
+					</Title>
 					<EditMode>EnterOnInput</EditMode>
 					<Width>8</Width>
 					<ChoiceButton>true</ChoiceButton>
@@ -143,7 +197,7 @@
 					<ListChoiceMode>true</ListChoiceMode>
 					<ChoiceListButton>false</ChoiceListButton>
 					<ContextMenu name="ДеревоПодсистемВажностьКонтекстноеМеню" id="72"/>
-					<ExtendedTooltip name="ДеревоПодсистемВажностьExtendedTooltip" id="89"/>
+					<ExtendedTooltip name="ДеревоПодсистемВажностьРасширеннаяПодсказка" id="89"/>
 					<Events>
 						<Event name="OnChange">ДеревоПодсистемВажностьПриИзменении</Event>
 					</Events>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<CommandBarLocation>None</CommandBarLocation>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
@@ -117,7 +117,7 @@
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>В этой программе будут удалены
+													<v8:content>В этом приложении будут удалены
   - настройки подключения;
   - информация о сопоставлении объектов;
   - информация о зарегистрированных к отправке объектах.</v8:content>
@@ -144,7 +144,7 @@
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Удалить настройку также в программе "Наименование корреспондента".</v8:content>
+															<v8:content>Удалить настройку также в приложении "Наименование корреспондента".</v8:content>
 														</v8:item>
 													</Title>
 													<TitleLocation>Right</TitleLocation>
@@ -292,11 +292,23 @@
 									<Type>CommandBarButton</Type>
 									<DefaultButton>true</DefaultButton>
 									<CommandName>Form.Command.КомандаДалее</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Удалить настройку синхронизации</v8:content>
+										</v8:item>
+									</Title>
 									<ExtendedTooltip name="КомандаДалееРасширеннаяПодсказка" id="28"/>
 								</Button>
 								<Button name="КомандаОтмена" id="29">
 									<Type>CommandBarButton</Type>
 									<CommandName>Form.Command.КомандаОтмена</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отмена</v8:content>
+										</v8:item>
+									</Title>
 									<ExtendedTooltip name="КомандаОтменаРасширеннаяПодсказка" id="30"/>
 								</Button>
 							</ChildItems>
@@ -325,6 +337,12 @@
 								<Button name="КомандаОтмена1" id="33">
 									<Type>CommandBarButton</Type>
 									<CommandName>Form.Command.КомандаОтмена</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отмена</v8:content>
+										</v8:item>
+									</Title>
 									<ExtendedTooltip name="КомандаОтмена1РасширеннаяПодсказка" id="34"/>
 								</Button>
 							</ChildItems>
@@ -353,6 +371,12 @@
 								<Button name="КомандаГотово" id="37">
 									<Type>CommandBarButton</Type>
 									<CommandName>Form.Command.КомандаГотово</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Готово</v8:content>
+										</v8:item>
+									</Title>
 									<ExtendedTooltip name="КомандаГотовоРасширеннаяПодсказка" id="38"/>
 								</Button>
 							</ChildItems>
@@ -478,7 +502,7 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ПодключениеOnline" id="9">
+		<Attribute name="Удалить_ПодключениеOnline" id="9">
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
@@ -527,15 +551,32 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ЭтоОбменСВнешнейСистемой" id="18">
+		<Attribute name="Удалить_ЭтоОбменСВнешнейСистемой" id="18">
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ПодключениеЧерезВнешнееСоединение" id="19">
+		<Attribute name="Удалить_ПодключениеЧерезВнешнееСоединение" id="19">
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
+		</Attribute>
+		<Attribute name="ИдентификаторТранспорта" id="7">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПрямоеПодключение" id="8">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДанныеАутентификации" id="11">
+			<Type/>
 		</Attribute>
 	</Attributes>
 	<Commands>

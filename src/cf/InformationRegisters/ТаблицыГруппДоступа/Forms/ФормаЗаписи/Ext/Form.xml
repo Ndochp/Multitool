@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<CommandSet>
 		<ExcludedCommand>Copy</ExcludedCommand>
@@ -9,8 +9,14 @@
 			<Button name="ФормаВключитьВозможностьРедактирования" id="19">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ВключитьВозможностьРедактирования</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Включить возможность редактирования</v8:content>
+					</v8:item>
+				</Title>
 				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-				<ExtendedTooltip name="ФормаВключитьВозможностьРедактированияExtendedTooltip" id="22"/>
+				<ExtendedTooltip name="ФормаВключитьВозможностьРедактированияРасширеннаяПодсказка" id="22"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -22,13 +28,13 @@
 			<DataPath>Запись.Таблица</DataPath>
 			<Width>40</Width>
 			<ContextMenu name="ТаблицаКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="ТаблицаExtendedTooltip" id="23"/>
+			<ExtendedTooltip name="ТаблицаРасширеннаяПодсказка" id="23"/>
 		</InputField>
 		<InputField name="ГруппаДоступа" id="5">
 			<DataPath>Запись.ГруппаДоступа</DataPath>
 			<Width>40</Width>
 			<ContextMenu name="ГруппаДоступаКонтекстноеМеню" id="6"/>
-			<ExtendedTooltip name="ГруппаДоступаExtendedTooltip" id="24"/>
+			<ExtendedTooltip name="ГруппаДоступаРасширеннаяПодсказка" id="24"/>
 		</InputField>
 		<UsualGroup name="ГруппаПрава" id="48">
 			<Title>
@@ -59,6 +65,12 @@
 						<CheckBoxField name="ПравоЧтение" id="20">
 							<DataPath>ПравоЧтение</DataPath>
 							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Право чтение</v8:content>
+								</v8:item>
+							</Title>
 							<TitleLocation>Right</TitleLocation>
 							<ToolTip>
 								<v8:item>
@@ -127,7 +139,7 @@
 		<InputField name="ТипТаблицы" id="13">
 			<DataPath>Запись.ТипТаблицы</DataPath>
 			<ContextMenu name="ТипТаблицыКонтекстноеМеню" id="14"/>
-			<ExtendedTooltip name="ТипТаблицыExtendedTooltip" id="29"/>
+			<ExtendedTooltip name="ТипТаблицыРасширеннаяПодсказка" id="29"/>
 		</InputField>
 	</ChildItems>
 	<Attributes>

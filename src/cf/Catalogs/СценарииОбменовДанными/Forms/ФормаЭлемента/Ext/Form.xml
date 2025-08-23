@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
@@ -7,6 +7,12 @@
 				<Type>CommandBarButton</Type>
 				<SkipOnInput>false</SkipOnInput>
 				<CommandName>Form.Command.ВыполнитьОбмен</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выполнить сценарий</v8:content>
+					</v8:item>
+				</Title>
 				<ExtendedTooltip name="ВыполнитьОбменExtendedTooltip" id="127"/>
 			</Button>
 		</ChildItems>
@@ -23,7 +29,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа сценарий отключен</v8:content>
+					<v8:content>Сценарий отключен</v8:content>
 				</v8:item>
 			</Title>
 			<HorizontalStretch>true</HorizontalStretch>
@@ -56,12 +62,12 @@
 				</LabelDecoration>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="ГруппаИнформацияОНастрокеВОднойБазе" id="164">
+		<UsualGroup name="ГруппаИнформацияОНастройкеВОднойБазе" id="164">
 			<Visible>false</Visible>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа информация о настроке в одной базе</v8:content>
+					<v8:content>Информация о настройке в одной базе</v8:content>
 				</v8:item>
 			</Title>
 			<HorizontalStretch>true</HorizontalStretch>
@@ -69,7 +75,7 @@
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<BackColor>web:LightGreen</BackColor>
-			<ExtendedTooltip name="ГруппаИнформацияОНастрокеВОднойБазеРасширеннаяПодсказка" id="165"/>
+			<ExtendedTooltip name="ГруппаИнформацияОНастройкеВОднойБазеРасширеннаяПодсказка" id="165"/>
 			<ChildItems>
 				<PictureDecoration name="Декорация3" id="166">
 					<Width>3</Width>
@@ -151,13 +157,19 @@
 					<Type>Hyperlink</Type>
 					<SkipOnInput>false</SkipOnInput>
 					<CommandName>Form.Command.НастроитьРасписаниеРегламентногоЗадания</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расписание синхронизации</v8:content>
+						</v8:item>
+					</Title>
 					<ExtendedTooltip name="НастроитьРасписаниеРегламентногоЗаданияExtendedTooltip" id="133">
 						<AutoMaxWidth>false</AutoMaxWidth>
 						<Title formatted="false">
 							<v8:item>
 								<v8:lang>ru</v8:lang>
 								<v8:content>Минимальный интервал не должен быть меньше 15 минут (900 секунд).
-Точное время выполнения сценария зависит от загруженности программы.</v8:content>
+Точное время выполнения сценария зависит от загруженности приложения.</v8:content>
 							</v8:item>
 						</Title>
 					</ExtendedTooltip>
@@ -191,7 +203,7 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Минимальный интервал не должен быть меньше 15 минут.
-Точное время выполнения сценария зависит от загруженности программы.</v8:content>
+Точное время выполнения сценария зависит от загруженности приложения.</v8:content>
 						</v8:item>
 					</Title>
 					<ContextMenu name="Декорация2КонтекстноеМеню" id="162"/>
@@ -232,12 +244,24 @@
 								<Type>CommandBarButton</Type>
 								<SkipOnInput>false</SkipOnInput>
 								<CommandName>Form.Command.НастройкиТранспорта</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Параметры подключения</v8:content>
+									</v8:item>
+								</Title>
 								<ExtendedTooltip name="НастройкиТранспортаExtendedTooltip" id="135"/>
 							</Button>
 							<Button name="КонтекстноеМенюСоставРасписанияПерейтиВЖурналРегистрации" id="126">
 								<Type>CommandBarButton</Type>
 								<SkipOnInput>false</SkipOnInput>
 								<CommandName>Form.Command.ПерейтиВЖурналРегистрации</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>События обмена данных</v8:content>
+									</v8:item>
+								</Title>
 								<ExtendedTooltip name="КонтекстноеМенюСоставРасписанияПерейтиВЖурналРегистрацииExtendedTooltip" id="136"/>
 							</Button>
 						</ChildItems>
@@ -268,9 +292,6 @@
 						<ContextMenu name="СоставРасписанияУправлениеПоискомКонтекстноеМеню" id="154"/>
 						<ExtendedTooltip name="СоставРасписанияУправлениеПоискомРасширеннаяПодсказка" id="155"/>
 					</SearchControlAddition>
-					<Events>
-						<Event name="OnActivateRow">СоставРасписанияПриАктивизацииСтроки</Event>
-					</Events>
 					<ChildItems>
 						<LabelField name="НастройкиОбменаНомерСтроки" id="108">
 							<DataPath>Объект.НастройкиОбмена.LineNumber</DataPath>
@@ -313,14 +334,20 @@
 								</InputField>
 							</ChildItems>
 						</ColumnGroup>
-						<InputField name="НастройкиОбменаВидТранспортаОбмена" id="114">
-							<DataPath>Объект.НастройкиОбмена.ВидТранспортаОбмена</DataPath>
+						<InputField name="НастройкиОбменаИдентификаторТранспорта" id="180">
+							<DataPath>Объект.НастройкиОбмена.ИдентификаторТранспорта</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Транспорт</v8:content>
+								</v8:item>
+							</Title>
 							<EditMode>EnterOnInput</EditMode>
 							<ListChoiceMode>true</ListChoiceMode>
-							<ContextMenu name="НастройкиОбменаВидТранспортаОбменаКонтекстноеМеню" id="115"/>
-							<ExtendedTooltip name="НастройкиОбменаВидТранспортаОбменаExtendedTooltip" id="142"/>
+							<ContextMenu name="НастройкиОбменаИдентификаторТранспортаКонтекстноеМеню" id="181"/>
+							<ExtendedTooltip name="НастройкиОбменаИдентификаторТранспортаРасширеннаяПодсказка" id="182"/>
 							<Events>
-								<Event name="StartChoice">НастройкиОбменаВидТранспортаОбменаНачалоВыбора</Event>
+								<Event name="StartChoice">НастройкиОбменаИдентификаторТранспортаНачалоВыбора</Event>
 							</Events>
 						</InputField>
 						<InputField name="НастройкиОбменаВыполняемоеДействие" id="116">
@@ -492,27 +519,23 @@
 			<Item>
 				<Command>0</Command>
 				<Type>Added</Type>
-				<Attribute>Items.СоставРасписания.CurrentData.УзелИнформационнойБазы</Attribute>
 				<DefaultVisible>false</DefaultVisible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Added</Type>
-				<Attribute>Items.СоставРасписания.CurrentData.УзелИнформационнойБазы</Attribute>
 				<Index>3</Index>
 				<DefaultVisible>false</DefaultVisible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Added</Type>
-				<Attribute>Items.СоставРасписания.CurrentData.УзелИнформационнойБазы</Attribute>
 				<Index>1</Index>
 				<DefaultVisible>false</DefaultVisible>
 			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Added</Type>
-				<Attribute>Items.СоставРасписания.CurrentData.УзелИнформационнойБазы</Attribute>
 				<Index>2</Index>
 				<DefaultVisible>false</DefaultVisible>
 			</Item>

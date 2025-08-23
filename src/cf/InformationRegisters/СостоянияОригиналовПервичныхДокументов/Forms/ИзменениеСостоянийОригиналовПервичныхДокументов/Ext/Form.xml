@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
 			<v8:content>Изменение состояния оригинала документа</v8:content>
 		</v8:item>
 	</Title>
-	<Width>55</Width>
+	<Width>62</Width>
+	<Height>25</Height>
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoTitle>false</AutoTitle>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
@@ -40,8 +41,8 @@
 					<GroupVerticalAlign>Center</GroupVerticalAlign>
 					<PictureSize>AutoSize</PictureSize>
 					<Picture>
-						<xr:Ref>CommonPicture.Информация32</xr:Ref>
-						<xr:LoadTransparent>false</xr:LoadTransparent>
+						<xr:Ref>StdPicture.Information</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
 					</Picture>
 					<ContextMenu name="КартинкаИнфоКонтекстноеМеню" id="94"/>
 					<ExtendedTooltip name="КартинкаИнфоРасширеннаяПодсказка" id="95"/>
@@ -68,6 +69,7 @@
 				</v8:item>
 			</Title>
 			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
 			<HorizontalSpacing>Single</HorizontalSpacing>
 			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
@@ -278,6 +280,7 @@
 									<v8:content>Поиск</v8:content>
 								</v8:item>
 							</Title>
+							<Width>12</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<ContextMenu name="ПоискКонтекстноеМеню" id="164"/>
 							<ExtendedTooltip name="ПоискРасширеннаяПодсказка" id="165"/>
@@ -427,6 +430,12 @@
 						<PictureField name="КомплектПечатныхФормКартинка" id="112">
 							<DataPath>КомплектПечатныхФорм.Картинка</DataPath>
 							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Картинка</v8:content>
+								</v8:item>
+							</Title>
 							<TitleLocation>None</TitleLocation>
 							<EditMode>EnterOnInput</EditMode>
 							<Width>7</Width>
@@ -450,63 +459,65 @@
 						</InputField>
 					</ChildItems>
 				</ColumnGroup>
-				<ColumnGroup name="КомплектПечатныхФормГруппаСостояние" id="166">
+				<PictureField name="ОригиналПолученКартинка" id="138">
+					<DataPath>КомплектПечатныхФорм.ОригиналПолученКартинка</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Состояние</v8:content>
+							<v8:content>Оригинал получен картинка</v8:content>
 						</v8:item>
 					</Title>
-					<Group>InCell</Group>
-					<ExtendedTooltip name="КомплектПечатныхФормГруппаСостояниеРасширеннаяПодсказка" id="167"/>
-					<ChildItems>
-						<PictureField name="ОригиналПолученКартинка" id="138">
-							<DataPath>КомплектПечатныхФорм.ОригиналПолученКартинка</DataPath>
-							<TitleLocation>None</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<HeaderPicture>
-								<xr:Ref>CommonPicture.СостояниеОригиналаПервичногоДокументаОригиналПолучен</xr:Ref>
-								<xr:LoadTransparent>false</xr:LoadTransparent>
-							</HeaderPicture>
-							<ValuesPicture>
-								<xr:Ref>CommonPicture.КоллекцияПиктограммНаличиеОригиналаПервичногоДокумента</xr:Ref>
-								<xr:LoadTransparent>false</xr:LoadTransparent>
-							</ValuesPicture>
-							<ContextMenu name="ОригиналПолученКартинкаКонтекстноеМеню" id="139"/>
-							<ExtendedTooltip name="ОригиналПолученКартинкаРасширеннаяПодсказка" id="140"/>
-						</PictureField>
-						<InputField name="КомплектПечатныхФормСостояние" id="64">
-							<DataPath>КомплектПечатныхФорм.Состояние</DataPath>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Состояние оригинала</v8:content>
-								</v8:item>
-							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<HeaderPicture>
-								<xr:Ref>CommonPicture.СостояниеОригиналаПервичногоДокументаОригиналПолучен</xr:Ref>
-								<xr:LoadTransparent>false</xr:LoadTransparent>
-							</HeaderPicture>
-							<DropListWidth>5</DropListWidth>
-							<ContextMenu name="КомплектПечатныхФормСостояниеКонтекстноеМеню" id="65"/>
-							<ExtendedTooltip name="КомплектПечатныхФормСостояниеРасширеннаяПодсказка" id="66"/>
-							<Events>
-								<Event name="OnChange">КомплектПечатныхФормСостояниеПриИзменении</Event>
-								<Event name="ChoiceProcessing">КомплектПечатныхФормСостояниеОбработкаВыбора</Event>
-							</Events>
-						</InputField>
-					</ChildItems>
-				</ColumnGroup>
+					<TitleLocation>None</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.СостояниеОригиналаПервичногоДокументаОригиналПолучен</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</HeaderPicture>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.КоллекцияПиктограммНаличиеОригиналаПервичногоДокумента</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</ValuesPicture>
+					<ContextMenu name="ОригиналПолученКартинкаКонтекстноеМеню" id="139"/>
+					<ExtendedTooltip name="ОригиналПолученКартинкаРасширеннаяПодсказка" id="140"/>
+				</PictureField>
+				<InputField name="КомплектПечатныхФормСостояние" id="64">
+					<DataPath>КомплектПечатныхФорм.Состояние</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние оригинала</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<DropListWidth>5</DropListWidth>
+					<ContextMenu name="КомплектПечатныхФормСостояниеКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="КомплектПечатныхФормСостояниеРасширеннаяПодсказка" id="66"/>
+					<Events>
+						<Event name="OnChange">КомплектПечатныхФормСостояниеПриИзменении</Event>
+						<Event name="ChoiceProcessing">КомплектПечатныхФормСостояниеОбработкаВыбора</Event>
+					</Events>
+				</InputField>
 				<InputField name="КомплектПечатныхФормДатаПоследнегоИзменения" id="157">
 					<DataPath>КомплектПечатныхФорм.ДатаПоследнегоИзменения</DataPath>
 					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата последнего изменения</v8:content>
+						</v8:item>
+					</Title>
 					<ContextMenu name="КомплектПечатныхФормДатаПоследнегоИзмененияКонтекстноеМеню" id="158"/>
 					<ExtendedTooltip name="КомплектПечатныхФормДатаПоследнегоИзмененияРасширеннаяПодсказка" id="159"/>
 				</InputField>
 				<InputField name="КомплектПечатныхФормАвторИзменения" id="160">
 					<DataPath>КомплектПечатныхФорм.АвторИзменения</DataPath>
 					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор изменения</v8:content>
+						</v8:item>
+					</Title>
 					<ContextMenu name="КомплектПечатныхФормАвторИзмененияКонтекстноеМеню" id="161"/>
 					<ExtendedTooltip name="КомплектПечатныхФормАвторИзмененияРасширеннаяПодсказка" id="162"/>
 				</InputField>
@@ -530,6 +541,12 @@
 			<ChildItems>
 				<LabelField name="СсылкаНаДокумент" id="117">
 					<DataPath>СсылкаНаДокумент</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка на документ</v8:content>
+						</v8:item>
+					</Title>
 					<TitleLocation>None</TitleLocation>
 					<GroupVerticalAlign>Bottom</GroupVerticalAlign>
 					<Hiperlink>true</Hiperlink>
@@ -544,6 +561,12 @@
 					<DefaultButton>true</DefaultButton>
 					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 					<CommandName>Form.Command.ОК</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ОК</v8:content>
+						</v8:item>
+					</Title>
 					<ExtendedTooltip name="ОКРасширеннаяПодсказка" id="156"/>
 				</Button>
 			</ChildItems>
@@ -814,7 +837,7 @@
 	<Parameters>
 		<Parameter name="ДокументСсылка">
 			<Type>
-				<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+				<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 			</Type>
 		</Parameter>
 	</Parameters>

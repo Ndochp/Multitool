@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<CommandBarLocation>Bottom</CommandBarLocation>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
@@ -10,11 +10,23 @@
 				<Type>CommandBarButton</Type>
 				<DefaultButton>true</DefaultButton>
 				<CommandName>Form.Command.ОК</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ОК</v8:content>
+					</v8:item>
+				</Title>
 				<ExtendedTooltip name="ФормаОКРасширеннаяПодсказка" id="13"/>
 			</Button>
 			<Button name="ФормаОтмена" id="14">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.Отмена</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Отмена</v8:content>
+					</v8:item>
+				</Title>
 				<ExtendedTooltip name="ФормаОтменаРасширеннаяПодсказка" id="15"/>
 			</Button>
 		</ChildItems>
@@ -531,6 +543,7 @@
 							<ChildItems>
 								<InputField name="ВладелецАдресРегистрации" id="71">
 									<DataPath>ВладелецАдресРегистрации</DataPath>
+									<ReadOnly>true</ReadOnly>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -539,38 +552,11 @@
 									</Title>
 									<Width>65</Width>
 									<AutoMaxWidth>false</AutoMaxWidth>
-									<ChoiceButton>true</ChoiceButton>
-									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<AutoMarkIncomplete>false</AutoMarkIncomplete>
 									<TextEdit>false</TextEdit>
 									<ContextMenu name="ВладелецАдресРегистрацииКонтекстноеМеню" id="72"/>
 									<ExtendedTooltip name="ВладелецАдресРегистрацииРасширеннаяПодсказка" id="73"/>
-									<Events>
-										<Event name="StartChoice">ВладелецАдресРегистрацииНачалоВыбора</Event>
-										<Event name="Clearing">ВладелецАдресРегистрацииОчистка</Event>
-										<Event name="ChoiceProcessing">ВладелецАдресРегистрацииОбработкаВыбора</Event>
-									</Events>
 								</InputField>
-								<PictureDecoration name="ВладелецАдресРегистрацииПредупреждение" id="74">
-									<Height>1</Height>
-									<SkipOnInput>true</SkipOnInput>
-									<Title formatted="false">
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Адрес регистрации (предупреждение)</v8:content>
-										</v8:item>
-									</Title>
-									<Hyperlink>true</Hyperlink>
-									<Picture>
-										<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
-										<xr:LoadTransparent>false</xr:LoadTransparent>
-									</Picture>
-									<FileDragMode>AsFile</FileDragMode>
-									<ContextMenu name="ВладелецАдресРегистрацииПредупреждениеКонтекстноеМеню" id="75"/>
-									<ExtendedTooltip name="ВладелецАдресРегистрацииПредупреждениеРасширеннаяПодсказка" id="76"/>
-									<Events>
-										<Event name="Click">АдресПредупреждениеНажатие</Event>
-									</Events>
-								</PictureDecoration>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ГруппаЭлектроннаяПочтаИТелефон" id="88">
@@ -919,18 +905,6 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
-		</Attribute>
-		<Attribute name="ВладелецАдресРегистрацииXML" id="25">
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-		</Attribute>
-		<Attribute name="ВидКонтактнойИнформации" id="26">
-			<Type/>
 		</Attribute>
 		<Attribute name="ВидКонтактнойИнформацииТелефон" id="27">
 			<Type/>

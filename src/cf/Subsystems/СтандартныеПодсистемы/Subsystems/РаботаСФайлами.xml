@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Subsystem uuid="2009c673-c1a5-45fc-8da2-a36c435085a6">
 		<Properties>
 			<Name>РаботаСФайлами</Name>
@@ -40,7 +40,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ДействияСФайламиПоДвойномуЩелчку</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВариантыСжатияTIFF</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ФорматыХраненияМногостраничныхФайлов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Enum.ФорматыХраненияОдностраничныхФайлов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайлами</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УдалитьХранимыеФайлыВерсий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.СкопироватьРеквизитыВерсииФайловВФайл</xr:Item>
@@ -58,7 +57,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ВладелецФайлов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НаличиеФайлов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкиСинхронизацииФайлов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДвоичныеДанныеФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УдалитьДвоичныеДанныеФайлов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СведенияОФайлах</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СтатусыСинхронизацииФайловСОблачнымСервисом</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РаботаСФайлами</xr:Item>
@@ -93,7 +92,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПодписанЗашифрованСостояния</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.РабочийКаталогПоУмолчанию</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.РедактироватьФайл</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.КомпонентаСканированияДокументов_3_0_1_1021</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.КомпонентаСканированияДокументов_3_0_1_1033</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.СозданиеНачальногоОбразаСФайлами</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ФайлыВТоме</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.РедактируемыеФайлы</xr:Item>
@@ -137,6 +136,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.РежимОчисткиФайлов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.РежимыОчисткиФайлов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПутьКТомуБезУчетаРегиональныхНастроек</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ХранилищеФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ХранилищеДвоичныхДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайламиЛокализация</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

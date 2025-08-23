@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<CommandSet>
@@ -44,11 +44,23 @@
 				<Button name="ФормаВыполнитьПроверку" id="125">
 					<Type>CommandBarButton</Type>
 					<CommandName>Form.Command.ВыполнитьПроверку</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполнить проверку</v8:content>
+						</v8:item>
+					</Title>
 					<ExtendedTooltip name="ФормаВыполнитьПроверкуРасширеннаяПодсказка" id="126"/>
 				</Button>
 				<Button name="ФормаВыполнитьВсеПроверки" id="154">
 					<Type>CommandBarButton</Type>
 					<CommandName>Form.Command.ВыполнитьВсеПроверки</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполнить все</v8:content>
+						</v8:item>
+					</Title>
 					<ExtendedTooltip name="ФормаВыполнитьВсеПроверкиРасширеннаяПодсказка" id="155"/>
 				</Button>
 				<ButtonGroup name="ФормаГруппаДействий" id="123">
@@ -63,6 +75,12 @@
 						<Button name="ФормаВосстановитьПоНачальномуЗаполнению" id="145">
 							<Type>CommandBarButton</Type>
 							<CommandName>Form.Command.ВосстановитьПоНачальномуЗаполнению</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Восстановить по начальному заполнению</v8:content>
+								</v8:item>
+							</Title>
 							<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 							<ExtendedTooltip name="ФормаВосстановитьПоНачальномуЗаполнениюРасширеннаяПодсказка" id="146"/>
 						</Button>
@@ -113,6 +131,12 @@
 					<Button name="СписокКонтекстноеМенюВыполнитьПроверку" id="17">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ВыполнитьПроверку</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выполнить проверку</v8:content>
+							</v8:item>
+						</Title>
 						<ExtendedTooltip name="СписокКонтекстноеМенюВыполнитьПроверкуРасширеннаяПодсказка" id="18"/>
 					</Button>
 				</ChildItems>
@@ -197,7 +221,7 @@
 									<AutoCellHeight>true</AutoCellHeight>
 									<Width>15</Width>
 									<ContextMenu name="РегламентноеЗаданиеПредставлениеКонтекстноеМеню" id="9"/>
-									<ExtendedTooltip name="РегламентноеЗаданиеПредставлениеExtendedTooltip" id="14"/>
+									<ExtendedTooltip name="РегламентноеЗаданиеПредставлениеРасширеннаяПодсказка" id="14"/>
 								</LabelField>
 							</ChildItems>
 						</ColumnGroup>
@@ -225,7 +249,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа расписание</v8:content>
+					<v8:content>Расписание</v8:content>
 				</v8:item>
 			</Title>
 			<Representation>None</Representation>

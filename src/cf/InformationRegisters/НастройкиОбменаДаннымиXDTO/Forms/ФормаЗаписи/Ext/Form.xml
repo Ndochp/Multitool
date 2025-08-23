@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
@@ -25,7 +25,7 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Объекты формата в этой программе</v8:content>
+							<v8:content>Объекты формата в этом приложении</v8:content>
 						</v8:item>
 					</Title>
 					<ExtendedTooltip name="СтраницаНастройкиРасширеннаяПодсказка" id="13"/>
@@ -84,18 +84,36 @@
 							<ChildItems>
 								<InputField name="ПоддерживаемыеОбъектыОбъект" id="29">
 									<DataPath>ПоддерживаемыеОбъекты.Объект</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Объект</v8:content>
+										</v8:item>
+									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ПоддерживаемыеОбъектыОбъектКонтекстноеМеню" id="30"/>
 									<ExtendedTooltip name="ПоддерживаемыеОбъектыОбъектРасширеннаяПодсказка" id="31"/>
 								</InputField>
 								<InputField name="ПоддерживаемыеОбъектыВерсия" id="32">
 									<DataPath>ПоддерживаемыеОбъекты.Версия</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Версия</v8:content>
+										</v8:item>
+									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ПоддерживаемыеОбъектыВерсияКонтекстноеМеню" id="33"/>
 									<ExtendedTooltip name="ПоддерживаемыеОбъектыВерсияРасширеннаяПодсказка" id="34"/>
 								</InputField>
 								<CheckBoxField name="ПоддерживаемыеОбъектыОтправка" id="35">
 									<DataPath>ПоддерживаемыеОбъекты.Отправка</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отправка</v8:content>
+										</v8:item>
+									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ПоддерживаемыеОбъектыОтправкаКонтекстноеМеню" id="36"/>
@@ -103,6 +121,12 @@
 								</CheckBoxField>
 								<CheckBoxField name="ПоддерживаемыеОбъектыПолучение" id="38">
 									<DataPath>ПоддерживаемыеОбъекты.Получение</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Получение</v8:content>
+										</v8:item>
+									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ПоддерживаемыеОбъектыПолучениеКонтекстноеМеню" id="39"/>
@@ -175,18 +199,36 @@
 							<ChildItems>
 								<InputField name="ПоддерживаемыеОбъектыКорреспондентаОбъект" id="54">
 									<DataPath>ПоддерживаемыеОбъектыКорреспондента.Объект</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Объект</v8:content>
+										</v8:item>
+									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ПоддерживаемыеОбъектыКорреспондентаОбъектКонтекстноеМеню" id="55"/>
 									<ExtendedTooltip name="ПоддерживаемыеОбъектыКорреспондентаОбъектРасширеннаяПодсказка" id="56"/>
 								</InputField>
 								<InputField name="ПоддерживаемыеОбъектыКорреспондентаВерсия" id="57">
 									<DataPath>ПоддерживаемыеОбъектыКорреспондента.Версия</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Версия</v8:content>
+										</v8:item>
+									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ПоддерживаемыеОбъектыКорреспондентаВерсияКонтекстноеМеню" id="58"/>
 									<ExtendedTooltip name="ПоддерживаемыеОбъектыКорреспондентаВерсияРасширеннаяПодсказка" id="59"/>
 								</InputField>
 								<CheckBoxField name="ПоддерживаемыеОбъектыКорреспондентаОтправка" id="60">
 									<DataPath>ПоддерживаемыеОбъектыКорреспондента.Отправка</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отправка</v8:content>
+										</v8:item>
+									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ПоддерживаемыеОбъектыКорреспондентаОтправкаКонтекстноеМеню" id="61"/>
@@ -194,6 +236,12 @@
 								</CheckBoxField>
 								<CheckBoxField name="ПоддерживаемыеОбъектыКорреспондентаПолучение" id="63">
 									<DataPath>ПоддерживаемыеОбъектыКорреспондента.Получение</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Получение</v8:content>
+										</v8:item>
+									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ПоддерживаемыеОбъектыКорреспондентаПолучениеКонтекстноеМеню" id="64"/>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -57,6 +57,12 @@
 				<xr:Ref>CommonPicture.ПиктограммыСвойств</xr:Ref>
 				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</RowsPicture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Метки</v8:content>
+				</v8:item>
+			</Title>
 			<CommandSet>
 				<ExcludedCommand>Add</ExcludedCommand>
 				<ExcludedCommand>CancelSearch</ExcludedCommand>
@@ -67,6 +73,7 @@
 				<ExcludedCommand>Find</ExcludedCommand>
 				<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
 				<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+				<ExcludedCommand>SearchHistory</ExcludedCommand>
 				<ExcludedCommand>SelectAll</ExcludedCommand>
 				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
 			</CommandSet>
@@ -78,21 +85,45 @@
 					<Button name="МеткиКонтекстноеМенюСоздать" id="38">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.Создать</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Новая</v8:content>
+							</v8:item>
+						</Title>
 						<ExtendedTooltip name="МеткиКонтекстноеМенюСоздатьРасширеннаяПодсказка" id="39"/>
 					</Button>
 					<Button name="МеткиКонтекстноеМенюИзменить" id="40">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.Изменить</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Изменить</v8:content>
+							</v8:item>
+						</Title>
 						<ExtendedTooltip name="МеткиКонтекстноеМенюИзменитьРасширеннаяПодсказка" id="41"/>
 					</Button>
 					<Button name="МеткиКонтекстноеМенюУстановитьВсе" id="42">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.УстановитьВсе</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Установить все</v8:content>
+							</v8:item>
+						</Title>
 						<ExtendedTooltip name="МеткиКонтекстноеМенюУстановитьВсеРасширеннаяПодсказка" id="43"/>
 					</Button>
 					<Button name="МеткиКонтекстноеМенюСнятьВсе" id="44">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.СнятьВсе</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Снять все</v8:content>
+							</v8:item>
+						</Title>
 						<ExtendedTooltip name="МеткиКонтекстноеМенюСнятьВсеРасширеннаяПодсказка" id="45"/>
 					</Button>
 				</ChildItems>
@@ -142,6 +173,12 @@
 					<ChildItems>
 						<CheckBoxField name="МеткиЗначение" id="17">
 							<DataPath>Метки.Значение</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Значение</v8:content>
+								</v8:item>
+							</Title>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="МеткиЗначениеКонтекстноеМеню" id="18"/>
 							<ExtendedTooltip name="МеткиЗначениеРасширеннаяПодсказка" id="19"/>
@@ -149,6 +186,12 @@
 						<InputField name="МеткиНаименование" id="29">
 							<DataPath>Метки.Наименование</DataPath>
 							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Наименование</v8:content>
+								</v8:item>
+							</Title>
 							<ContextMenu name="МеткиНаименованиеКонтекстноеМеню" id="30"/>
 							<ExtendedTooltip name="МеткиНаименованиеРасширеннаяПодсказка" id="31"/>
 						</InputField>
@@ -225,7 +268,7 @@
 		</Attribute>
 		<Attribute name="СсылкаНаОбъект" id="9">
 			<Type>
-				<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+				<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 			</Type>
 		</Attribute>
 		<Attribute name="МеткиОбъекта" id="10">

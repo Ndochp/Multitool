@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -34,7 +34,7 @@
 						</v8:item>
 					</Title>
 					<ContextMenu name="НомерОтправленногоКонтекстноеМеню" id="8"/>
-					<ExtendedTooltip name="НомерОтправленногоExtendedTooltip" id="16"/>
+					<ExtendedTooltip name="НомерОтправленногоРасширеннаяПодсказка" id="16"/>
 				</InputField>
 				<InputField name="НомерПринятого" id="9">
 					<DataPath>НомерПринятого</DataPath>
@@ -51,7 +51,7 @@
 					<OpenButton>false</OpenButton>
 					<CreateButton>false</CreateButton>
 					<ContextMenu name="НомерПринятогоКонтекстноеМеню" id="10"/>
-					<ExtendedTooltip name="НомерПринятогоExtendedTooltip" id="17"/>
+					<ExtendedTooltip name="НомерПринятогоРасширеннаяПодсказка" id="17"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -75,7 +75,7 @@
 							<v8:content>Записать</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="ЗаписатьИзмененияУзлаExtendedTooltip" id="19"/>
+					<ExtendedTooltip name="ЗаписатьИзмененияУзлаРасширеннаяПодсказка" id="19"/>
 				</Button>
 				<Button name="Отмена" id="13">
 					<Type>CommandBarButton</Type>
@@ -86,7 +86,7 @@
 							<v8:content>Закрыть</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="ОтменаExtendedTooltip" id="20"/>
+					<ExtendedTooltip name="ОтменаРасширеннаяПодсказка" id="20"/>
 				</Button>
 			</ChildItems>
 		</CommandBar>

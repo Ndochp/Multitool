@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<HorizontalAlign>Right</HorizontalAlign>
@@ -44,11 +44,23 @@
 									<Type>UsualButton</Type>
 									<DefaultButton>true</DefaultButton>
 									<CommandName>Form.Command.РазрешитьРедактирование</CommandName>
-									<ExtendedTooltip name="ФормаРазрешитьРедактированиеExtendedTooltip" id="18"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Разрешить редактирование</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ФормаРазрешитьРедактированиеРасширеннаяПодсказка" id="18"/>
 								</Button>
 								<Button name="ФормаПроверитьИспользование" id="25">
 									<Type>UsualButton</Type>
 									<CommandName>Form.Command.ПроверитьИспользование</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Проверить использование</v8:content>
+										</v8:item>
+									</Title>
 									<ExtendedTooltip name="ФормаПроверитьИспользованиеРасширеннаяПодсказка" id="26"/>
 								</Button>
 								<CommandBar name="ДополнительныеКоманды" id="31">
@@ -73,11 +85,23 @@
 												<Button name="ФормаУстановитьФлажки" id="27">
 													<Type>CommandBarButton</Type>
 													<CommandName>Form.Command.УстановитьФлажки</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Установить флажки</v8:content>
+														</v8:item>
+													</Title>
 													<ExtendedTooltip name="ФормаУстановитьФлажкиРасширеннаяПодсказка" id="28"/>
 												</Button>
 												<Button name="ФормаСнятьФлажки" id="29">
 													<Type>CommandBarButton</Type>
 													<CommandName>Form.Command.СнятьФлажки</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Снять флажки</v8:content>
+														</v8:item>
+													</Title>
 													<ExtendedTooltip name="ФормаСнятьФлажкиРасширеннаяПодсказка" id="30"/>
 												</Button>
 											</ChildItems>
@@ -183,7 +207,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Проверить использование объекта в базе данных и убедится, что не будет рассогласования данных при изменении реквизитов</v8:content>
+					<v8:content>Проверить использование объекта в базе данных и убедиться, что не будет рассогласования данных при изменении реквизитов</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>Проверить</Action>
@@ -227,7 +251,7 @@
 		</Parameter>
 		<Parameter name="Ссылка">
 			<Type>
-				<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+				<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 			</Type>
 		</Parameter>
 		<Parameter name="АдресСсылокНаОбъекты">

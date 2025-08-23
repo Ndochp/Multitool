@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
@@ -59,6 +59,12 @@
 							<ChildItems>
 								<InputField name="ВидТелефонаПолучателей" id="26">
 									<DataPath>ВидТелефонаПолучателей</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Телефон</v8:content>
+										</v8:item>
+									</Title>
 									<OpenButton>false</OpenButton>
 									<CreateButton>false</CreateButton>
 									<ChoiceParameters>
@@ -207,12 +213,24 @@
 										<InputField name="ПолучателиПолучатель" id="14">
 											<DataPath>Получатели.Получатель</DataPath>
 											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Получатель</v8:content>
+												</v8:item>
+											</Title>
 											<ContextMenu name="ПолучателиПолучательКонтекстноеМеню" id="15"/>
 											<ExtendedTooltip name="ПолучателиПолучательРасширеннаяПодсказка" id="16"/>
 										</InputField>
 										<InputField name="ПолучателиНомерТелефона" id="17">
 											<DataPath>Получатели.Телефон</DataPath>
 											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Телефон</v8:content>
+												</v8:item>
+											</Title>
 											<ShowInHeader>false</ShowInHeader>
 											<ContextMenu name="ПолучателиНомерТелефонаКонтекстноеМеню" id="18"/>
 											<ExtendedTooltip name="ПолучателиНомерТелефонаРасширеннаяПодсказка" id="19"/>
@@ -236,6 +254,12 @@
 									<Type>CommandBarButton</Type>
 									<DefaultButton>true</DefaultButton>
 									<CommandName>Form.Command.Отправить</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отправить</v8:content>
+										</v8:item>
+									</Title>
 									<ExtendedTooltip name="ОтправитьРасширеннаяПодсказка" id="39"/>
 								</Button>
 								<Button name="Отмена" id="31">
@@ -507,11 +531,23 @@
 							<ChildItems>
 								<InputField name="РезультатРассылкиSMSПолучатель" id="95">
 									<DataPath>РезультатРассылкиSMS.Получатель</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Получатель</v8:content>
+										</v8:item>
+									</Title>
 									<ContextMenu name="РезультатРассылкиSMSПолучательКонтекстноеМеню" id="96"/>
 									<ExtendedTooltip name="РезультатРассылкиSMSПолучательРасширеннаяПодсказка" id="97"/>
 								</InputField>
 								<InputField name="РезультатРассылкиSMSКомментарий" id="98">
 									<DataPath>РезультатРассылкиSMS.Комментарий</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Комментарий</v8:content>
+										</v8:item>
+									</Title>
 									<MultiLine>true</MultiLine>
 									<HeightControlVariant>UseContentHeight</HeightControlVariant>
 									<ContextMenu name="РезультатРассылкиSMSКомментарийКонтекстноеМеню" id="99"/>
@@ -551,6 +587,12 @@
 										<InputField name="КоличествоОтправлено" id="164">
 											<DataPath>КоличествоОтправлено</DataPath>
 											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отправлено</v8:content>
+												</v8:item>
+											</Title>
 											<TitleLocation>Left</TitleLocation>
 											<ContextMenu name="КоличествоОтправленоКонтекстноеМеню" id="165"/>
 											<ExtendedTooltip name="КоличествоОтправленоРасширеннаяПодсказка" id="166"/>
@@ -558,6 +600,12 @@
 										<InputField name="КоличествоНеОтправлено" id="167">
 											<DataPath>КоличествоНеОтправлено</DataPath>
 											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Не отправлено</v8:content>
+												</v8:item>
+											</Title>
 											<TitleLocation>Left</TitleLocation>
 											<ContextMenu name="КоличествоНеОтправленоКонтекстноеМеню" id="168"/>
 											<ExtendedTooltip name="КоличествоНеОтправленоРасширеннаяПодсказка" id="169"/>

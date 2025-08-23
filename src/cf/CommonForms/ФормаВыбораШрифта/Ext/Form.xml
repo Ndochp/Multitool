@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoTitle>false</AutoTitle>
 	<AutoURL>false</AutoURL>
@@ -60,18 +60,36 @@
 							<Type>UsualButton</Type>
 							<CommandName>Form.Command.Arial</CommandName>
 							<Font ref="style:NormalTextFont" kind="StyleItem"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Arial</v8:content>
+								</v8:item>
+							</Title>
 							<ExtendedTooltip name="ФормаArialРасширеннаяПодсказка" id="5"/>
 						</Button>
 						<Button name="TimesNewRoman" id="10">
 							<Type>UsualButton</Type>
 							<CommandName>Form.Command.TimesNewRoman</CommandName>
 							<Font ref="style:NormalTextFont" faceName="Times New Roman" height="11" kind="StyleItem"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Times New Roman</v8:content>
+								</v8:item>
+							</Title>
 							<ExtendedTooltip name="TimesNewRomanРасширеннаяПодсказка" id="11"/>
 						</Button>
 						<Button name="ФормаVerdana" id="6">
 							<Type>UsualButton</Type>
 							<CommandName>Form.Command.Verdana</CommandName>
 							<Font ref="style:NormalTextFont" faceName="Verdana" height="11" kind="StyleItem"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Verdana</v8:content>
+								</v8:item>
+							</Title>
 							<ExtendedTooltip name="ФормаVerdanaРасширеннаяПодсказка" id="7"/>
 						</Button>
 						<LabelDecoration name="Декорация1" id="16">
@@ -82,6 +100,12 @@
 						<Button name="ШрифтПоУмолчанию" id="12">
 							<Type>UsualButton</Type>
 							<CommandName>Form.Command.ШрифтПоУмолчанию</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Авто</v8:content>
+								</v8:item>
+							</Title>
 							<ExtendedTooltip name="ШрифтПоУмолчаниюРасширеннаяПодсказка" id="13"/>
 						</Button>
 						<LabelDecoration name="ДругиеШрифты" id="30">

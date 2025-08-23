@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<CommandBarLocation>None</CommandBarLocation>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
@@ -30,22 +30,46 @@
 				<Button name="ПроверкаРаботоспособности" id="18">
 					<Type>CommandBarButton</Type>
 					<CommandName>Form.Command.ПроверкаРаботоспособности</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проверка работоспособности</v8:content>
+						</v8:item>
+					</Title>
 					<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 					<ExtendedTooltip name="ПроверкаРаботоспособностиРасширеннаяПодсказка" id="19"/>
 				</Button>
 				<Button name="ПроверитьПодключение" id="30">
 					<Type>CommandBarButton</Type>
 					<CommandName>Form.Command.ПроверитьПодключение</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проверить подключение</v8:content>
+						</v8:item>
+					</Title>
 					<ExtendedTooltip name="ПроверитьПодключениеРасширеннаяПодсказка" id="31"/>
 				</Button>
 				<Button name="ИзменитьРеквизитыПодключения" id="110">
 					<Type>CommandBarButton</Type>
 					<CommandName>Form.Command.ИзменитьРеквизитыПодключения</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заявление на изменение</v8:content>
+						</v8:item>
+					</Title>
 					<ExtendedTooltip name="ИзменитьРеквизитыПодключенияРасширеннаяПодсказка" id="111"/>
 				</Button>
 				<Button name="ОткрытьПредыдущееЗаявление" id="112">
 					<Type>CommandBarButton</Type>
 					<CommandName>Form.Command.ОткрытьПредыдущееЗаявление</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Открыть оформленное заявление</v8:content>
+						</v8:item>
+					</Title>
 					<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 					<ExtendedTooltip name="ОткрытьПредыдущееЗаявлениеРасширеннаяПодсказка" id="113"/>
 				</Button>
@@ -69,6 +93,12 @@
 				<Button name="ОбновитьСостояние" id="105">
 					<Type>UsualButton</Type>
 					<CommandName>Form.Command.ОбновитьСостояние</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновить состояние</v8:content>
+						</v8:item>
+					</Title>
 					<ExtendedTooltip name="ОбновитьСостояниеРасширеннаяПодсказка" id="106"/>
 				</Button>
 				<LabelField name="СостояниеОбработкиЗаявления" id="107">
@@ -196,6 +226,12 @@
 					<ChildItems>
 						<InputField name="Сертификат" id="76">
 							<DataPath>Сертификат</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сертификат</v8:content>
+								</v8:item>
+							</Title>
 							<ChoiceButton>true</ChoiceButton>
 							<ClearButton>true</ClearButton>
 							<TextEdit>false</TextEdit>
@@ -213,6 +249,12 @@
 						<Button name="ВыгрузитьСертификат" id="55">
 							<Type>UsualButton</Type>
 							<CommandName>Form.Command.ВыгрузитьСертификат</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выгрузить</v8:content>
+								</v8:item>
+							</Title>
 							<ExtendedTooltip name="ВыгрузитьСертификатРасширеннаяПодсказка" id="56"/>
 						</Button>
 						<InputField name="ПинКод" id="79">
@@ -281,6 +323,12 @@
 					<ChildItems>
 						<LabelField name="ЛичныйКабинет" id="92">
 							<DataPath>ЛичныйКабинет</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Личный кабинет</v8:content>
+								</v8:item>
+							</Title>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<Hiperlink>true</Hiperlink>
 							<ContextMenu name="ЛичныйКабинетКонтекстноеМеню" id="93"/>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
@@ -65,7 +65,7 @@
 			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
 				<Autofill>false</Autofill>
 			</AutoCommandBar>
-			<ExtendedTooltip name="СписокExtendedTooltip" id="12"/>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="12"/>
 			<SearchStringAddition name="СписокСтрокаПоиска" id="21">
 				<AdditionSource>
 					<Item>Список</Item>
@@ -95,22 +95,22 @@
 					<DataPath>Список.Description</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
-					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="13"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="13"/>
 				</LabelField>
 				<LabelField name="Приоритет" id="6">
 					<DataPath>Список.Приоритет</DataPath>
 					<ContextMenu name="ПриоритетКонтекстноеМеню" id="7"/>
-					<ExtendedTooltip name="ПриоритетExtendedTooltip" id="14"/>
+					<ExtendedTooltip name="ПриоритетРасширеннаяПодсказка" id="14"/>
 				</LabelField>
 				<LabelField name="ЦелевоеВремя" id="8">
 					<DataPath>Список.ЦелевоеВремя</DataPath>
 					<ContextMenu name="ЦелевоеВремяКонтекстноеМеню" id="9"/>
-					<ExtendedTooltip name="ЦелевоеВремяExtendedTooltip" id="15"/>
+					<ExtendedTooltip name="ЦелевоеВремяРасширеннаяПодсказка" id="15"/>
 				</LabelField>
 				<LabelField name="МинимальноДопустимыйУровень" id="10">
 					<DataPath>Список.МинимальноДопустимыйУровень</DataPath>
 					<ContextMenu name="МинимальноДопустимыйУровеньКонтекстноеМеню" id="11"/>
-					<ExtendedTooltip name="МинимальноДопустимыйУровеньExtendedTooltip" id="16"/>
+					<ExtendedTooltip name="МинимальноДопустимыйУровеньРасширеннаяПодсказка" id="16"/>
 				</LabelField>
 				<LabelField name="Ссылка" id="30">
 					<DataPath>Список.Ref</DataPath>

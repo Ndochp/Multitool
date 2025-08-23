@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -27,7 +27,7 @@
 			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаШапкаExtendedTooltip" id="19"/>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="19"/>
 			<ChildItems>
 				<UsualGroup name="ГруппаАдрес" id="16">
 					<Title>
@@ -41,16 +41,22 @@
 					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаАдресExtendedTooltip" id="20"/>
+					<ExtendedTooltip name="ГруппаАдресРасширеннаяПодсказка" id="20"/>
 					<ChildItems>
 						<InputField name="АдресПубликацииИнформационнойБазыВИнтернете" id="1">
 							<DataPath>АдресПубликацииИнформационнойБазыВИнтернете</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Адрес публикации информационной базы в интернете</v8:content>
+								</v8:item>
+							</Title>
 							<TitleLocation>Top</TitleLocation>
 							<Width>40</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<AutoMarkIncomplete>true</AutoMarkIncomplete>
 							<ContextMenu name="АдресПубликацииИнформационнойБазыВИнтернетеКонтекстноеМеню" id="2"/>
-							<ExtendedTooltip name="АдресПубликацииИнформационнойБазыВИнтернетеExtendedTooltip" id="21"/>
+							<ExtendedTooltip name="АдресПубликацииИнформационнойБазыВИнтернетеРасширеннаяПодсказка" id="21"/>
 							<Events>
 								<Event name="OnChange">АдресПубликацииИнформационнойБазыВИнтернетеПриИзменении</Event>
 							</Events>
@@ -66,7 +72,7 @@
 							</Title>
 							<VerticalAlign>Top</VerticalAlign>
 							<ContextMenu name="ДекорацияАдресКонтекстноеМеню" id="18"/>
-							<ExtendedTooltip name="ДекорацияАдресExtendedTooltip" id="22"/>
+							<ExtendedTooltip name="ДекорацияАдресРасширеннаяПодсказка" id="22"/>
 						</LabelDecoration>
 					</ChildItems>
 				</UsualGroup>
@@ -83,7 +89,7 @@
 					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаСсылкаНаОбъектExtendedTooltip" id="23"/>
+					<ExtendedTooltip name="ГруппаСсылкаНаОбъектРасширеннаяПодсказка" id="23"/>
 					<ChildItems>
 						<InputField name="СсылкаНаОбъект" id="3">
 							<DataPath>СсылкаНаОбъект</DataPath>
@@ -96,7 +102,7 @@
 							<TitleLocation>Top</TitleLocation>
 							<AutoMarkIncomplete>true</AutoMarkIncomplete>
 							<ContextMenu name="СсылкаНаОбъектКонтекстноеМеню" id="4"/>
-							<ExtendedTooltip name="СсылкаНаОбъектExtendedTooltip" id="24"/>
+							<ExtendedTooltip name="СсылкаНаОбъектРасширеннаяПодсказка" id="24"/>
 							<Events>
 								<Event name="OnChange">СсылкаНаОбъектПриИзменении</Event>
 							</Events>
@@ -114,7 +120,7 @@
 								</v8:item>
 							</Title>
 							<ContextMenu name="ДекорацияПодсказкаСсылкаНаОбъектКонтекстноеМеню" id="15"/>
-							<ExtendedTooltip name="ДекорацияПодсказкаСсылкаНаОбъектExtendedTooltip" id="25"/>
+							<ExtendedTooltip name="ДекорацияПодсказкаСсылкаНаОбъектРасширеннаяПодсказка" id="25"/>
 						</LabelDecoration>
 					</ChildItems>
 				</UsualGroup>
@@ -124,8 +130,14 @@
 			<DataPath>СформированнаяСсылка</DataPath>
 			<Visible>false</Visible>
 			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформированная ссылка</v8:content>
+				</v8:item>
+			</Title>
 			<ContextMenu name="ФормируемаяСсылкаКонтекстноеМеню" id="7"/>
-			<ExtendedTooltip name="ФормируемаяСсылкаExtendedTooltip" id="26"/>
+			<ExtendedTooltip name="ФормируемаяСсылкаРасширеннаяПодсказка" id="26"/>
 		</InputField>
 		<UsualGroup name="ГруппаПодвал" id="12">
 			<Title>
@@ -141,13 +153,19 @@
 			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаПодвалExtendedTooltip" id="27"/>
+			<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="27"/>
 			<ChildItems>
 				<Button name="Вставить" id="8">
 					<Type>UsualButton</Type>
 					<DefaultButton>true</DefaultButton>
 					<CommandName>Form.Command.Вставить</CommandName>
-					<ExtendedTooltip name="ВставитьExtendedTooltip" id="30"/>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вставить</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ВставитьРасширеннаяПодсказка" id="30"/>
 				</Button>
 				<Button name="Закрыть" id="31">
 					<Type>UsualButton</Type>

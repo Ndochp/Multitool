@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -47,6 +47,12 @@
 					<ExtendedTooltip name="НаличиеРасширенийИзменяющихСтруктуруДанныхРасширеннаяПодсказка" id="328"/>
 					<ChildItems>
 						<UsualGroup name="Группа1" id="329">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа</v8:content>
+								</v8:item>
+							</Title>
 							<Group>AlwaysHorizontal</Group>
 							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
@@ -91,7 +97,7 @@
 							<Title formatted="false">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Для создания автономного рабочего места необходимо удалить расширения, которые изменяют структуру программы.
+									<v8:content>Для создания автономного рабочего места необходимо удалить расширения, которые изменяют структуру приложения.
 Будьте внимательны, вместе с расширениями безвозвратно будут удаленны добавленные ими данные, поэтому перед удалением рекомендуется сделать резервную копию.</v8:content>
 								</v8:item>
 							</Title>
@@ -196,6 +202,12 @@
 									<ExtendedTooltip name="КартинкаСозданиеЛокальногоРабочегоМестаExtendedTooltip" id="229"/>
 								</PictureDecoration>
 								<UsualGroup name="Группа3" id="153">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа</v8:content>
+										</v8:item>
+									</Title>
 									<Group>Horizontal</Group>
 									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
@@ -231,6 +243,12 @@
 									</ChildItems>
 								</UsualGroup>
 								<UsualGroup name="Группа5" id="173">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа</v8:content>
+										</v8:item>
+									</Title>
 									<Group>Horizontal</Group>
 									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
@@ -246,6 +264,12 @@
 											<SkipOnInput>true</SkipOnInput>
 											<AutoMaxWidth>false</AutoMaxWidth>
 											<CommandName>Form.Command.КакУстановитьИлиОбновитьВерсиюПлатформы1СПредприятие</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Как установить или обновить версию платформы 1С:Предприятие</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="КакУстановитьИлиОбновитьВерсиюПлатформы1СПредприятиеExtendedTooltip" id="235"/>
 										</Button>
 									</ChildItems>
@@ -312,6 +336,12 @@
 									</ExtendedTooltip>
 								</InputField>
 								<UsualGroup name="Группа2" id="143">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа</v8:content>
+										</v8:item>
+									</Title>
 									<Group>Horizontal</Group>
 									<Behavior>Usual</Behavior>
 									<Representation>NormalSeparation</Representation>
@@ -321,6 +351,12 @@
 										<Button name="НастроитьОграниченияПередачиДанных" id="105">
 											<Type>UsualButton</Type>
 											<CommandName>Form.Command.НастроитьОграниченияПередачиДанных</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Изменить...</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="НастроитьОграниченияПередачиДанныхExtendedTooltip" id="242"/>
 										</Button>
 										<LabelDecoration name="ОписаниеОграниченийПередачиДанных" id="206">
@@ -408,6 +444,12 @@
 											<ChildItems>
 												<CheckBoxField name="ПользователиРазрешитьСинхронизациюДанных" id="224">
 													<DataPath>ПользователиСинхронизации.РазрешитьСинхронизациюДанных</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Разрешить синхронизацию данных</v8:content>
+														</v8:item>
+													</Title>
 													<EditMode>EnterOnInput</EditMode>
 													<CheckBoxType>Auto</CheckBoxType>
 													<ContextMenu name="ПользователиРазрешитьСинхронизациюДанныхКонтекстноеМеню" id="225"/>
@@ -416,6 +458,12 @@
 												<InputField name="ПользователиПользователь" id="216">
 													<DataPath>ПользователиСинхронизации.Пользователь</DataPath>
 													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Пользователь</v8:content>
+														</v8:item>
+													</Title>
 													<EditMode>EnterOnInput</EditMode>
 													<AutoMaxWidth>false</AutoMaxWidth>
 													<ContextMenu name="ПользователиПользовательКонтекстноеМеню" id="217"/>
@@ -430,7 +478,7 @@
 												<v8:item>
 													<v8:lang>ru</v8:lang>
 													<v8:content>Указанные пользователи могут выполнять синхронизацию данных
-с любыми автономными рабочими местами и другими программами.</v8:content>
+с любыми автономными рабочими местами и другими приложениями.</v8:content>
 												</v8:item>
 											</Title>
 											<ContextMenu name="Декорация6КонтекстноеМеню" id="223"/>
@@ -614,29 +662,59 @@
 							<ExtendedTooltip name="Декорация1ExtendedTooltip" id="262"/>
 						</LabelDecoration>
 						<UsualGroup name="Группа9" id="201">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа</v8:content>
+								</v8:item>
+							</Title>
 							<Group>Vertical</Group>
 							<Behavior>Usual</Behavior>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа9ExtendedTooltip" id="263"/>
 							<ChildItems>
 								<CommandBar name="Группа6" id="180">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа</v8:content>
+										</v8:item>
+									</Title>
 									<CommandSource>Item.ИнструкцияПоНастройкеАвтономногоРабочегоМеста</CommandSource>
 									<ExtendedTooltip name="Группа6ExtendedTooltip" id="264"/>
 									<ChildItems>
 										<Button name="ИнструкцияПоНастройкеАвтономногоРабочегоМестаСохранитьИнструкциюКак" id="209">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.СохранитьИнструкциюКак</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Загрузить</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="ИнструкцияПоНастройкеАвтономногоРабочегоМестаСохранитьИнструкциюКакExtendedTooltip" id="266"/>
 										</Button>
 										<Button name="ИнструкцияПоНастройкеАвтономногоРабочегоМестаПечатьИнструкции" id="208">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.ПечатьИнструкции</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Печать</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="ИнструкцияПоНастройкеАвтономногоРабочегоМестаПечатьИнструкцииExtendedTooltip" id="265"/>
 										</Button>
 									</ChildItems>
 								</CommandBar>
 								<HTMLDocumentField name="ИнструкцияПоНастройкеАвтономногоРабочегоМеста" id="171">
 									<DataPath>ИнструкцияПоНастройкеАвтономногоРабочегоМеста</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Инструкция по настройке автономного рабочего места</v8:content>
+										</v8:item>
+									</Title>
 									<TitleLocation>None</TitleLocation>
 									<ContextMenu name="ИнструкцияПоНастройкеАвтономногоРабочегоМестаКонтекстноеМеню" id="172"/>
 									<ExtendedTooltip name="ИнструкцияПоНастройкеАвтономногоРабочегоМестаExtendedTooltip" id="267"/>
@@ -659,6 +737,12 @@
 					<ExtendedTooltip name="ОшибкаВыполненияРасширеннаяПодсказка" id="357"/>
 					<ChildItems>
 						<UsualGroup name="Группа7" id="358">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа</v8:content>
+								</v8:item>
+							</Title>
 							<Group>AlwaysHorizontal</Group>
 							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
@@ -675,6 +759,12 @@
 									<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="362"/>
 								</PictureDecoration>
 								<UsualGroup name="Группа8" id="363">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа</v8:content>
+										</v8:item>
+									</Title>
 									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
@@ -721,6 +811,12 @@
 						<InputField name="ТекстОшибкиВыполнения" id="371">
 							<DataPath>ТекстОшибкиВыполнения</DataPath>
 							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Текст ошибки выполнения</v8:content>
+								</v8:item>
+							</Title>
 							<TitleLocation>None</TitleLocation>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<AutoMaxHeight>false</AutoMaxHeight>
@@ -778,6 +874,12 @@
 											<Type>CommandBarButton</Type>
 											<Visible>false</Visible>
 											<CommandName>Form.Command.КомандаНазад</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>&lt; Назад</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="КомандаНазадExtendedTooltip" id="272"/>
 										</Button>
 									</ChildItems>
@@ -798,11 +900,23 @@
 											<DefaultButton>true</DefaultButton>
 											<DefaultItem>true</DefaultItem>
 											<CommandName>Form.Command.КомандаДалее</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Далее &gt;</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="КомандаДалееExtendedTooltip" id="273"/>
 										</Button>
 										<Button name="КомандаОтмена" id="61">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.КомандаОтмена</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отмена</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="КомандаОтменаExtendedTooltip" id="274"/>
 										</Button>
 										<Button name="Справка" id="62">
@@ -837,6 +951,12 @@
 										<Button name="КомандаНазад1" id="65">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.КомандаНазад</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>&lt; Назад</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="КомандаНазад1ExtendedTooltip" id="278"/>
 										</Button>
 									</ChildItems>
@@ -872,6 +992,12 @@
 										<Button name="КомандаОтмена1" id="67">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.КомандаОтмена</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отмена</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="КомандаОтмена1ExtendedTooltip" id="280"/>
 										</Button>
 										<Button name="Справка1" id="68">
@@ -907,6 +1033,12 @@
 											<Type>CommandBarButton</Type>
 											<Enabled>false</Enabled>
 											<CommandName>Form.Command.КомандаНазад</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>&lt; Назад</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="КомандаНазад2ExtendedTooltip" id="284"/>
 										</Button>
 									</ChildItems>
@@ -925,12 +1057,24 @@
 										<Button name="КомандаГотово" id="72">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.КомандаГотово</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Готово</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="КомандаГотовоExtendedTooltip" id="285"/>
 										</Button>
 										<Button name="КомандаОтмена2" id="73">
 											<Type>CommandBarButton</Type>
 											<Enabled>false</Enabled>
 											<CommandName>Form.Command.КомандаОтмена</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отмена</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="КомандаОтмена2ExtendedTooltip" id="286"/>
 										</Button>
 										<Button name="Справка2" id="74">
@@ -968,6 +1112,12 @@
 											<Type>CommandBarButton</Type>
 											<Enabled>false</Enabled>
 											<CommandName>Form.Command.КомандаНазад</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>&lt; Назад</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="КомандаНазад3ExtendedTooltip" id="290"/>
 										</Button>
 									</ChildItems>
@@ -998,6 +1148,12 @@
 										<Button name="КомандаОтмена3" id="79">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.КомандаОтмена</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отмена</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="КомандаОтмена3ExtendedTooltip" id="292"/>
 										</Button>
 										<Button name="Справка3" id="80">

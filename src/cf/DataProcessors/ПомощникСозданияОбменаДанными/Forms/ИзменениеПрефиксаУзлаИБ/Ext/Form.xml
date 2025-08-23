@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -61,6 +61,12 @@
 							<ExtendedTooltip name="СтраницаУстановкаПрефиксаРасширеннаяПодсказка" id="104"/>
 							<ChildItems>
 								<UsualGroup name="Группа2" id="204">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа</v8:content>
+										</v8:item>
+									</Title>
 									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
@@ -103,6 +109,12 @@
 								</PictureDecoration>
 								<InputField name="НовыйПрефиксИБ" id="167">
 									<DataPath>НовыйПрефиксИБ</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Новый префикс ИБ</v8:content>
+										</v8:item>
+									</Title>
 									<Mask>NN</Mask>
 									<ContextMenu name="НовыйПрефиксИБКонтекстноеМеню" id="168"/>
 									<ExtendedTooltip name="НовыйПрефиксИБРасширеннаяПодсказка" id="169"/>
@@ -177,6 +189,12 @@
 									<ExtendedTooltip name="КартинкаПредупреждениеОшибкаРасширеннаяПодсказка" id="178"/>
 								</PictureDecoration>
 								<UsualGroup name="Группа1" id="222">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа</v8:content>
+										</v8:item>
+									</Title>
 									<Group>Vertical</Group>
 									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
@@ -196,6 +214,12 @@
 										<Button name="АктивныеПользователи" id="227">
 											<Type>Hyperlink</Type>
 											<CommandName>Form.Command.АктивныеПользователи</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Активные пользователи</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="АктивныеПользователиРасширеннаяПодсказка" id="228"/>
 										</Button>
 										<LabelDecoration name="ДекорацияПояснениеПоОшибке" id="229">
@@ -299,6 +323,12 @@
 											<Type>CommandBarButton</Type>
 											<Visible>false</Visible>
 											<CommandName>Form.Command.КомандаНазад</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>&lt; Назад</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="КомандаНазадExtendedTooltip" id="125"/>
 										</Button>
 									</ChildItems>
@@ -319,11 +349,23 @@
 											<DefaultButton>true</DefaultButton>
 											<DefaultItem>true</DefaultItem>
 											<CommandName>Form.Command.КомандаДалее</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Далее &gt;</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="КомандаДалееExtendedTooltip" id="126"/>
 										</Button>
 										<Button name="КомандаОтмена" id="73">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.КомандаОтмена</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отмена</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="КомандаОтменаExtendedTooltip" id="127"/>
 										</Button>
 									</ChildItems>
@@ -363,6 +405,12 @@
 										<Button name="КомандаОтмена3" id="88">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.КомандаОтмена</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отмена</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="КомандаОтмена3ExtendedTooltip" id="145"/>
 										</Button>
 									</ChildItems>
@@ -391,6 +439,12 @@
 										<Button name="КомандаВНачало" id="196">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.КомандаВНачало</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>&lt; Назад</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="КомандаВНачалоРасширеннаяПодсказка" id="197"/>
 										</Button>
 									</ChildItems>
@@ -409,11 +463,23 @@
 										<Button name="ПовторитьВМонопольномРежиме" id="218">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.ПовторитьВМонопольномРежиме</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Повторить в монопольном режиме</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="ПовторитьВМонопольномРежимеРасширеннаяПодсказка" id="219"/>
 										</Button>
 										<Button name="КомандаОтмена1" id="78">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.КомандаОтмена</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отмена</v8:content>
+												</v8:item>
+											</Title>
 											<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 											<ExtendedTooltip name="КомандаОтмена1ExtendedTooltip" id="133"/>
 										</Button>
@@ -454,12 +520,24 @@
 										<Button name="КомандаГотово" id="90">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.КомандаГотово</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Готово</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="КомандаГотовоExtendedTooltip" id="138"/>
 										</Button>
 										<Button name="КомандаОтмена2" id="83">
 											<Type>CommandBarButton</Type>
 											<Enabled>false</Enabled>
 											<CommandName>Form.Command.КомандаОтмена</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отмена</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedTooltip name="КомандаОтмена2ExtendedTooltip" id="139"/>
 										</Button>
 									</ChildItems>
@@ -472,16 +550,6 @@
 		</UsualGroup>
 	</ChildItems>
 	<Attributes>
-		<Attribute name="Объект" id="1">
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-			<MainAttribute>true</MainAttribute>
-		</Attribute>
 		<Attribute name="ПорядковыйНомерПерехода" id="2">
 			<Type>
 				<v8:Type>xs:decimal</v8:Type>

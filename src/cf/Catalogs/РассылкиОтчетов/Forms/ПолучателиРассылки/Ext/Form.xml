@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoTitle>false</AutoTitle>
 	<MobileDeviceCommandBarContent>
@@ -29,6 +29,12 @@
 	<ChildItems>
 		<InputField name="ВидПочтовогоАдресаПолучателей" id="41">
 			<DataPath>ВидПочтовогоАдресаПолучателей</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Электронная почта</v8:content>
+				</v8:item>
+			</Title>
 			<CreateButton>false</CreateButton>
 			<QuickChoice>true</QuickChoice>
 			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
@@ -88,11 +94,23 @@
 					<Button name="Подобрать" id="74">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ПолучателиПодобрать</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Подобрать</v8:content>
+							</v8:item>
+						</Title>
 						<ExtendedTooltip name="ПодобратьРасширеннаяПодсказка" id="75"/>
 					</Button>
 					<Button name="ВставитьИзБуфераОбмена" id="95">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ВставитьИзБуфераОбмена</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Вставить из буфера обмена</v8:content>
+							</v8:item>
+						</Title>
 						<ExtendedTooltip name="ВставитьИзБуфераОбменаРасширеннаяПодсказка" id="96"/>
 					</Button>
 					<ButtonGroup name="ПолучателиГруппаПометки" id="106">
@@ -108,11 +126,23 @@
 							<Button name="ПолучателиУстановитьПометки" id="108">
 								<Type>CommandBarButton</Type>
 								<CommandName>Form.Command.УстановитьПометки</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Установить пометки</v8:content>
+									</v8:item>
+								</Title>
 								<ExtendedTooltip name="ПолучателиУстановитьПометкиРасширеннаяПодсказка" id="109"/>
 							</Button>
 							<Button name="ПолучателиСнятьПометки" id="110">
 								<Type>CommandBarButton</Type>
 								<CommandName>Form.Command.СнятьПометки</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Снять пометки</v8:content>
+									</v8:item>
+								</Title>
 								<ExtendedTooltip name="ПолучателиСнятьПометкиРасширеннаяПодсказка" id="111"/>
 							</Button>
 						</ChildItems>
@@ -192,6 +222,7 @@
 			</SearchControlAddition>
 			<Events>
 				<Event name="BeforeAddRow">ПолучателиПередНачаломДобавления</Event>
+				<Event name="BeforeEditEnd">ПолучателиПередОкончаниемРедактирования</Event>
 				<Event name="ChoiceProcessing">ПолучателиОбработкаВыбора</Event>
 				<Event name="AfterDeleteRow">ПолучателиПослеУдаления</Event>
 			</Events>
@@ -209,13 +240,26 @@
 					<ChildItems>
 						<InputField name="ПолучателиПолучатель" id="68">
 							<DataPath>Получатели.Получатель</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Получатель</v8:content>
+								</v8:item>
+							</Title>
 							<EditMode>EnterOnInput</EditMode>
 							<Width>10</Width>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
 							<ContextMenu name="ПолучателиПолучательКонтекстноеМеню" id="69"/>
 							<ExtendedTooltip name="ПолучателиПолучательРасширеннаяПодсказка" id="70"/>
 						</InputField>
 						<InputField name="ПолучателиТЗАдрес" id="80">
 							<DataPath>Получатели.Адрес</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Адрес</v8:content>
+								</v8:item>
+							</Title>
 							<EditMode>EnterOnInput</EditMode>
 							<ShowInHeader>false</ShowInHeader>
 							<Width>20</Width>
@@ -226,6 +270,12 @@
 				</ColumnGroup>
 				<CheckBoxField name="ПолучателиИсключен" id="71">
 					<DataPath>Получатели.Исключен</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исключен</v8:content>
+						</v8:item>
+					</Title>
 					<EditMode>EnterOnInput</EditMode>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ПолучателиИсключенКонтекстноеМеню" id="72"/>
@@ -268,12 +318,24 @@
 						<InputField name="ИтогВсего" id="119">
 							<DataPath>ИтогВсего</DataPath>
 							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Всего</v8:content>
+								</v8:item>
+							</Title>
 							<ContextMenu name="ИтогВсегоКонтекстноеМеню" id="120"/>
 							<ExtendedTooltip name="ИтогВсегоРасширеннаяПодсказка" id="121"/>
 						</InputField>
 						<InputField name="ИтогИсключены" id="122">
 							<DataPath>ИтогИсключены</DataPath>
 							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Исключены</v8:content>
+								</v8:item>
+							</Title>
 							<ContextMenu name="ИтогИсключеныКонтекстноеМеню" id="123"/>
 							<ExtendedTooltip name="ИтогИсключеныРасширеннаяПодсказка" id="124"/>
 						</InputField>
@@ -295,6 +357,12 @@
 							<Type>CommandBarButton</Type>
 							<DefaultButton>true</DefaultButton>
 							<CommandName>Form.Command.ОК</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ОК</v8:content>
+								</v8:item>
+							</Title>
 							<ExtendedTooltip name="ОКРасширеннаяПодсказка" id="50"/>
 						</Button>
 						<Button name="ФормаЗакрыть" id="39">

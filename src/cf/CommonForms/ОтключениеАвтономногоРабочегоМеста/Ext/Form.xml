@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -39,6 +39,12 @@
 					<ExtendedTooltip name="НачалоExtendedTooltip" id="32"/>
 					<ChildItems>
 						<UsualGroup name="Группа7" id="15">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа</v8:content>
+								</v8:item>
+							</Title>
 							<Group>Horizontal</Group>
 							<VerticalAlign>Center</VerticalAlign>
 							<Behavior>Usual</Behavior>
@@ -86,6 +92,12 @@
 					<ExtendedTooltip name="ОжиданиеExtendedTooltip" id="36"/>
 					<ChildItems>
 						<UsualGroup name="Группа8" id="9">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа</v8:content>
+								</v8:item>
+							</Title>
 							<Group>Horizontal</Group>
 							<VerticalAlign>Center</VerticalAlign>
 							<Behavior>Usual</Behavior>
@@ -132,6 +144,12 @@
 					<ExtendedTooltip name="ЗавершениеExtendedTooltip" id="40"/>
 					<ChildItems>
 						<UsualGroup name="Группа9" id="3">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа</v8:content>
+								</v8:item>
+							</Title>
 							<Group>Horizontal</Group>
 							<VerticalAlign>Center</VerticalAlign>
 							<Behavior>Usual</Behavior>
@@ -188,6 +206,12 @@
 					<ExtendedTooltip name="СтраницаНавигацииНачалоExtendedTooltip" id="45"/>
 					<ChildItems>
 						<CommandBar name="Группа5" id="28">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа</v8:content>
+								</v8:item>
+							</Title>
 							<HorizontalLocation>Right</HorizontalLocation>
 							<ExtendedTooltip name="Группа5ExtendedTooltip" id="46"/>
 							<ChildItems>
@@ -195,11 +219,23 @@
 									<Type>CommandBarButton</Type>
 									<DefaultButton>true</DefaultButton>
 									<CommandName>Form.Command.ПрекратитьСинхронизациюДанных</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Прекратить синхронизацию данных</v8:content>
+										</v8:item>
+									</Title>
 									<ExtendedTooltip name="ПрекратитьСинхронизациюДанныхExtendedTooltip" id="47"/>
 								</Button>
 								<Button name="Отменить" id="30">
 									<Type>CommandBarButton</Type>
 									<CommandName>Form.Command.Отменить</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отменить</v8:content>
+										</v8:item>
+									</Title>
 									<ExtendedTooltip name="ОтменитьExtendedTooltip" id="48"/>
 								</Button>
 							</ChildItems>
@@ -221,6 +257,12 @@
 						<CommandBar name="Группа6" id="22">
 							<Enabled>false</Enabled>
 							<EnableContentChange>true</EnableContentChange>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа</v8:content>
+								</v8:item>
+							</Title>
 							<HorizontalLocation>Right</HorizontalLocation>
 							<ExtendedTooltip name="Группа6ExtendedTooltip" id="50"/>
 							<ChildItems>
@@ -228,6 +270,12 @@
 									<Type>CommandBarButton</Type>
 									<Enabled>false</Enabled>
 									<CommandName>Form.Command.Закрыть</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Закрыть</v8:content>
+										</v8:item>
+									</Title>
 									<ExtendedTooltip name="ЗакрытьExtendedTooltip" id="51"/>
 								</Button>
 							</ChildItems>
@@ -246,12 +294,24 @@
 					<ChildItems>
 						<CommandBar name="Группа14" id="25">
 							<EnableContentChange>true</EnableContentChange>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа</v8:content>
+								</v8:item>
+							</Title>
 							<HorizontalLocation>Right</HorizontalLocation>
 							<ExtendedTooltip name="Группа14ExtendedTooltip" id="53"/>
 							<ChildItems>
 								<Button name="Закрыть1" id="26">
 									<Type>CommandBarButton</Type>
 									<CommandName>Form.Command.Закрыть</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Закрыть</v8:content>
+										</v8:item>
+									</Title>
 									<ExtendedTooltip name="Закрыть1ExtendedTooltip" id="54"/>
 								</Button>
 							</ChildItems>
