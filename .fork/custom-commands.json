@@ -1,0 +1,15 @@
+[
+  {
+    "version" : 2
+  },
+  {
+    "action" : {
+      "script" : "git checkout *.html",
+      "showOutput" : true,
+      "type" : "sh",
+      "waitForExit" : true
+    },
+    "name" : "Сбросить HTML",
+    "target" : "file"
+  }
+]
