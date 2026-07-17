@@ -28,7 +28,7 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="3a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d">
+			<Attribute uuid="9fcf5003-66d8-458b-b4a7-d16ad1a3a051">
 				<Properties>
 					<Name>БазовыйURL</Name>
 					<Synonym>
@@ -45,17 +45,28 @@
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
-					<FillChecking>ShowError</FillChecking>
-					<FillValue xsi:type="xs:string"/>
-					<MultiLanguage>false</MultiLanguage>
-					<AutoFill/>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
 					<ToolTip/>
-					<DataHistory>Use</DataHistory>
-					<Indexing>None</Indexing>
-					<FullTextSearch>DontUse</FullTextSearch>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b">
+			<Attribute uuid="eb1f64ef-1044-4b31-a860-4e6aeaeb5e8f">
 				<Properties>
 					<Name>Токен</Name>
 					<Synonym>
@@ -72,14 +83,25 @@
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
-					<FillChecking>ShowError</FillChecking>
-					<FillValue xsi:type="xs:string"/>
-					<MultiLanguage>false</MultiLanguage>
-					<AutoFill/>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
 					<ToolTip/>
-					<DataHistory>Use</DataHistory>
-					<Indexing>None</Indexing>
-					<FullTextSearch>DontUse</FullTextSearch>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
 		</ChildObjects>
