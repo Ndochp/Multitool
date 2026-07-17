@@ -1872,6 +1872,7 @@
 			<DataProcessor>УправлениеИтогамиИАгрегатами</DataProcessor>
 			<DataProcessor>УправлениеПодключениемDSS</DataProcessor>
 			<DataProcessor>УстановкаОбновлений</DataProcessor>
+			<DataProcessor>ИнтеграцияGitlab</DataProcessor>
 			<InformationRegister>БезопасноеХранилищеДанных</InformationRegister>
 			<InformationRegister>ДвоичныеДанныеФайлов</InformationRegister>
 			<InformationRegister>ДампыПлатформы</InformationRegister>
