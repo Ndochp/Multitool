@@ -68,6 +68,8 @@
 			<Role>tst_ОсновнаяРоль</Role>
 			<CommonModule>тест_Gitlab</CommonModule>
 			<CommonModule>тест_GitlabКлиент</CommonModule>
+			<CommonModule>КоннекторHTTP</CommonModule>
+			<DataProcessor>ИнтеграцияGitlab</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
