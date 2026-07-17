@@ -1,0 +1,32 @@
+{
+  "reportPath": "D:\\GIT_REPO\\Multitool\\build\\yaxUnitReport.json",
+  "closeAfterTests": false,
+  "filter": {
+    "extensions": [
+      "test"
+    ]
+  },
+  "settings": {
+    "ВТранзакции": false
+  },
+  "reportFormat": "dumpjson",
+  "reports": [],
+  "showReport": false,
+  "logging": {
+    "file": "D:\\GIT_REPO\\Multitool\\build\\yaxUnit.log",
+    "console": false,
+    "enable": null,
+    "level": "debug"
+  },
+  "exitCode": "D:\\GIT_REPO\\Multitool\\build\\yaxUnit.Res",
+  "projectPath": "D:\\GIT_REPO",
+  "workspacePath": "",
+  "ДымовыеТесты": false,
+  "rpc": {
+    "port": 0,
+    "enable": false,
+    "key": "",
+    "transport": "ws"
+  },
+  "ПодключатьВнешниеКомпоненты": true
+}
