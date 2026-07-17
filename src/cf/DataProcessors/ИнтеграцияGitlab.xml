@@ -27,6 +27,61 @@
 			<ExtendedPresentation/>
 			<Explanation/>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Attribute uuid="3a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d">
+				<Properties>
+					<Name>БазовыйURL</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Базовый URL</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Базовый URL GitLab сервера, например https://gitlab.example.com</Comment>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<FillChecking>ShowError</FillChecking>
+					<FillValue xsi:type="xs:string"/>
+					<MultiLanguage>false</MultiLanguage>
+					<AutoFill/>
+					<ToolTip/>
+					<DataHistory>Use</DataHistory>
+					<Indexing>None</Indexing>
+					<FullTextSearch>DontUse</FullTextSearch>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b">
+				<Properties>
+					<Name>Токен</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Токен</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Персональный токен доступа GitLab (PRIVATE-TOKEN)</Comment>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<FillChecking>ShowError</FillChecking>
+					<FillValue xsi:type="xs:string"/>
+					<MultiLanguage>false</MultiLanguage>
+					<AutoFill/>
+					<ToolTip/>
+					<DataHistory>Use</DataHistory>
+					<Indexing>None</Indexing>
+					<FullTextSearch>DontUse</FullTextSearch>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>
