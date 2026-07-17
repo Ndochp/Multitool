@@ -271,6 +271,7 @@
 			<Subsystem>Jenkins</Subsystem>
 			<Subsystem>ДополнительныеБиблиотеки</Subsystem>
 			<Subsystem>Project</Subsystem>
+			<Subsystem>ВнешниеНаработки</Subsystem>
 			<StyleItem>ВажнаяНадписьШрифт</StyleItem>
 			<StyleItem>ВидДняПроизводственногоКалендаряПраздникЦвет</StyleItem>
 			<StyleItem>ГруппаВариантовОтчетовОбычнаяШрифт</StyleItem>
@@ -1279,6 +1280,7 @@
 			<CommonModule>ЗадачиКлиент</CommonModule>
 			<CommonModule>мт_ОбщегоНазначенияВызовСервера</CommonModule>
 			<CommonModule>мт_УкрашательТекстов</CommonModule>
+			<CommonModule>КоннекторHTTP</CommonModule>
 			<ExchangePlan>ОбновлениеИнформационнойБазы</ExchangePlan>
 			<XDTOPackage>ApdexExport</XDTOPackage>
 			<XDTOPackage>ApdexExport_1_0_0_3</XDTOPackage>
