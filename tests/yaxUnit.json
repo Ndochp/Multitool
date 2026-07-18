@@ -11,7 +11,7 @@
   },
   "reportFormat": "dumpjson",
   "reports": [],
-  "showReport": false,
+  "showReport": true,
   "logging": {
     "file": "D:\\GIT_REPO\\Multitool\\build\\yaxUnit.log",
     "console": false,
@@ -19,7 +19,7 @@
     "level": "debug"
   },
   "exitCode": "D:\\GIT_REPO\\Multitool\\build\\yaxUnit.Res",
-  "projectPath": "D:\\GIT_REPO",
+  "projectPath": "D:\\GIT_REPO\\Multitool",
   "workspacePath": "",
   "ДымовыеТесты": false,
   "rpc": {
