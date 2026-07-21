@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="грНомерДата" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гр номер дата</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гр номер дата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="грНомерДатаРасширеннаяПодсказка" id="39"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="грНачалоОкончание" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гр начало окончание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гр начало окончание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="грНачалоОкончаниеРасширеннаяПодсказка" id="47"/>
+			<ChildItems>
+				<InputField name="НачалоРаботы" id="43">
+					<DataPath>Объект.НачалоРаботы</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>С</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НачалоРаботыКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="НачалоРаботыРасширеннаяПодсказка" id="45"/>
+				</InputField>
+				<InputField name="ОкончаниеРаботы" id="7">
+					<DataPath>Объект.ОкончаниеРаботы</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОкончаниеРаботыКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ОкончаниеРаботыРасширеннаяПодсказка" id="9"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ОтчетЗаДень" id="10">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ОтчетЗаДень</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ОтчетЗаДеньКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="ОтчетЗаДеньКоманднаяПанель" id="12"/>
+			<ExtendedTooltip name="ОтчетЗаДеньРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="ОтчетЗаДеньСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>ОтчетЗаДень</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОтчетЗаДеньСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ОтчетЗаДеньСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ОтчетЗаДеньСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>ОтчетЗаДень</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОтчетЗаДеньСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ОтчетЗаДеньСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ОтчетЗаДеньУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>ОтчетЗаДень</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ОтчетЗаДеньУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ОтчетЗаДеньУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ОтчетЗаДеньСтатусСинхронизации" id="40">
+					<DataPath>Объект.ОтчетЗаДень.СтатусСинхронизации</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтчетЗаДеньСтатусСинхронизацииКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ОтчетЗаДеньСтатусСинхронизацииРасширеннаяПодсказка" id="42"/>
+				</InputField>
+				<InputField name="ОтчетЗаДеньНачало" id="26">
+					<DataPath>Объект.ОтчетЗаДень.Начало</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтчетЗаДеньНачалоКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ОтчетЗаДеньНачалоРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ОтчетЗаДеньОкончание" id="29">
+					<DataPath>Объект.ОтчетЗаДень.Окончание</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтчетЗаДеньОкончаниеКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ОтчетЗаДеньОкончаниеРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ОтчетЗаДеньТикет" id="32">
+					<DataPath>Объект.ОтчетЗаДень.Тикет</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтчетЗаДеньТикетКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ОтчетЗаДеньТикетРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ОтчетЗаДеньОписание" id="35">
+					<DataPath>Объект.ОтчетЗаДень.Описание</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтчетЗаДеньОписаниеКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ОтчетЗаДеньОписаниеРасширеннаяПодсказка" id="37"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ЛУРВ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+			<Columns>
+				<AdditionalColumns table="Объект.ОтчетЗаДень">
+					<Column name="СтатусСинхронизации" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Статус</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+	</Attributes>
+</Form>
