@@ -1877,6 +1877,7 @@
 			<DataProcessor>УправлениеПодключениемDSS</DataProcessor>
 			<DataProcessor>УстановкаОбновлений</DataProcessor>
 			<DataProcessor>ИнтеграцияGitlab</DataProcessor>
+			<DataProcessor>GitlabTimeLog</DataProcessor>
 			<InformationRegister>БезопасноеХранилищеДанных</InformationRegister>
 			<InformationRegister>ДвоичныеДанныеФайлов</InformationRegister>
 			<InformationRegister>ДампыПлатформы</InformationRegister>

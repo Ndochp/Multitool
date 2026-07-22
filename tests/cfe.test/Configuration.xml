@@ -70,6 +70,7 @@
 			<CommonModule>тест_GitlabКлиент</CommonModule>
 			<CommonModule>КоннекторHTTP</CommonModule>
 			<DataProcessor>ИнтеграцияGitlab</DataProcessor>
+			<DataProcessor>GitlabTimeLog</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

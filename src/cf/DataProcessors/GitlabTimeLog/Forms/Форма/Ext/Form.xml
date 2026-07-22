@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПолучитьДанныеПоДате" id="50">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПолучитьДанныеПоДате</CommandName>
+				<ExtendedTooltip name="ФормаПолучитьДанныеПоДатеРасширеннаяПодсказка" id="51"/>
+			</Button>
+			<Button name="ФормаПолучитьДанныеСДаты" id="52">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПолучитьДанныеСДаты</CommandName>
+				<ExtendedTooltip name="ФормаПолучитьДанныеСДатыРасширеннаяПодсказка" id="53"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="BaseURL" id="44">
+			<DataPath>Объект.BaseURL</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="BaseURLКонтекстноеМеню" id="45"/>
+			<ExtendedTooltip name="BaseURLРасширеннаяПодсказка" id="46"/>
+		</InputField>
+		<InputField name="Токен" id="47">
+			<DataPath>Объект.Токен</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ТокенКонтекстноеМеню" id="48"/>
+			<ExtendedTooltip name="ТокенРасширеннаяПодсказка" id="49"/>
+		</InputField>
+		<InputField name="userID" id="1">
+			<DataPath>Объект.userID</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="userIDКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="userIDРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="After" id="4">
+			<DataPath>Объект.After</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="AfterКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="AfterРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Date" id="7">
+			<DataPath>Объект.Date</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="DateКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="DateРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<Table name="Таймлог" id="10">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Таймлог</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаймлогКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="ТаймлогКоманднаяПанель" id="12">
+				<ChildItems>
+					<Button name="СоздатьТекущуюЗапись" id="54">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СоздатьТекущуюЗапись</CommandName>
+						<ExtendedTooltip name="СоздатьТекущуюЗаписьРасширеннаяПодсказка" id="55"/>
+					</Button>
+					<Button name="ТаймлогУдалитьТекущуюЗапись" id="56">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.УдалитьТекущуюЗапись</CommandName>
+						<ExtendedTooltip name="ТаймлогУдалитьТекущуюЗаписьРасширеннаяПодсказка" id="57"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаймлогРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="ТаймлогСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>Таймлог</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаймлогСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ТаймлогСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаймлогСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>Таймлог</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаймлогСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ТаймлогСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаймлогУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>Таймлог</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаймлогУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ТаймлогУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТаймлогНомерСтроки" id="23">
+					<DataPath>Объект.Таймлог.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаймлогНомерСтрокиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ТаймлогНомерСтрокиРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<InputField name="ТаймлогТаймлогИД" id="26">
+					<DataPath>Объект.Таймлог.ТаймлогИД</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаймлогТаймлогИДКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ТаймлогТаймлогИДРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ТаймлогIssueIID" id="29">
+					<DataPath>Объект.Таймлог.IssueIID</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаймлогIssueIIDКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ТаймлогIssueIIDРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ТаймлогProject" id="32">
+					<DataPath>Объект.Таймлог.Project</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаймлогProjectКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ТаймлогProjectРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ТаймлогSummary" id="35">
+					<DataPath>Объект.Таймлог.Summary</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаймлогSummaryКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ТаймлогSummaryРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ТаймлогDuration" id="38">
+					<DataPath>Объект.Таймлог.Duration</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаймлогDurationКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ТаймлогDurationРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="ТаймлогDate" id="41">
+					<DataPath>Объект.Таймлог.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаймлогDateКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ТаймлогDateРасширеннаяПодсказка" id="43"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.GitlabTimeLog</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПолучитьДанныеПоДате" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить данные по дате</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить данные по дате</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьДанныеПоДате</Action>
+		</Command>
+		<Command name="ПолучитьДанныеСДаты" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить данные с даты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить данные с даты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьДанныеСДаты</Action>
+		</Command>
+		<Command name="УдалитьТекущуюЗапись" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить текущую запись</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить текущую запись</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьТекущуюЗапись</Action>
+		</Command>
+		<Command name="СоздатьТекущуюЗапись" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать текущую запись</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать текущую запись</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьТекущуюЗапись</Action>
+		</Command>
+	</Commands>
+</Form>

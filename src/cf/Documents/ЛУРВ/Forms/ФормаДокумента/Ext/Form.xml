@@ -116,6 +116,11 @@
 				<ContextMenu name="ОтчетЗаДеньУправлениеПоискомКонтекстноеМеню" id="21"/>
 				<ExtendedTooltip name="ОтчетЗаДеньУправлениеПоискомРасширеннаяПодсказка" id="22"/>
 			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">ОтчетЗаДеньПередНачаломДобавления</Event>
+				<Event name="AfterDeleteRow">ОтчетЗаДеньПослеУдаления</Event>
+				<Event name="OnChange">ОтчетЗаДеньПриИзменении</Event>
+			</Events>
 			<ChildItems>
 				<InputField name="ОтчетЗаДеньСтатусСинхронизации" id="40">
 					<DataPath>Объект.ОтчетЗаДень.СтатусСинхронизации</DataPath>
@@ -130,6 +135,9 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ОтчетЗаДеньНачалоКонтекстноеМеню" id="27"/>
 					<ExtendedTooltip name="ОтчетЗаДеньНачалоРасширеннаяПодсказка" id="28"/>
+					<Events>
+						<Event name="OnChange">ОтчетЗаДеньНачалоПриИзменении</Event>
+					</Events>
 				</InputField>
 				<InputField name="ОтчетЗаДеньОкончание" id="29">
 					<DataPath>Объект.ОтчетЗаДень.Окончание</DataPath>
@@ -137,6 +145,9 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ОтчетЗаДеньОкончаниеКонтекстноеМеню" id="30"/>
 					<ExtendedTooltip name="ОтчетЗаДеньОкончаниеРасширеннаяПодсказка" id="31"/>
+					<Events>
+						<Event name="OnChange">ОтчетЗаДеньОкончаниеПриИзменении</Event>
+					</Events>
 				</InputField>
 				<InputField name="ОтчетЗаДеньТикет" id="32">
 					<DataPath>Объект.ОтчетЗаДень.Тикет</DataPath>
@@ -151,6 +162,13 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ОтчетЗаДеньОписаниеКонтекстноеМеню" id="36"/>
 					<ExtendedTooltip name="ОтчетЗаДеньОписаниеРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ОтчетЗаДеньСсылкаНаТаймлог" id="48">
+					<DataPath>Объект.ОтчетЗаДень.СсылкаНаТаймлог</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтчетЗаДеньСсылкаНаТаймлогКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="ОтчетЗаДеньСсылкаНаТаймлогРасширеннаяПодсказка" id="50"/>
 				</InputField>
 			</ChildItems>
 		</Table>
