@@ -19,6 +19,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Тикеты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВнешниеСистемыТикетов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ЛУРВ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.GitlabTimeLog</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
