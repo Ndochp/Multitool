@@ -10,3 +10,5 @@ out
 env.json
 .obsidian
 *.log
+.cline
+.1cpt
