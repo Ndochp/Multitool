@@ -5,173 +5,280 @@
 	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
-		<UsualGroup name="грНомерДата" id="38">
+		<Pages name="грСтраницы" id="51">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Гр номер дата</v8:content>
+					<v8:content>Гр страницы</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Гр номер дата</v8:content>
+					<v8:content>Гр страницы</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="грНомерДатаРасширеннаяПодсказка" id="39"/>
+			<ExtendedTooltip name="грСтраницыРасширеннаяПодсказка" id="52"/>
 			<ChildItems>
-				<InputField name="Номер" id="1">
-					<DataPath>Объект.Number</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
-					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
-				</InputField>
-				<InputField name="Дата" id="4">
-					<DataPath>Объект.Date</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
-					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
-				</InputField>
-			</ChildItems>
-		</UsualGroup>
-		<UsualGroup name="грНачалоОкончание" id="46">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Гр начало окончание</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Гр начало окончание</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="грНачалоОкончаниеРасширеннаяПодсказка" id="47"/>
-			<ChildItems>
-				<InputField name="НачалоРаботы" id="43">
-					<DataPath>Объект.НачалоРаботы</DataPath>
+				<Page name="грОсновное" id="53">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>С</v8:content>
+							<v8:content>Основное</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="НачалоРаботыКонтекстноеМеню" id="44"/>
-					<ExtendedTooltip name="НачалоРаботыРасширеннаяПодсказка" id="45"/>
-				</InputField>
-				<InputField name="ОкончаниеРаботы" id="7">
-					<DataPath>Объект.ОкончаниеРаботы</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр основное</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="грОсновноеРасширеннаяПодсказка" id="54"/>
+					<ChildItems>
+						<UsualGroup name="грНачалоОкончание" id="46">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр начало окончание</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр начало окончание</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="грНачалоОкончаниеРасширеннаяПодсказка" id="47"/>
+							<ChildItems>
+								<InputField name="НачалоРаботы" id="43">
+									<DataPath>Объект.НачалоРаботы</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>С</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="НачалоРаботыКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="НачалоРаботыРасширеннаяПодсказка" id="45"/>
+								</InputField>
+								<InputField name="ОкончаниеРаботы" id="7">
+									<DataPath>Объект.ОкончаниеРаботы</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>По</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОкончаниеРаботыКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="ОкончаниеРаботыРасширеннаяПодсказка" id="9"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ОтчетЗаДень" id="10">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ОтчетЗаДень</DataPath>
+							<CommandSet>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ОтчетЗаДеньКонтекстноеМеню" id="11"/>
+							<AutoCommandBar name="ОтчетЗаДеньКоманднаяПанель" id="12">
+								<ChildItems>
+									<Button name="ОтчетЗаДеньСтрокаВверх" id="69">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СтрокаВверх</CommandName>
+										<ExtendedTooltip name="ОтчетЗаДеньСтрокаВверхРасширеннаяПодсказка" id="70"/>
+									</Button>
+									<Button name="ОтчетЗаДеньСтрокаВниз" id="71">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СтрокаВниз</CommandName>
+										<ExtendedTooltip name="ОтчетЗаДеньСтрокаВнизРасширеннаяПодсказка" id="72"/>
+									</Button>
+									<Button name="ОтчетЗаДеньСинхронизировать" id="73">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Синхронизировать</CommandName>
+										<ExtendedTooltip name="ОтчетЗаДеньСинхронизироватьРасширеннаяПодсказка" id="74"/>
+									</Button>
+									<Button name="ОтчетЗаДеньОтправить" id="75">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Отправить</CommandName>
+										<ExtendedTooltip name="ОтчетЗаДеньОтправитьРасширеннаяПодсказка" id="76"/>
+									</Button>
+									<Button name="ОтчетЗаДеньСобратьТаймлогиНаДату" id="77">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СобратьТаймлогиНаДату</CommandName>
+										<ExtendedTooltip name="ОтчетЗаДеньСобратьТаймлогиНаДатуРасширеннаяПодсказка" id="78"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ОтчетЗаДеньРасширеннаяПодсказка" id="13"/>
+							<SearchStringAddition name="ОтчетЗаДеньСтрокаПоиска" id="14">
+								<AdditionSource>
+									<Item>ОтчетЗаДень</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОтчетЗаДеньСтрокаПоискаКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="ОтчетЗаДеньСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОтчетЗаДеньСостояниеПросмотра" id="17">
+								<AdditionSource>
+									<Item>ОтчетЗаДень</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОтчетЗаДеньСостояниеПросмотраКонтекстноеМеню" id="18"/>
+								<ExtendedTooltip name="ОтчетЗаДеньСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОтчетЗаДеньУправлениеПоиском" id="20">
+								<AdditionSource>
+									<Item>ОтчетЗаДень</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОтчетЗаДеньУправлениеПоискомКонтекстноеМеню" id="21"/>
+								<ExtendedTooltip name="ОтчетЗаДеньУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeRowChange">ОтчетЗаДеньПередНачаломИзменения</Event>
+								<Event name="AfterDeleteRow">ОтчетЗаДеньПослеУдаления</Event>
+								<Event name="OnChange">ОтчетЗаДеньПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ОтчетЗаДеньСтатусСинхронизации" id="40">
+									<DataPath>Объект.ОтчетЗаДень.СтатусСинхронизации</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОтчетЗаДеньСтатусСинхронизацииКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="ОтчетЗаДеньСтатусСинхронизацииРасширеннаяПодсказка" id="42"/>
+								</InputField>
+								<InputField name="ОтчетЗаДеньНачало" id="26">
+									<DataPath>Объект.ОтчетЗаДень.Начало</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОтчетЗаДеньНачалоКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ОтчетЗаДеньНачалоРасширеннаяПодсказка" id="28"/>
+									<Events>
+										<Event name="OnChange">ОтчетЗаДеньНачалоПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ОтчетЗаДеньТикет" id="32">
+									<DataPath>Объект.ОтчетЗаДень.Тикет</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОтчетЗаДеньТикетКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="ОтчетЗаДеньТикетРасширеннаяПодсказка" id="34"/>
+								</InputField>
+								<InputField name="ОтчетЗаДеньОписание" id="35">
+									<DataPath>Объект.ОтчетЗаДень.Описание</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОтчетЗаДеньОписаниеКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="ОтчетЗаДеньОписаниеРасширеннаяПодсказка" id="37"/>
+								</InputField>
+								<InputField name="ОтчетЗаДеньДлительность" id="66">
+									<DataPath>Объект.ОтчетЗаДень.Длительность</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОтчетЗаДеньДлительностьКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="ОтчетЗаДеньДлительностьРасширеннаяПодсказка" id="68"/>
+								</InputField>
+								<InputField name="ОтчетЗаДеньОкончание" id="29">
+									<DataPath>Объект.ОтчетЗаДень.Окончание</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОтчетЗаДеньОкончаниеКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="ОтчетЗаДеньОкончаниеРасширеннаяПодсказка" id="31"/>
+								</InputField>
+								<InputField name="ОтчетЗаДеньСсылкаНаТаймлог" id="48">
+									<DataPath>Объект.ОтчетЗаДень.СсылкаНаТаймлог</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОтчетЗаДеньСсылкаНаТаймлогКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="ОтчетЗаДеньСсылкаНаТаймлогРасширеннаяПодсказка" id="50"/>
+								</InputField>
+								<InputField name="ОтчетЗаДеньТаймлогДлительность" id="57">
+									<DataPath>Объект.ОтчетЗаДень.ТаймлогДлительность</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОтчетЗаДеньТаймлогДлительностьКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="ОтчетЗаДеньТаймлогДлительностьРасширеннаяПодсказка" id="59"/>
+								</InputField>
+								<InputField name="ОтчетЗаДеньТаймлогКомментарий" id="60">
+									<DataPath>Объект.ОтчетЗаДень.ТаймлогКомментарий</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОтчетЗаДеньТаймлогКомментарийКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="ОтчетЗаДеньТаймлогКомментарийРасширеннаяПодсказка" id="62"/>
+								</InputField>
+								<InputField name="ОтчетЗаДеньТаймлогДата" id="63">
+									<DataPath>Объект.ОтчетЗаДень.ТаймлогДата</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОтчетЗаДеньТаймлогДатаКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="ОтчетЗаДеньТаймлогДатаРасширеннаяПодсказка" id="65"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="грДополнительно" id="55">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>По</v8:content>
+							<v8:content>Дополнительно</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ОкончаниеРаботыКонтекстноеМеню" id="8"/>
-					<ExtendedTooltip name="ОкончаниеРаботыРасширеннаяПодсказка" id="9"/>
-				</InputField>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр дополнительно</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="грДополнительноРасширеннаяПодсказка" id="56"/>
+					<ChildItems>
+						<UsualGroup name="грНомерДата" id="38">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр номер дата</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр номер дата</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="грНомерДатаРасширеннаяПодсказка" id="39"/>
+							<ChildItems>
+								<InputField name="Номер" id="1">
+									<DataPath>Объект.Number</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+								</InputField>
+								<InputField name="Дата" id="4">
+									<DataPath>Объект.Date</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
 			</ChildItems>
-		</UsualGroup>
-		<Table name="ОтчетЗаДень" id="10">
-			<Representation>List</Representation>
-			<AutoInsertNewRow>true</AutoInsertNewRow>
-			<EnableStartDrag>true</EnableStartDrag>
-			<EnableDrag>true</EnableDrag>
-			<DataPath>Объект.ОтчетЗаДень</DataPath>
-			<RowFilter xsi:nil="true"/>
-			<ContextMenu name="ОтчетЗаДеньКонтекстноеМеню" id="11"/>
-			<AutoCommandBar name="ОтчетЗаДеньКоманднаяПанель" id="12"/>
-			<ExtendedTooltip name="ОтчетЗаДеньРасширеннаяПодсказка" id="13"/>
-			<SearchStringAddition name="ОтчетЗаДеньСтрокаПоиска" id="14">
-				<AdditionSource>
-					<Item>ОтчетЗаДень</Item>
-					<Type>SearchStringRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ОтчетЗаДеньСтрокаПоискаКонтекстноеМеню" id="15"/>
-				<ExtendedTooltip name="ОтчетЗаДеньСтрокаПоискаРасширеннаяПодсказка" id="16"/>
-			</SearchStringAddition>
-			<ViewStatusAddition name="ОтчетЗаДеньСостояниеПросмотра" id="17">
-				<AdditionSource>
-					<Item>ОтчетЗаДень</Item>
-					<Type>ViewStatusRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ОтчетЗаДеньСостояниеПросмотраКонтекстноеМеню" id="18"/>
-				<ExtendedTooltip name="ОтчетЗаДеньСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
-			</ViewStatusAddition>
-			<SearchControlAddition name="ОтчетЗаДеньУправлениеПоиском" id="20">
-				<AdditionSource>
-					<Item>ОтчетЗаДень</Item>
-					<Type>SearchControl</Type>
-				</AdditionSource>
-				<ContextMenu name="ОтчетЗаДеньУправлениеПоискомКонтекстноеМеню" id="21"/>
-				<ExtendedTooltip name="ОтчетЗаДеньУправлениеПоискомРасширеннаяПодсказка" id="22"/>
-			</SearchControlAddition>
-			<Events>
-				<Event name="BeforeAddRow">ОтчетЗаДеньПередНачаломДобавления</Event>
-				<Event name="AfterDeleteRow">ОтчетЗаДеньПослеУдаления</Event>
-				<Event name="OnChange">ОтчетЗаДеньПриИзменении</Event>
-			</Events>
-			<ChildItems>
-				<InputField name="ОтчетЗаДеньСтатусСинхронизации" id="40">
-					<DataPath>Объект.ОтчетЗаДень.СтатусСинхронизации</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ОтчетЗаДеньСтатусСинхронизацииКонтекстноеМеню" id="41"/>
-					<ExtendedTooltip name="ОтчетЗаДеньСтатусСинхронизацииРасширеннаяПодсказка" id="42"/>
-				</InputField>
-				<InputField name="ОтчетЗаДеньНачало" id="26">
-					<DataPath>Объект.ОтчетЗаДень.Начало</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ОтчетЗаДеньНачалоКонтекстноеМеню" id="27"/>
-					<ExtendedTooltip name="ОтчетЗаДеньНачалоРасширеннаяПодсказка" id="28"/>
-					<Events>
-						<Event name="OnChange">ОтчетЗаДеньНачалоПриИзменении</Event>
-					</Events>
-				</InputField>
-				<InputField name="ОтчетЗаДеньОкончание" id="29">
-					<DataPath>Объект.ОтчетЗаДень.Окончание</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ОтчетЗаДеньОкончаниеКонтекстноеМеню" id="30"/>
-					<ExtendedTooltip name="ОтчетЗаДеньОкончаниеРасширеннаяПодсказка" id="31"/>
-					<Events>
-						<Event name="OnChange">ОтчетЗаДеньОкончаниеПриИзменении</Event>
-					</Events>
-				</InputField>
-				<InputField name="ОтчетЗаДеньТикет" id="32">
-					<DataPath>Объект.ОтчетЗаДень.Тикет</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ОтчетЗаДеньТикетКонтекстноеМеню" id="33"/>
-					<ExtendedTooltip name="ОтчетЗаДеньТикетРасширеннаяПодсказка" id="34"/>
-				</InputField>
-				<InputField name="ОтчетЗаДеньОписание" id="35">
-					<DataPath>Объект.ОтчетЗаДень.Описание</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ОтчетЗаДеньОписаниеКонтекстноеМеню" id="36"/>
-					<ExtendedTooltip name="ОтчетЗаДеньОписаниеРасширеннаяПодсказка" id="37"/>
-				</InputField>
-				<InputField name="ОтчетЗаДеньСсылкаНаТаймлог" id="48">
-					<DataPath>Объект.ОтчетЗаДень.СсылкаНаТаймлог</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ОтчетЗаДеньСсылкаНаТаймлогКонтекстноеМеню" id="49"/>
-					<ExtendedTooltip name="ОтчетЗаДеньСсылкаНаТаймлогРасширеннаяПодсказка" id="50"/>
-				</InputField>
-			</ChildItems>
-		</Table>
+		</Pages>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -200,8 +307,154 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
+					<Column name="ТаймлогДлительность" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Таймлог длительность</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>10</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="ТаймлогКомментарий" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Таймлог комментарий</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="ТаймлогДата" id="4">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Таймлог дата</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:dateTime</v8:Type>
+							<v8:DateQualifiers>
+								<v8:DateFractions>Date</v8:DateFractions>
+							</v8:DateQualifiers>
+						</Type>
+					</Column>
+					<Column name="ТаймлогЗадача" id="5">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Таймлог задача</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
 				</AdditionalColumns>
 			</Columns>
 		</Attribute>
+		<Attribute name="ВнешниеСистемы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Внешние системы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="СобратьТаймлогиНаДату" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Собрать таймлоги на дату</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Собрать таймлоги на дату</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СобратьТаймлогиНаДату</Action>
+		</Command>
+		<Command name="СтрокаВверх" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Строка вверх</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Строка вверх</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СтрокаВверх</Action>
+		</Command>
+		<Command name="СтрокаВниз" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Строка вниз</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Строка вниз</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="Синхронизировать" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Синхронизировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Синхронизировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Синхронизировать</Action>
+		</Command>
+		<Command name="Отправить" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+	</Commands>
 </Form>
