@@ -1,30 +1,32 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
-	<Subsystem uuid="2fb3c8ad-5d46-4639-a0ec-f31d4f7cb2b9">
+	<DataProcessor uuid="92416378-4f90-4bbb-8ac4-2328e16c9f69">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ТаймлогиЛокальныйУчет" category="Object">
+				<xr:TypeId>9f28f12f-be11-4fee-9f39-07fdd5846e4f</xr:TypeId>
+				<xr:ValueId>8b670e67-364e-4643-a8e6-03991e76ea33</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ТаймлогиЛокальныйУчет" category="Manager">
+				<xr:TypeId>7ccef9bf-0ece-4c98-8e74-c213c7446bd7</xr:TypeId>
+				<xr:ValueId>a9112704-5022-47d2-9cbe-193ef776678b</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
 		<Properties>
-			<Name>УчетРабочегоВремени</Name>
+			<Name>ТаймлогиЛокальныйУчет</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Учет рабочего времени</v8:content>
+					<v8:content>Таймлоги локальный учет</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<IncludeHelpInContents>true</IncludeHelpInContents>
-			<IncludeInCommandInterface>true</IncludeInCommandInterface>
-			<UseOneCommand>false</UseOneCommand>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
 			<Explanation/>
-			<Picture/>
-			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Тикеты</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВнешниеСистемыТикетов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Document.ЛУРВ</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.GitlabTimeLog</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УчетРабочегоВремени</xr:Item>
-			</Content>
 		</Properties>
-		<ChildObjects>
-			<Subsystem>УчетРабочегоВремениСлужебные</Subsystem>
-		</ChildObjects>
-	</Subsystem>
+		<ChildObjects/>
+	</DataProcessor>
 </MetaDataObject>

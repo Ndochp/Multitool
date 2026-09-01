@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.20">
+	<Item id="4aed3372-d234-4ff6-86c6-d74147174771">
+		<Name>GitLab</Name>
+		<Code>000000001</Code>
+		<Description>Git lab</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e3dd3940-de47-4970-8715-6d10a4f7b553">
+		<Name>Jira</Name>
+		<Code>000000002</Code>
+		<Description>Jira</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="764f5ce7-70e0-4871-9125-a7b566f82658">
+		<Name>ЛокальныйУчет</Name>
+		<Code>000000003</Code>
+		<Description>Локальный учет</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

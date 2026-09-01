@@ -271,7 +271,7 @@
 			<Subsystem>Project</Subsystem>
 			<Subsystem>ВнешниеНаработки</Subsystem>
 			<Subsystem>УчетРабочегоВремени</Subsystem>
-			<Subsystem>GitLab</Subsystem>
+			<Subsystem>GitLabMirror</Subsystem>
 			<Subsystem>JIRA</Subsystem>
 			<StyleItem>ВажнаяНадписьШрифт</StyleItem>
 			<StyleItem>ВидДняПроизводственногоКалендаряПраздникЦвет</StyleItem>
@@ -1282,6 +1282,7 @@
 			<CommonModule>мт_ОбщегоНазначенияВызовСервера</CommonModule>
 			<CommonModule>мт_УкрашательТекстов</CommonModule>
 			<CommonModule>КоннекторHTTP</CommonModule>
+			<CommonModule>УчетРабочегоВремени</CommonModule>
 			<ExchangePlan>ОбновлениеИнформационнойБазы</ExchangePlan>
 			<XDTOPackage>ApdexExport</XDTOPackage>
 			<XDTOPackage>ApdexExport_1_0_0_3</XDTOPackage>
@@ -1755,6 +1756,7 @@
 			<Catalog>ВерсияРасписанияПроекта</Catalog>
 			<Catalog>Тикеты</Catalog>
 			<Catalog>ВнешниеСистемыТикетов</Catalog>
+			<Catalog>ТипыСистемТикетов</Catalog>
 			<Document>ДокПустышка</Document>
 			<Document>ЛУРВ</Document>
 			<Enum>ВажностьПроблемыУчета</Enum>
@@ -1878,6 +1880,9 @@
 			<DataProcessor>УстановкаОбновлений</DataProcessor>
 			<DataProcessor>ИнтеграцияGitlab</DataProcessor>
 			<DataProcessor>GitlabTimeLog</DataProcessor>
+			<DataProcessor>УчетРабочегоВремениИнтеграции</DataProcessor>
+			<DataProcessor>ТаймлогиGitlab</DataProcessor>
+			<DataProcessor>ТаймлогиЛокальныйУчет</DataProcessor>
 			<InformationRegister>БезопасноеХранилищеДанных</InformationRegister>
 			<InformationRegister>ДвоичныеДанныеФайлов</InformationRegister>
 			<InformationRegister>ДампыПлатформы</InformationRegister>
