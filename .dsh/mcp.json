@@ -1,0 +1,16 @@
+{
+	"mcpServers": {
+		"mcp-1c-platform-tools": {
+			"disabled": false,
+			"command": "node",
+			"args": [
+				"c:/Users/Ndochp/.vscode/extensions/yellow-hammer.mcp-1c-platform-tools-0.2.1/out/src/index.js"
+			],
+			"env": {
+				"ONEC_IPC_HOST": "127.0.0.1",
+				"ONEC_IPC_PORT": "40241",
+				"ONEC_IPC_TOKEN": ""
+			}
+		}
+	}
+}
