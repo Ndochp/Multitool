@@ -12,3 +12,4 @@ env.json
 *.log
 .cline
 .1cpt
+.dsh

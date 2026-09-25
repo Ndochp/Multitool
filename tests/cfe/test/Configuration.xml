@@ -69,6 +69,7 @@
 			<CommonModule>тест_Gitlab</CommonModule>
 			<CommonModule>тест_GitlabКлиент</CommonModule>
 			<CommonModule>КоннекторHTTP</CommonModule>
+			<CommonModule>тест_ЛУРВ</CommonModule>
 			<DataProcessor>ИнтеграцияGitlab</DataProcessor>
 			<DataProcessor>GitlabTimeLog</DataProcessor>
 		</ChildObjects>

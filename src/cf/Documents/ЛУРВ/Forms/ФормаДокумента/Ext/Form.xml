@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoTime>CurrentOrLast</AutoTime>
 	<UsePostingMode>Auto</UsePostingMode>
@@ -61,6 +61,9 @@
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="НачалоРаботыКонтекстноеМеню" id="44"/>
 									<ExtendedTooltip name="НачалоРаботыРасширеннаяПодсказка" id="45"/>
+									<Events>
+										<Event name="OnChange">НачалоРаботыПриИзменении</Event>
+									</Events>
 								</InputField>
 								<InputField name="ОкончаниеРаботы" id="7">
 									<DataPath>Объект.ОкончаниеРаботы</DataPath>
@@ -74,7 +77,21 @@
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ОкончаниеРаботыКонтекстноеМеню" id="8"/>
 									<ExtendedTooltip name="ОкончаниеРаботыРасширеннаяПодсказка" id="9"/>
+									<Events>
+										<Event name="OnChange">ОкончаниеРаботыПриИзменении</Event>
+									</Events>
 								</InputField>
+								<LabelDecoration name="ПометкаОдублеДокумента" id="79">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>На эту дату уже существует другой документ «Лист учета рабочего времени»</v8:content>
+										</v8:item>
+									</Title>
+									<Visible>false</Visible>
+									<ContextMenu name="ПометкаОдублеДокументаКонтекстноеМеню" id="80"/>
+									<ExtendedTooltip name="ПометкаОдублеДокументаРасширеннаяПодсказка" id="81"/>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 						<Table name="ОтчетЗаДень" id="10">
@@ -147,6 +164,7 @@
 								<Event name="BeforeRowChange">ОтчетЗаДеньПередНачаломИзменения</Event>
 								<Event name="AfterDeleteRow">ОтчетЗаДеньПослеУдаления</Event>
 								<Event name="OnChange">ОтчетЗаДеньПриИзменении</Event>
+								<Event name="BeforeDeleteRow">ОтчетЗаДеньПередУдалением</Event>
 							</Events>
 							<ChildItems>
 								<InputField name="ОтчетЗаДеньСтатусСинхронизации" id="40">
@@ -279,7 +297,7 @@
 				</Page>
 			</ChildItems>
 		</Pages>
-	</ChildItems>
+		</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
@@ -381,6 +399,11 @@
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ПоказыватьПометкуДубля" id="3">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="СобратьТаймлогиНаДату" id="1">
@@ -426,6 +449,7 @@
 					<v8:content>Строка вниз</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Action>СтрокаВниз</Action>
 		</Command>
 		<Command name="Синхронизировать" id="4">
 			<Title>
