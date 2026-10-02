@@ -484,6 +484,7 @@
 					<v8:content>Отправить</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Action>Отправить</Action>
 		</Command>
 	</Commands>
 </Form>
