@@ -1283,6 +1283,7 @@
 			<CommonModule>мт_УкрашательТекстов</CommonModule>
 			<CommonModule>КоннекторHTTP</CommonModule>
 			<CommonModule>УчетРабочегоВремени</CommonModule>
+			<CommonModule>ЛУРВКлиентСервер</CommonModule>
 			<ExchangePlan>ОбновлениеИнформационнойБазы</ExchangePlan>
 			<XDTOPackage>ApdexExport</XDTOPackage>
 			<XDTOPackage>ApdexExport_1_0_0_3</XDTOPackage>
