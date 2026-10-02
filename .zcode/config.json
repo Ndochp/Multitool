@@ -1,0 +1,16 @@
+{
+  "mcp": {
+    "servers": {
+      "v8std": {
+        "type": "http",
+        "url": "https://ai.v8std.ru/mcp",
+        "timeoutMs": 60000
+      }
+    }
+  },
+  "plugins": {
+    "enabledPlugins": {
+      "unica@unica-next": true
+    }
+  }
+}
