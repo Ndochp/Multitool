@@ -24,6 +24,10 @@ Form.bin binary
 *.ico binary
 *.jpg binary
 *.jpeg binary
+*.gif -text
+
+# XDTO-пакеты: Package.bin — текстовый XML, а не бинарник.
+src/cf/XDTOPackages/*/Ext/Package.bin text eol=crlf
 
 # Archives
 *.7z       binary

@@ -13,3 +13,5 @@ env.json
 .cline
 .1cpt
 .dsh
+.build/
+DumpFilesIndex.txt

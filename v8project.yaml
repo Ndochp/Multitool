@@ -1,0 +1,13 @@
+# Конфигурация рабочего пространства UNICA (v8-runner).
+# main — основная конфигурация, test — расширение с yaxUnit-тестами.
+format: DESIGNER
+infobases:
+  origin:
+    connection: 'File=build/ib'
+source-set:
+  - name: main
+    type: CONFIGURATION
+    path: src/cf
+  - name: test
+    type: EXTENSION
+    path: tests/cfe/test
