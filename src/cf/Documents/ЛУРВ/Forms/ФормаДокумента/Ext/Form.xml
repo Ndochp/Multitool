@@ -246,6 +246,16 @@
 									<ContextMenu name="ОтчетЗаДеньТаймлогДатаКонтекстноеМеню" id="64"/>
 									<ExtendedTooltip name="ОтчетЗаДеньТаймлогДатаРасширеннаяПодсказка" id="65"/>
 								</InputField>
+								<InputField name="ОтчетЗаДеньДлительностьВремя" id="85">
+									<DataPath>Объект.ОтчетЗаДень.ДлительностьВремя</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОтчетЗаДеньДлительностьВремяКонтекстноеМеню" id="86"/>
+									<ExtendedTooltip name="ОтчетЗаДеньДлительностьВремяРасширеннаяПодсказка" id="87"/>
+									<Events>
+										<Event name="OnChange">ОтчетЗаДеньДлительностьВремяПриИзменении</Event>
+									</Events>
+								</InputField>
 							</ChildItems>
 						</Table>
 					</ChildItems>
@@ -299,10 +309,10 @@
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
-				</Page>
-			</ChildItems>
-		</Pages>
-	</ChildItems>
+			</Page>
+		</ChildItems>
+	</Pages>
+</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
@@ -380,6 +390,21 @@
 							<v8:item>
 								<v8:lang>ru</v8:lang>
 								<v8:content>Таймлог задача</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="ДлительностьВремя" id="7">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Длит. время</v8:content>
 							</v8:item>
 						</Title>
 						<Type>
