@@ -28,13 +28,21 @@
 - look to `.bsl-language-server.json`
 
 ## Testing
-- use mcp-1c-platform-tools for running tests and getting results
-- Config: `tests/yaxUnit.json` — filters by extension `"test"`, runs in non-transaction mode (`ВТранзакции: false`)
-- Reports/log to `build/`, exit code to `build/yaxUnit.Res`
+- **Use vrunner for all 1C launches** (tests, config update, compilation). Unica MCP does not run 1C. vrunner is at `C:\Users\Ndochp\AppData\Local\ovm\current\bin\vrunner.bat` (v3.0.0).
+- vrunner 3.0 command syntax (differs from older `.cmd` scripts in repo root):
+  - Load config: `vrunner cf load src/cf`
+  - Load test extension: `vrunner cfe load tests/cfe/test`
+  - Run tests: `vrunner test yaxunit --yaxunit-config tools/yaxunit.json`
+- Config: `tools/yaxunit.json` — filters by extension `"test"`, runs in transaction mode (`ВТранзакции: true`)
+- Reports/log to `build/out/yaxunit/`, exit code to `build/out/yaxunit/result.txt`
 
 ## Config files that matter
 - **`env.json`** — IB connection string, DB credentials, platform version (`--v8version`), locale
 - **`.bsl-language-server.json`** — LSP diagnostics settings (line length, magic numbers, typos)
+
+## Context optimization
+- **Skill list abbreviation:** when the system skill reminder exceeds 30 entries, output only skills relevant to this repo (Unica MCP tools, code-diagnostics, meta-edit, form-edit, module-placement, object-events, form-events, form-compile, query-optimize, log-analysis, source-access, platform-help, interface-edit). Skip browser-use, computer-use, documents, pdf, presentations, spreadsheets, plugin-creator, skill-creator.
+- **Unica MCP preferred:** use `mcp_plugin_unica_*` tools for all 1C configuration operations (view, search, apply, check, diff). They are more reliable than raw file reads for XML metadata.
 
 ## Gotchas
 - `env.json` is gitignored; copy from `env.json.sample` if needed
