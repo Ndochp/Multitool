@@ -36,6 +36,15 @@
 - Config: `tools/yaxunit.json` — filters by extension `"test"`, runs in transaction mode (`ВТранзакции: true`)
 - Reports/log to `build/out/yaxunit/`, exit code to `build/out/yaxunit/result.txt`
 
+## vrunner MCP server (preferred for AI agents)
+- Entry: `vrunner-mcp.bat` = `oscript <ovm>/lib/vanessa-runner/src/mcp.os` (stdio MCP server, built on `autumn-mcpify`).
+- Register in `.mcp.json`: `{"mcpServers": {"vrunner": {"command": "oscript", "args": ["C:/Users/Ndochp/AppData/Local/ovm/current/lib/vanessa-runner/src/mcp.os"]}}}`. Run from project root.
+- Tools = CLI subcommands marked `&ДоступноВMCP`, named by path with `_`: `cf_load`, `cfe_load`, `test_yaxunit`, `test_xunit`, `test_vanessa`, `validate_syntax_check`, `infobase_update`, `extensions_list`, `repo_*`, `cluster_*`, `task_status`, `task_result`, `task_cancel`, `cache_show`, `cache_clear`.
+- `test_yaxunit` is `&MCPДлительная` → runs in background, returns `taskId`; poll with `task_status` / `task_result` (live log). Pass `background:false` (or `debug:true`) to run synchronously with streamed log — use this to diagnose launch issues.
+- Session cache: options like `ibconnection` are remembered per session by name and auto-applied to later calls. Pass `nocache:true` for independent/parallel calls; inspect with `cache_show`, reset with `cache_clear`.
+- `test_yaxunit` options: `yaxunit-config`, `ext`, `modules`, `tests`, `tags`, `suites`, `report`, `exitcode`, `show-report`, `no-close`, `no-wait`, `background`, `nocache`, `debug` + connection/platform options (`ibconnection`, `v8version`, `locale`, ...).
+- Docs: `autumn-mcpify` README at `<ovm>/lib/vanessa-runner/oscript_modules/autumn-mcpify/README.md`; online: https://autumn-library.github.io/vanessa-runner
+
 ## Config files that matter
 - **`env.json`** — IB connection string, DB credentials, platform version (`--v8version`), locale
 - **`.bsl-language-server.json`** — LSP diagnostics settings (line length, magic numbers, typos)
