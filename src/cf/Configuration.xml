@@ -1698,6 +1698,12 @@
 			<CommonForm>ФормаНастроекОтчета</CommonForm>
 			<CommonForm>ФормаОтчета</CommonForm>
 			<CommonForm>ЭлектроннаяПодпись</CommonForm>
+			<Catalog>ГитлабЗадачи</Catalog>
+			<Catalog>ГитлабЗаписиВремени</Catalog>
+			<Catalog>ГитлабКомментарии</Catalog>
+			<Catalog>ГитлабМетки</Catalog>
+			<Catalog>ГитлабПользователи</Catalog>
+			<Catalog>ГитлабПроекты</Catalog>
 			<Catalog>Задачи</Catalog>
 			<Catalog>ГруппыДоступа</Catalog>
 			<Catalog>ВариантыОтчетов</Catalog>

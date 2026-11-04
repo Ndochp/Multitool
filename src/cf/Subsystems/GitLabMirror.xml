@@ -20,6 +20,12 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.GitLab</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ИнтеграцияGitlab</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.GitlabTimeLog</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГитлабПользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГитлабПроекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГитлабМетки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГитлабЗадачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГитлабЗаписиВремени</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГитлабКомментарии</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
