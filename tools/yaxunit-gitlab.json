@@ -1,0 +1,28 @@
+{
+    "reportPath": "./build/out/yaxunit/gitlab.xml",
+    "closeAfterTests": true,
+    "filter": {
+        "extensions": [
+            "test"
+        ],
+        "modules": [
+            "тест_ГитлабЗеркало"
+        ],
+        "suites": null,
+        "tags": null,
+        "contexts": null,
+        "paths": null,
+        "tests": null
+    },
+    "settings": {
+        "ВТранзакции": false
+    },
+    "reportFormat": "jUnit",
+    "showReport": false,
+    "logging": {
+        "file": "./build/out/yaxunit/gitlab-log.txt",
+        "enable": true,
+        "level": "info"
+    },
+    "exitCode": "./build/out/yaxunit/gitlab-result.txt"
+}
