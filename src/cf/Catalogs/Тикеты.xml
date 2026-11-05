@@ -60,7 +60,7 @@
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm/>
+			<DefaultObjectForm>Catalog.Тикеты.Form.ФормаЭлемента</DefaultObjectForm>
 			<DefaultFolderForm/>
 			<DefaultListForm/>
 			<DefaultChoiceForm/>
@@ -261,14 +261,14 @@
 			</Attribute>
 			<Attribute uuid="28df7521-4014-43ab-9c87-23589e359973">
 				<Properties>
-					<Name>ГитлабЗадача</Name>
+					<Name>ВнешняяЗадача</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Задача GitLab</v8:content>
+							<v8:content>Задача внешней системы</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>Задача зеркала GitLab, связанная с тикетом (связка таймтрекинга ЛУРВ с задачами GitLab); в будущем тип расширяется до составного</Comment>
+					<Comment>Задача зеркала внешней системы тикетов, связанная с тикетом (связка таймтрекинга ЛУРВ с задачами). Сейчас — GitLab (CatalogRef.ГитлабЗадачи), при появлении других зеркал (Jira и др.) тип расширяется до составного</Comment>
 					<Type>
 						<v8:Type>cfg:CatalogRef.ГитлабЗадачи</v8:Type>
 					</Type>
@@ -429,6 +429,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
+			<Form>ФормаЭлемента</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>
