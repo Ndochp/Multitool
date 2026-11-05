@@ -220,6 +220,13 @@
 										<Event name="OnChange">ОтчетЗаДеньДлительностьВремяПриИзменении</Event>
 									</Events>
 								</InputField>
+								<CheckBoxField name="ОтчетЗаДеньФиксированнаяДлительность" id="88">
+									<DataPath>Объект.ОтчетЗаДень.ФиксированнаяДлительность</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОтчетЗаДеньФиксированнаяДлительностьКонтекстноеМеню" id="89"/>
+									<ExtendedTooltip name="ОтчетЗаДеньФиксированнаяДлительностьРасширеннаяПодсказка" id="90"/>
+								</CheckBoxField>
 								<InputField name="ОтчетЗаДеньОкончание" id="29">
 									<DataPath>Объект.ОтчетЗаДень.Окончание</DataPath>
 									<ReadOnly>true</ReadOnly>
