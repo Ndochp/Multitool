@@ -33,6 +33,16 @@
 			<ContextMenu name="ПолеВнешняяЗадачаКонтекстноеМеню" id="17"/>
 			<ExtendedTooltip name="ПолеВнешняяЗадачаРасширеннаяПодсказка" id="18"/>
 		</InputField>
+		<Button name="КнопкаЗаполнитьПоЗадаче" id="28">
+			<CommandName>Form.Command.ЗаполнитьПоЗадаче</CommandName>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по задаче GitLab</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="КнопкаЗаполнитьПоЗадачеРасширеннаяПодсказка" id="29"/>
+		</Button>
 		<InputField name="ПолеОписание" id="19">
 			<DataPath>Объект.Описание</DataPath>
 			<MultiLine>true</MultiLine>
@@ -61,4 +71,21 @@
 			<SavedData>true</SavedData>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьПоЗадаче" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по задаче GitLab</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить реквизиты адресации по выбранной задаче зеркала GitLab</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПоЗадаче</Action>
+		</Command>
+	</Commands>
 </Form>
