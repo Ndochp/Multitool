@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Обновление задач GitLab</v8:content>
+		</v8:item>
+	</Title>
+	<Width>46</Width>
+	<Height>14</Height>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ПолеСистема" id="1">
+			<DataPath>Система</DataPath>
+			<Width>40</Width>
+			<ContextMenu name="ПолеСистемаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПолеСистемаРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ПолеСостояние" id="4">
+			<DataPath>Состояние</DataPath>
+			<DropListButton>true</DropListButton>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="ПолеСостояниеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ПолеСостояниеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ПолеПроекты" id="7">
+			<DataPath>Проекты</DataPath>
+			<MultiLine>true</MultiLine>
+			<Height>4</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>группа/проект, через запятую</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="ПолеПроектыКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПолеПроектыРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ПолеМетки" id="10">
+			<DataPath>Метки</DataPath>
+			<MultiLine>true</MultiLine>
+			<Height>4</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>отв: НД, через запятую</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="ПолеМеткиКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ПолеМеткиРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<Button name="КнопкаОбновить" id="13">
+			<CommandName>Form.Command.ОбновитьЗадачи</CommandName>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<DefaultButton>true</DefaultButton>
+			<ExtendedTooltip name="КнопкаОбновитьРасширеннаяПодсказка" id="14"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ИнтеграцияGitlab</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Система" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Система GitLab</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВнешниеСистемыТикетов</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="Состояние" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние задач</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>10</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Проекты" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проекты (пути)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Метки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Метки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьЗадачи" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зеркалировать задачи по указанным проектам и меткам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьЗадачи</Action>
+		</Command>
+	</Commands>
+</Form>
