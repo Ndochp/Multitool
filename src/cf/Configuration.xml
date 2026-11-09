@@ -1010,6 +1010,7 @@
 			<CommonModule>ИнформацияПриЗапуске</CommonModule>
 			<CommonModule>ИнформацияПриЗапускеКлиент</CommonModule>
 			<CommonModule>ИнформацияПриЗапускеПереопределяемый</CommonModule>
+			<CommonModule>КалендариПроектов</CommonModule>
 			<CommonModule>КалендарныеГрафики</CommonModule>
 			<CommonModule>КалендарныеГрафикиПереопределяемый</CommonModule>
 			<CommonModule>КалендарныеГрафикиСлужебный</CommonModule>
