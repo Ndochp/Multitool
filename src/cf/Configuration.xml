@@ -1082,6 +1082,7 @@
 			<CommonModule>ОценкаПроизводительностиКлиентСервер</CommonModule>
 			<CommonModule>ОценкаПроизводительностиПовтИсп</CommonModule>
 			<CommonModule>ОценкаПроизводительностиСлужебный</CommonModule>
+			<CommonModule>ПланированиеПроектов</CommonModule>
 			<CommonModule>ПодключаемыеКоманды</CommonModule>
 			<CommonModule>ПодключаемыеКомандыВызовСервера</CommonModule>
 			<CommonModule>ПодключаемыеКомандыКлиент</CommonModule>

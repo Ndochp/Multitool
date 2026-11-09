@@ -26,6 +26,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВерсияРасписанияПроекта</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Проект</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КалендариПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПланированиеПроектов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

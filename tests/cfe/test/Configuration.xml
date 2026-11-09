@@ -73,6 +73,7 @@
 			<CommonModule>тест_КалендариПроектов</CommonModule>
 			<CommonModule>тест_ЛУРВ</CommonModule>
 			<CommonModule>тест_ЛУРВФормы</CommonModule>
+			<CommonModule>тест_ПланированиеПроектов</CommonModule>
 			<CommonModule>тест_ТаймлогиGitlab</CommonModule>
 			<CommonModule>тест_Тикеты</CommonModule>
 			<DataProcessor>ИнтеграцияGitlab</DataProcessor>
