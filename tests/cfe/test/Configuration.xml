@@ -69,11 +69,14 @@
 			<CommonModule>тест_Gitlab</CommonModule>
 			<CommonModule>тест_GitlabКлиент</CommonModule>
 			<CommonModule>КоннекторHTTP</CommonModule>
+			<CommonModule>тест_ВыравниваниеРесурсов</CommonModule>
 			<CommonModule>тест_ГитлабЗеркало</CommonModule>
 			<CommonModule>тест_КалендариПроектов</CommonModule>
 			<CommonModule>тест_ЛУРВ</CommonModule>
 			<CommonModule>тест_ЛУРВФормы</CommonModule>
+			<CommonModule>тест_ОбменMSProject</CommonModule>
 			<CommonModule>тест_ПланированиеПроектов</CommonModule>
+			<CommonModule>тест_СводныеЗадачи</CommonModule>
 			<CommonModule>тест_ТаймлогиGitlab</CommonModule>
 			<CommonModule>тест_Тикеты</CommonModule>
 			<DataProcessor>ИнтеграцияGitlab</DataProcessor>
