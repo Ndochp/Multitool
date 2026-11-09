@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="ПолеКод" id="1">
+			<DataPath>Объект.Код</DataPath>
+			<ContextMenu name="ПолеКодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПолеКодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ПолеНаименование" id="4">
+			<DataPath>Объект.Наименование</DataPath>
+			<ContextMenu name="ПолеНаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ПолеНаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ПолеВладелец" id="7">
+			<DataPath>Объект.Владелец</DataPath>
+			<ContextMenu name="ПолеВладелецКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПолеВладелецРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ПолеИдентификатор" id="10">
+			<DataPath>Объект.Идентификатор</DataPath>
+			<ContextMenu name="ПолеИдентификаторКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ПолеИдентификаторРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ПолеСостояние" id="13">
+			<DataPath>Объект.Состояние</DataPath>
+			<ContextMenu name="ПолеСостояниеКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ПолеСостояниеРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="ПолеАвтор" id="16">
+			<DataPath>Объект.Автор</DataPath>
+			<ContextMenu name="ПолеАвторКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ПолеАвторРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="ПолеВебURL" id="19">
+			<DataPath>Объект.ВебURL</DataPath>
+			<ContextMenu name="ПолеВебURLКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ПолеВебURLРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<Button name="КнопкаЗагрузитьИзGitLab" id="22">
+			<CommandName>Form.Command.ЗагрузитьИзGitLab</CommandName>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из GitLab</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="КнопкаЗагрузитьИзGitLabРасширеннаяПодсказка" id="23"/>
+		</Button>
+		<InputField name="ПолеОписание" id="24">
+			<DataPath>Объект.Описание</DataPath>
+			<ContextMenu name="ПолеОписаниеКонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="ПолеОписаниеРасширеннаяПодсказка" id="26"/>
+		</InputField>
+		<InputField name="ПолеДедлайн" id="27">
+			<DataPath>Объект.Дедлайн</DataPath>
+			<ContextMenu name="ПолеДедлайнКонтекстноеМеню" id="28"/>
+			<ExtendedTooltip name="ПолеДедлайнРасширеннаяПодсказка" id="29"/>
+		</InputField>
+		<InputField name="ПолеВес" id="30">
+			<DataPath>Объект.Вес</DataPath>
+			<ContextMenu name="ПолеВесКонтекстноеМеню" id="31"/>
+			<ExtendedTooltip name="ПолеВесРасширеннаяПодсказка" id="32"/>
+		</InputField>
+		<InputField name="ПолеОценкаВремени" id="33">
+			<DataPath>Объект.ОценкаВремени</DataPath>
+			<ContextMenu name="ПолеОценкаВремениКонтекстноеМеню" id="34"/>
+			<ExtendedTooltip name="ПолеОценкаВремениРасширеннаяПодсказка" id="35"/>
+		</InputField>
+		<InputField name="ПолеЗатраченоВремени" id="36">
+			<DataPath>Объект.ЗатраченоВремени</DataPath>
+			<ContextMenu name="ПолеЗатраченоВремениКонтекстноеМеню" id="37"/>
+			<ExtendedTooltip name="ПолеЗатраченоВремениРасширеннаяПодсказка" id="38"/>
+		</InputField>
+		<InputField name="ПолеДатаСоздания" id="39">
+			<DataPath>Объект.ДатаСоздания</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ПолеДатаСозданияКонтекстноеМеню" id="40"/>
+			<ExtendedTooltip name="ПолеДатаСозданияРасширеннаяПодсказка" id="41"/>
+		</InputField>
+		<InputField name="ПолеДатаОбновления" id="42">
+			<DataPath>Объект.ДатаОбновления</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ПолеДатаОбновленияКонтекстноеМеню" id="43"/>
+			<ExtendedTooltip name="ПолеДатаОбновленияРасширеннаяПодсказка" id="44"/>
+		</InputField>
+		<InputField name="ПолеДатаЗакрытия" id="45">
+			<DataPath>Объект.ДатаЗакрытия</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ПолеДатаЗакрытияКонтекстноеМеню" id="46"/>
+			<ExtendedTooltip name="ПолеДатаЗакрытияРасширеннаяПодсказка" id="47"/>
+		</InputField>
+		<Table name="Метки" id="48">
+			<DataPath>Объект.Метки</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="МеткиКонтекстноеМеню" id="49"/>
+			<AutoCommandBar name="МеткиКоманднаяПанель" id="50"/>
+			<ExtendedTooltip name="МеткиРасширеннаяПодсказка" id="51"/>
+			<SearchStringAddition name="МеткиСтрокаПоиска" id="52">
+				<AdditionSource>
+					<Item>Метки</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="МеткиСтрокаПоискаКонтекстноеМеню" id="53"/>
+				<ExtendedTooltip name="МеткиСтрокаПоискаРасширеннаяПодсказка" id="54"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="МеткиСостояниеПросмотра" id="55">
+				<AdditionSource>
+					<Item>Метки</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="МеткиСостояниеПросмотраКонтекстноеМеню" id="56"/>
+				<ExtendedTooltip name="МеткиСостояниеПросмотраРасширеннаяПодсказка" id="57"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="МеткиУправлениеПоиском" id="58">
+				<AdditionSource>
+					<Item>Метки</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="МеткиУправлениеПоискомКонтекстноеМеню" id="59"/>
+				<ExtendedTooltip name="МеткиУправлениеПоискомРасширеннаяПодсказка" id="60"/>
+			</SearchControlAddition>
+		</Table>
+		<Table name="Исполнители" id="61">
+			<DataPath>Объект.Исполнители</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ИсполнителиКонтекстноеМеню" id="62"/>
+			<AutoCommandBar name="ИсполнителиКоманднаяПанель" id="63"/>
+			<ExtendedTooltip name="ИсполнителиРасширеннаяПодсказка" id="64"/>
+			<SearchStringAddition name="ИсполнителиСтрокаПоиска" id="65">
+				<AdditionSource>
+					<Item>Исполнители</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ИсполнителиСтрокаПоискаКонтекстноеМеню" id="66"/>
+				<ExtendedTooltip name="ИсполнителиСтрокаПоискаРасширеннаяПодсказка" id="67"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ИсполнителиСостояниеПросмотра" id="68">
+				<AdditionSource>
+					<Item>Исполнители</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ИсполнителиСостояниеПросмотраКонтекстноеМеню" id="69"/>
+				<ExtendedTooltip name="ИсполнителиСостояниеПросмотраРасширеннаяПодсказка" id="70"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ИсполнителиУправлениеПоиском" id="71">
+				<AdditionSource>
+					<Item>Исполнители</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ИсполнителиУправлениеПоискомКонтекстноеМеню" id="72"/>
+				<ExtendedTooltip name="ИсполнителиУправлениеПоискомРасширеннаяПодсказка" id="73"/>
+			</SearchControlAddition>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ГитлабЗадачи</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьИзGitLab" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из GitLab</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Точечно загрузить данные задачи из GitLab по веб-ссылке (подобрать внешнюю систему, прочитать живой API, заполнить поля)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьИзGitLab</Action>
+		</Command>
+	</Commands>
+</Form>
