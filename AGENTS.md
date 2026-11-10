@@ -46,7 +46,7 @@
 - Docs: `autumn-mcpify` README at `<ovm>/lib/vanessa-runner/oscript_modules/autumn-mcpify/README.md`; online: https://autumn-library.github.io/vanessa-runner
 
 ## Config files that matter
-- **`env.json`** — IB connection string, DB credentials, platform version (`--v8version`), locale
+- **`autumn-properties.json`** (repo root) — settings for vrunner 3.0: `ibconnection` `/F./build/ib`, `v8version`, `locale`/`language`, vanessa paths. vrunner auto-loads it from the working directory, or pass `--settings <file>`. v3 does **not** read `env.json` or `tools/vrunner.json` (2.x-era, kept only for reference) — without this file vrunner silently creates a throwaway `v8r_TempDB`.
 - **`.bsl-language-server.json`** — LSP diagnostics settings (line length, magic numbers, typos)
 
 ## Context optimization
@@ -54,5 +54,6 @@
 - **Unica MCP preferred:** use `mcp_plugin_unica_*` tools for all 1C configuration operations (view, search, apply, check, diff). They are more reliable than raw file reads for XML metadata.
 
 ## Gotchas
-- `env.json` is gitignored; copy from `env.json.sample` if needed
+- `env.json` is legacy and gitignored — vrunner 3.0 ignores it; the live settings file is `autumn-properties.json` (committed at repo root)
+- BSL has no `Массив.Сортировать()`/global `Сортировать()` — sort arrays manually (see `ОтсортироватьСтроки` in `ТаймлогиGitlab`)
 - Source files use UTF-8 (`@chcp 65001` in all `.cmd` scripts)
