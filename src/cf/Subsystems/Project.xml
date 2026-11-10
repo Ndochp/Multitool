@@ -30,6 +30,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВыравниваниеРесурсов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменMSProject</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СводныеЗадачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИмпортMSPDI</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВерсииРасписания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭкспортMSPDI</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
