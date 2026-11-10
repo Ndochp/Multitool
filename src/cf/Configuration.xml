@@ -938,6 +938,7 @@
 			<CommonTemplate>ОписаниеИзмененийСистемы</CommonTemplate>
 			<FilterCriterion>СвязанныеДокументы</FilterCriterion>
 			<CommonModule>АдминистрированиеКластера</CommonModule>
+			<CommonModule>ВыравниваниеРесурсов</CommonModule>
 			<CommonModule>ГитлабЗеркало</CommonModule>
 			<CommonModule>ДополнительныеОтчетыИОбработки</CommonModule>
 			<CommonModule>ДополнительныеОтчетыИОбработкиВБезопасномРежимеСлужебный</CommonModule>
@@ -1000,6 +1001,7 @@
 			<CommonModule>ЗапретРедактированияРеквизитовОбъектовСлужебный</CommonModule>
 			<CommonModule>ЗапретРедактированияРеквизитовОбъектовСлужебныйКлиент</CommonModule>
 			<CommonModule>ЗаявлениеНаСертификатПереопределяемый</CommonModule>
+			<CommonModule>ИмпортMSPDI</CommonModule>
 			<CommonModule>ИнтеграцияПодсистемБСП</CommonModule>
 			<CommonModule>ИнтеграцияПодсистемБСПКлиент</CommonModule>
 			<CommonModule>ИнтеграцияПодсистемБСПКлиентПовтИсп</CommonModule>
@@ -1043,6 +1045,7 @@
 			<CommonModule>НастройкиПрограммы</CommonModule>
 			<CommonModule>НастройкиПрограммыКлиент</CommonModule>
 			<CommonModule>НастройкиПрограммыПереопределяемый</CommonModule>
+			<CommonModule>ОбменMSProject</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазы</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыБСП</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыВызовСервера</CommonModule>
@@ -1157,6 +1160,7 @@
 			<CommonModule>РезервноеКопированиеИБКлиент</CommonModule>
 			<CommonModule>РезервноеКопированиеИБКлиентПереопределяемый</CommonModule>
 			<CommonModule>РезервноеКопированиеИБСервер</CommonModule>
+			<CommonModule>СводныеЗадачи</CommonModule>
 			<CommonModule>СерверныеОповещения</CommonModule>
 			<CommonModule>СерверныеОповещенияГлобальный</CommonModule>
 			<CommonModule>СерверныеОповещенияКлиент</CommonModule>

@@ -71,6 +71,7 @@
 			<CommonModule>КоннекторHTTP</CommonModule>
 			<CommonModule>тест_ВыравниваниеРесурсов</CommonModule>
 			<CommonModule>тест_ГитлабЗеркало</CommonModule>
+			<CommonModule>тест_ИмпортMSPDI</CommonModule>
 			<CommonModule>тест_КалендариПроектов</CommonModule>
 			<CommonModule>тест_ЛУРВ</CommonModule>
 			<CommonModule>тест_ЛУРВФормы</CommonModule>
