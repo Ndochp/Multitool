@@ -81,6 +81,7 @@
 			<CommonModule>тест_СводныеЗадачи</CommonModule>
 			<CommonModule>тест_ТаймлогиGitlab</CommonModule>
 			<CommonModule>тест_Тикеты</CommonModule>
+			<CommonModule>тест_ЭкспортMSPDI</CommonModule>
 			<DataProcessor>ИнтеграцияGitlab</DataProcessor>
 			<DataProcessor>GitlabTimeLog</DataProcessor>
 		</ChildObjects>
