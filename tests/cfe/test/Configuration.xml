@@ -69,6 +69,7 @@
 			<CommonModule>тест_Gitlab</CommonModule>
 			<CommonModule>тест_GitlabКлиент</CommonModule>
 			<CommonModule>КоннекторHTTP</CommonModule>
+			<CommonModule>тест_ВерсииРасписания</CommonModule>
 			<CommonModule>тест_ВыравниваниеРесурсов</CommonModule>
 			<CommonModule>тест_ГитлабЗеркало</CommonModule>
 			<CommonModule>тест_ИмпортMSPDI</CommonModule>

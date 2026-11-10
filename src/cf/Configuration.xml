@@ -938,6 +938,7 @@
 			<CommonTemplate>ОписаниеИзмененийСистемы</CommonTemplate>
 			<FilterCriterion>СвязанныеДокументы</FilterCriterion>
 			<CommonModule>АдминистрированиеКластера</CommonModule>
+			<CommonModule>ВерсииРасписания</CommonModule>
 			<CommonModule>ВыравниваниеРесурсов</CommonModule>
 			<CommonModule>ГитлабЗеркало</CommonModule>
 			<CommonModule>ДополнительныеОтчетыИОбработки</CommonModule>
