@@ -33,6 +33,7 @@
   - Load config: `vrunner cf load src/cf`
   - Load test extension: `vrunner cfe load tests/cfe/test`
   - Run tests: `vrunner test yaxunit --yaxunit-config tools/yaxunit.json`
+  - **Перед запуском YAxUnit всегда сперва проверка компиляции/синтаксиса**: `vrunner validate syntax-check` (в MCP — `validate_syntax_check`) или Unica (`unica_check`). Это не всегда помогает — обращения «через точку» (`НеизвестныйТип.Член`) проверяются плохо — но хоть так: непойманный дефект модуля даёт модальное окно и вечное зависание тестовой сессии.
 - Config: `tools/yaxunit.json` — filters by extension `"test"`, runs in transaction mode (`ВТранзакции: true`)
 - Reports/log to `build/out/yaxunit/`, exit code to `build/out/yaxunit/result.txt`
 
