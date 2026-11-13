@@ -34,6 +34,7 @@
   - Load test extension: `vrunner cfe load tests/cfe/test`
   - Эквивалент загрузки конфигурации через Unica — `unica_run` op `push` (пуш source set'ов + применение конфигурации БД; обязателен сначала `dryRun: true`-preview; `force: true` перезаписывает БД без проверки поколения; отсутствие базы — `infobase.create`). Это не «cf load из каталога», а push декларированных source set'ов проекта.
   - Run tests: `vrunner test yaxunit --yaxunit-config tools/yaxunit.json`
+  - **Каждый тест обязан быть зарегистрирован** в тестовом модуле в `Процедура ИсполняемыеСценарии() Экспорт` (`.ДобавитьТестовыйНабор(...).ДобавитьТест("ИмяМетода")`). Без регистрации тест молча не выполнится — счётчик «всего N» не изменится. Признак проблемы: junit-отчёт не содержит новых имён. Диагностика: `vrunner cfe decompile --extension-name test <каталог>` — выгрузит реальный модуль из ИБ, сравнить с исходником.
   - **Перед запуском YAxUnit всегда сперва проверка компиляции/синтаксиса**: `vrunner validate syntax-check` (в MCP — `validate_syntax_check`) или Unica (`unica_check`). Это не всегда помогает — обращения «через точку» (`НеизвестныйТип.Член`) проверяются плохо — но хоть так: непойманный дефект модуля даёт модальное окно и вечное зависание тестовой сессии.
 - Config: `tools/yaxunit.json` — filters by extension `"test"`, runs in transaction mode (`ВТранзакции: true`)
 - Reports/log to `build/out/yaxunit/`, exit code to `build/out/yaxunit/result.txt`
@@ -59,3 +60,5 @@
 - `env.json` is legacy and gitignored — vrunner 3.0 ignores it; the live settings file is `autumn-properties.json` (committed at repo root)
 - BSL has no `Массив.Сортировать()`/global `Сортировать()` — sort arrays manually (see `ОтсортироватьСтроки` in `ТаймлогиGitlab`)
 - Source files use UTF-8 (`@chcp 65001` in all `.cmd` scripts)
+- Токены шаблона `Формат` (`ДФ=`) чувствительны к регистру: день — строчные `д`/`дд`, год — `гггг`; заглавные `Д`/`Г` токенами не являются и выдаются литералом (заглавные `М`/`ММММ` — корректны). См. справку платформы «Форматная строка»
+- Присваивание объекта ссылочного типа (`Справочники.Х.СоздатьЭлемент()`) типизированному реквизиту/свойству ТЧ не вызывает ошибки, но сохраняет пустое значение — присваивать `Элемент.Ссылка`
