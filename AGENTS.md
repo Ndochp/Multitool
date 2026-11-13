@@ -28,10 +28,11 @@
 - look to `.bsl-language-server.json`
 
 ## Testing
-- **Use vrunner for all 1C launches** (tests, config update, compilation). Unica MCP does not run 1C. vrunner is at `C:\Users\Ndochp\AppData\Local\ovm\current\bin\vrunner.bat` (v3.0.0).
+- **Use vrunner for all 1C launches** (tests, config update, compilation). Unica запускает 1C только через `unica_run` (push/launch/dump и т.п.), но для тестов и сборки здесь — vrunner. vrunner is at `C:\Users\Ndochp\AppData\Local\ovm\current\bin\vrunner.bat` (v3.0.0).
 - vrunner 3.0 command syntax (differs from older `.cmd` scripts in repo root):
-  - Load config: `vrunner cf load src/cf`
+  - Load config: `vrunner cf load --ibcmd src/cf` — **всегда с опцией `--ibcmd`** (загрузка через утилиту `ibcmd` вместо конфигуратора; опция ставится до positional-пути). В MCP `cf_load` — тот же параметр `ibcmd: true`.
   - Load test extension: `vrunner cfe load tests/cfe/test`
+  - Эквивалент загрузки конфигурации через Unica — `unica_run` op `push` (пуш source set'ов + применение конфигурации БД; обязателен сначала `dryRun: true`-preview; `force: true` перезаписывает БД без проверки поколения; отсутствие базы — `infobase.create`). Это не «cf load из каталога», а push декларированных source set'ов проекта.
   - Run tests: `vrunner test yaxunit --yaxunit-config tools/yaxunit.json`
   - **Перед запуском YAxUnit всегда сперва проверка компиляции/синтаксиса**: `vrunner validate syntax-check` (в MCP — `validate_syntax_check`) или Unica (`unica_check`). Это не всегда помогает — обращения «через точку» (`НеизвестныйТип.Член`) проверяются плохо — но хоть так: непойманный дефект модуля даёт модальное окно и вечное зависание тестовой сессии.
 - Config: `tools/yaxunit.json` — filters by extension `"test"`, runs in transaction mode (`ВТранзакции: true`)
