@@ -48,6 +48,10 @@
 			</Title>
 			<ExtendedTooltip name="КнопкаЗаполнитьПоЗадачеРасширеннаяПодсказка" id="29"/>
 		</Button>
+		<Button name="КнопкаЗаполнитьПоСсылке" id="33">
+			<CommandName>Form.Command.ЗаполнитьПоСсылке</CommandName>
+			<ExtendedTooltip name="КнопкаЗаполнитьПоСсылкеРасширеннаяПодсказка" id="34"/>
+		</Button>
 		<InputField name="ПолеОписание" id="19">
 			<DataPath>Объект.Описание</DataPath>
 			<MultiLine>true</MultiLine>
@@ -91,6 +95,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗаполнитьПоЗадаче</Action>
+		</Command>
+		<Command name="ЗаполнитьПоСсылке" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по ссылке GitLab</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти задачу по ссылке на внешний тикет (зеркало, API), создать задачу, если её нет, и заполнить реквизиты адресации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПоСсылке</Action>
 		</Command>
 	</Commands>
 </Form>
